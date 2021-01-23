@@ -1,0 +1,74 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <connectionString>zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROEhyw74eaUAZiyj4Np4qCcKEPrl87ihwobAVSBlcJVuHNXibJ1PV/BVRFIqNFutrzMgCXvI6x4kpwy0z/lgBhpzOcMJIW0fgf1g0DsLHlFM04vbxPEX4HNheCVvj2trCVghKt+3xJUAm/PwwKsS6UUyA==</connectionString>
+    <customSQLQuery>SELECT FichedeNotification1.*, FichedeNotification2.*, FichedeNotification10.*, FichedeNotification6.*
+FROM ((FichedeNotification1 INNER JOIN FichedeNotification2 ON FichedeNotification1.GlobalRecordId = FichedeNotification2.GlobalRecordId) INNER JOIN FichedeNotification10 ON FichedeNotification1.GlobalRecordId = FichedeNotification10.GlobalRecordId) INNER JOIN FichedeNotification6 ON FichedeNotification1.GlobalRecordId = FichedeNotification6.GlobalRecordId;
+</customSQLQuery>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <lineListGadget top="33" left="50" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="e6e774b9-ba67-4197-b8b7-09e2b0b2c878">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>50</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>False</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Indicateurs de performance</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <dataFilters recordProcessScope="undeleted" />
+      <listFields>
+        <listField>Cas</listField>
+        <listField>Décès</listField>
+        <listField>Décès (pct)</listField>
+        <listField>District</listField>
+        <listField>Malade Vaccine</listField>
+        <listField>MenAfriVac</listField>
+        <listField>MenAfriVacpct)</listField>
+        <listField>Ponction lombaire (%) (Seuil &gt; 80%)</listField>
+        <listField>Ponction Lombaire (n)</listField>
+        <listField>Region</listField>
+        <listField>TI (pct)</listField>
+        <listField>TI District</listField>
+        <listField>Vivant</listField>
+        <listField>Vivant (pct)</listField>
+      </listFields>
+      <sortFields>
+        <sortField>Region (ascending)</sortField>
+        <sortField>District (ascending)</sortField>
+      </sortFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>False</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Indicateurs de performance</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

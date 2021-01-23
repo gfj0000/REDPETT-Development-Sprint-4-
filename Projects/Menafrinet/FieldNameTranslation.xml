@@ -1,0 +1,366 @@
+﻿<FieldNameTranslationLookup>
+  <Fields>
+    <Field Name="REGION" Prompt="Reporting Region">
+      <en-US>REGION</en-US>
+      <fr-FR>Drs</fr-FR>
+    </Field>
+    <Field Name="DISTRICT" Prompt="Reporting District">
+      <!--<en-US>DISTRICT</en-US> db name changed above also-->
+      <en-US>DISTRICT</en-US>
+      <fr-FR>Districts</fr-FR>
+    </Field>
+    <Field Name="SUBDISTRICT" Prompt="Reporting subdistrict">
+      <en-US>SUBDISTRICT</en-US>
+    </Field>
+    <Field Name="HEALTHFACILITY" Prompt="Reporting Health Facility">
+      <!--<en-US>HEALTHFACILITY</en-US> db name change-->
+      <en-US>HEALTHFACILITY</en-US>
+      <fr-FR>FormationSanitaire</fr-FR>
+    </Field>
+    <Field Name="DISEASE" Prompt="REPLACEME">
+      <en-US>DISEASE</en-US>
+      <fr-FR>Maladie</fr-FR>
+    </Field>
+    <Field Name="EPIDNUMBER" Prompt="REPLACEME">
+      <!--<en-US>EPIDNUMBER</en-US> db name change-->
+      <en-US>EPIDNUMBER</en-US>
+      <fr-FR>EpidShow</fr-FR>
+    </Field>
+    <Field Name="CASENUMBER" Prompt="REPLACEME">
+      <!--<en-US>CASENUM</en-US> db name changed above also-->
+      <en-US>CASENUMBER</en-US>
+      <fr-FR>EPID_CASNO</fr-FR>
+    </Field>
+    <Field Name="PTSURNAME" Prompt="REPLACEME">
+      <en-US>PTSURNAME</en-US>
+      <!--<fr-FR>NomPrenom</fr-FR> db name change-->
+      <fr-FR>NomPrenom</fr-FR>
+    </Field>
+    <Field Name="PTFIRSTNAME" Prompt="REPLACEME">
+      <!--<en-US>PTFIRSTNAME</en-US> db name change-->
+      <en-US>PTFIRSTNAME</en-US>
+      <fr-FR>Prenom</fr-FR>
+    </Field>
+    <Field Name="PTOTHERNAME" Prompt="REPLACEME">
+      <en-US>PTOTHERNAME</en-US>
+    </Field>
+    <Field Name="DOB" Prompt="REPLACEME">
+      <en-US>DOB</en-US>
+      <fr-FR>DateNaissance</fr-FR>
+    </Field>
+    <Field Name="AGEYR" Prompt="REPLACEME">
+      <!--<en-US>AGEYR</en-US> db name change AgeYear-->
+      <en-US>AGEYR</en-US>
+      <fr-FR>Agean</fr-FR>
+    </Field>
+    <Field Name="AgeMonths" Prompt="REPLACEME">
+      <!--<en-US>AGEMO</en-US> db name changed above also-->
+      <en-US>AgeMonths</en-US>
+      <fr-FR>Agemois</fr-FR>
+    </Field>
+    <Field Name="SEX" Prompt="REPLACEME">
+      <!--<en-US>SEX</en-US> db name change-->
+      <en-US>SEX</en-US>
+      <fr-FR>Sexe</fr-FR>
+    </Field>
+    <Field Name="NEIGHLOCAL" Prompt="REPLACEME">
+      <en-US>NEIGHLOCAL</en-US>
+      <fr-FR>Village</fr-FR>
+    </Field>
+    <Field Name="TOWNCITYVIL" Prompt="REPLACEME">
+      <!--<en-US>Neighborhood</en-US> db name change Neighbrhood-->
+      <en-US>TOWNCITYVIL</en-US>
+      <fr-FR>Ville</fr-FR>
+    </Field>
+    <Field Name="PTDISTRICT" Prompt="REPLACEME">
+      <!--<en-US>PTDISTRICT</en-US> db name change DistrictResidence-->
+      <en-US>PTDISTRICT</en-US>
+      <fr-FR>DistrictResidence</fr-FR>
+    </Field>
+    <Field Name="URBANRURAL" Prompt="REPLACEME">
+      <en-US>URBANRURAL</en-US>
+      <fr-FR>UrbainRural</fr-FR>
+    </Field>
+    <Field Name="PHONENUM" Prompt="REPLACEME">
+      <en-US>PHONENUM</en-US>
+      <fr-FR>NumTelephone</fr-FR>
+    </Field>
+    <Field Name="PTADDRESS" Prompt="Adress">
+      <en-US>PTADDRESS</en-US>
+      <fr-FR>Localisation</fr-FR>
+    </Field>
+    <Field Name="PARENTGUARDIAN" Prompt="REPLACEME">
+      <!--<en-US>PARENTGUARDIAN</en-US> db name change-->
+      <en-US>PARENTGUARDIAN</en-US>
+      <fr-FR>NomParent</fr-FR>
+    </Field>
+    <Field Name="DTHEALTHFACILITY" Prompt="REPLACEME">
+      <en-US>DTHEALTHFACILITY</en-US>
+      <fr-FR>DateConsultation</fr-FR>
+    </Field>
+    <Field Name="EPIWEEK" Prompt="REPLACEME">
+      <en-US>EPIWEEK</en-US>
+      <fr-FR>Annee</fr-FR>
+      <!--<fr-FR>EpidYear</fr-FR> db name change-->
+    </Field>
+    <Field Name="EPIYEAR" Prompt="REPLACEME">
+      <en-US>EPIYEAR</en-US>
+      <fr-FR>Semaine</fr-FR>
+      <!--<fr-FR>EpidWeek</fr-FR> db name change-->
+    </Field>
+    <Field Name="DTONSET" Prompt="REPLACEME">
+      <en-US>DTONSET</en-US>
+      <fr-FR>DateDebut</fr-FR>
+      <!--<fr-FR>DateOnset</fr-FR> db name change-->
+    </Field>
+    <Field Name="VAXSTATUS" Prompt="REPLACEME">
+      <en-US>VAXSTATUS</en-US>
+      <fr-FR>StatutVaccinal</fr-FR>
+    </Field>
+    <Field Name="VAXNUM" Prompt="REPLACEME">
+      <en-US>VAXNUM</en-US>
+    </Field>
+    <Field Name="VAXTYPE" Prompt="REPLACEME">
+      <en-US>VAXTYPE</en-US>
+      <fr-FR>Type_vaccin</fr-FR>
+    </Field>
+    <Field Name="VAXCONF" Prompt="REPLACEME">
+      <en-US>VAXCONF</en-US>
+    </Field>
+    <Field Name="VAXDATE" Prompt="REPLACEME">
+      <en-US>VAXDATE</en-US>
+      <fr-FR>Date_dose</fr-FR>
+    </Field>
+    <Field Name="INOUTPATIENT" Prompt="REPLACEME">
+      <en-US>INOUTPATIENT</en-US>
+      <fr-FR>InterneExterne</fr-FR>
+    </Field>
+    <Field Name="OUTCOME" Prompt="REPLACEME">
+      <en-US>OUTCOME</en-US>
+      <!--<fr-FR>Evolution</fr-FR> db name change-->
+      <fr-FR>Evolution</fr-FR>
+    </Field>
+    <Field Name="LUMBARPUNCTURE" Prompt="REPLACEME">
+      <en-US>LUMBARPUNCTURE</en-US>
+      <fr-FR>Prelevement</fr-FR>
+    </Field>
+    <Field Name="DTSPECIMEN" Prompt="REPLACEME">
+      <en-US>DTSPECIMEN</en-US>
+      <fr-FR>Dateprelevement</fr-FR>
+    </Field>
+    <Field Name="MACROSCOPIC" Prompt="REPLACEME">
+      <en-US>MACROSCOPIC</en-US>
+      <fr-FR>AspectFS</fr-FR>
+    </Field>
+    <Field Name="DTNOTIFYDS" Prompt="REPLACEME">
+      <en-US>DTNOTIFYDS</en-US>
+      <fr-FR>DateNotificationDS</fr-FR>
+    </Field>
+    <Field Name="DTSENTDS" Prompt="REPLACEME">
+      <en-US>DTSENTDS</en-US>
+      <fr-FR>DateEnvoiDS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYFACILITY" Prompt="REPLACEME">
+      <en-US>DAYSDELAYFACILITY</en-US>
+      <!--<fr-FR>Drs</fr-FR>-->
+    </Field>
+    <Field Name="DTSPECIMENTOLAB" Prompt="REPLACEME">
+      <en-US>DTSPECIMENTOLAB</en-US>
+      <fr-FR>DateEnvoiDS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYSPECIMENTODS" Prompt="REPLACEME">
+      <en-US>DAYSDELAYSPECIMENTODS</en-US>
+    </Field>
+    <Field Name="DTDISTNOTIFIEDREG" Prompt="REPLACEME">
+      <en-US>DTDISTNOTIFIEDREG</en-US>
+    </Field>
+    <Field Name="DAYSDELAYDISTRICT" Prompt="REPLACEME">
+      <en-US>DAYSDELAYDISTRICT</en-US>
+    </Field>
+    <Field Name="DTREGNOTIFIEDNAT" Prompt="REPLACEME">
+      <en-US>DTREGNOTIFIEDNAT</en-US>
+    </Field>
+    <Field Name="DAYSDELAYREGION" Prompt="REPLACEME">
+      <en-US>DAYSDELAYREGION</en-US>
+    </Field>
+    <Field Name="REPORTERNAME" Prompt="REPLACEME">
+      <en-US>REPORTERNAME</en-US>
+      <fr-FR>AgentFS</fr-FR>
+    </Field>
+    <Field Name="REPORTERTITLE" Prompt="REPLACEME">
+      <en-US>REPORTERTITLE</en-US>
+    </Field>
+    <Field Name="REPORTERPHONE" Prompt="REPLACEME">
+      <en-US>REPORTERPHONE</en-US>
+      <fr-FR>NumTelephoneFS</fr-FR>
+    </Field>
+    <Field Name="REPORTERSIGN" Prompt="REPLACEME">
+      <en-US>REPORTERSIGN</en-US>
+    </Field>
+    <Field Name="DISTRICTLAB" Prompt="REPLACEME">
+      <en-US>DISTRICTLAB</en-US>
+      <fr-FR>LaboDS</fr-FR>
+    </Field>
+    <Field Name="REGIONALLAB" Prompt="REPLACEME">
+      <en-US>REGIONALLAB</en-US>
+      <fr-FR>LaboDRS</fr-FR>
+    </Field>
+    <Field Name="DTDSLABREC" Prompt="REPLACEME">
+      <en-US>DTDSLABREC</en-US>
+      <fr-FR>ReceptionDS</fr-FR>
+    </Field>
+    <Field Name="DTREGLABREC" Prompt="REPLACEME">
+      <en-US>DTREGLABREC</en-US>
+      <fr-FR>ReceptionDRS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYSPECIMENDS" Prompt="REPLACEME">
+      <en-US>DAYSDELAYSPECIMENDS</en-US>
+      <fr-FR>DelaiResultatsDS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYSPECIMENREG" Prompt="REPLACEME">
+      <en-US>DAYSDELAYSPECIMENREG</en-US>
+    </Field>
+    <Field Name="SPECTYPE" Prompt="REPLACEME">
+      <en-US>SPECTYPE</en-US>
+    </Field>
+    <Field Name="DTRESULTSTOCLIN" Prompt="REPLACEME">
+      <en-US>DTRESULTSTOCLIN</en-US>
+      <fr-FR>DateEnvoiResultatsFS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYRESULTCLIN" Prompt="REPLACEME">
+      <en-US>DAYSDELAYRESULTCLIN</en-US>
+      <fr-FR>DelaiResultatsFS</fr-FR>
+    </Field>
+    <Field Name="DTDSRECLABRESULTS" Prompt="REPLACEME">
+      <en-US>DTDSRECLABRESULTS</en-US>
+      <fr-FR>DateReceptionResultatsDS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYFINAL" Prompt="REPLACEME">
+      <en-US>DAYSDELAYFINAL</en-US>
+      <fr-FR>DelaiFinalResults</fr-FR>
+    </Field>
+    <!--<Field Name="OBSERVATIONS" Prompt="REPLACEME">
+      <en-US>OBSERVATIONS</en-US>
+      <fr-FR>ObservationsDS</fr-FR>
+    </Field>-->
+    <Field Name="ZONALLAB" Prompt="REPLACEME">
+      <en-US>ZONALLAB</en-US>
+      <fr-FR>LAB_PCR</fr-FR>
+    </Field>
+    <Field Name="DTZNLABREC" Prompt="REPLACEME">
+      <en-US>DTZNLABREC</en-US>
+      <fr-FR>DateReceptionEchantillonLNR</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYSPECIMENZS" Prompt="REPLACEME">
+      <en-US>DAYSDELAYSPECIMENZS</en-US>
+    </Field>
+    <Field Name="OTHERTUBE" Prompt="REPLACEME">
+      <en-US>OTHERTUBE</en-US>
+      <fr-FR>TubesecLNR</fr-FR>
+    </Field>
+    <Field Name="TI" Prompt="REPLACEME">
+      <en-US>TI</en-US>
+      <fr-FR>TILNR</fr-FR>
+    </Field>
+    <Field Name="Cryotube" Prompt="REPLACEME">
+      <en-US>Cryotube</en-US>
+      <fr-FR>CryotubeLNR</fr-FR>
+    </Field>
+    <Field Name="SPECCOND" Prompt="REPLACEME">
+      <en-US>SPECCOND</en-US>
+      <fr-FR>EtatConservationLNR</fr-FR>
+    </Field>
+    <Field Name="SPECIMENEPID" Prompt="REPLACEME">
+      <en-US>SPECIMENEPID</en-US>
+      <fr-FR>TubeEPID</fr-FR>
+    </Field>
+    <!--<Field Name="MACROSCOPIC" Prompt="REPLACEME">
+      <en-US>MACROSCOPIC</en-US>
+      <fr-FR>AspectLNR</fr-FR>
+    </Field>-->
+    <Field Name="WBC" Prompt="REPLACEME">
+      <en-US>WBC</en-US>
+      <fr-FR>LeucoLNR</fr-FR>
+    </Field>
+    <Field Name="PMN" Prompt="REPLACEME">
+      <en-US>PMN</en-US>
+    </Field>
+    <Field Name="LYMPHOCYTES" Prompt="REPLACEME">
+      <en-US>LYMPHOCYTES</en-US>
+    </Field>
+    <Field Name="PROTEIN" Prompt="REPLACEME">
+      <en-US>PROTEIN</en-US>
+    </Field>
+    <Field Name="GLUCOSE" Prompt="REPLACEME">
+      <en-US>GLUCOSE</en-US>
+    </Field>
+    <Field Name="GLOBULIN" Prompt="REPLACEME">
+      <en-US>GLOBULIN</en-US>
+    </Field>
+    <Field Name="GRAM" Prompt="REPLACEME">
+      <en-US>GRAM</en-US>
+      <fr-FR>GramLNR</fr-FR>
+    </Field>
+    <Field Name="LATEX" Prompt="REPLACEME">
+      <en-US>LATEX</en-US>
+      <fr-FR>LatexLNR</fr-FR>
+    </Field>
+    <Field Name="CULTURE" Prompt="REPLACEME">
+      <en-US>CULTURE</en-US>
+      <fr-FR>CultureLNR</fr-FR>
+    </Field>
+    <Field Name="OTHERPATHOGEN" Prompt="REPLACEME">
+      <en-US>OTHERPATHOGEN</en-US>
+      <fr-FR>CultureAutresLNR</fr-FR>
+    </Field>
+    <Field Name="PCR" Prompt="REPLACEME">
+      <en-US>PCR</en-US>
+      <fr-FR>PCR</fr-FR>
+    </Field>
+    <Field Name="FINALLABRESULT" Prompt="REPLACEME">
+      <en-US>FINALLABRESULT</en-US>
+      <!--<fr-FR>ResultatFinalLNR</fr-FR> db name change-->
+      <fr-FR>FinalResultLNR</fr-FR>
+    </Field>
+    <Field Name="CEFTRIAXONE" Prompt="REPLACEME">
+      <en-US>CEFTRIAXONE</en-US>
+      <fr-FR>CEFTRX</fr-FR>
+    </Field>
+    <Field Name="PENICILLIN" Prompt="REPLACEME">
+      <en-US>PENICILLIN</en-US>
+      <fr-FR>Penicillin</fr-FR>
+    </Field>
+    <Field Name="CHLORAMPHENICOL" Prompt="REPLACEME">
+      <en-US>CHLORAMPHENICOL</en-US>
+      <fr-FR>Chloramphenicol</fr-FR>
+    </Field>
+    <Field Name="DTRESULTSTODS" Prompt="REPLACEME">
+      <en-US>DTRESULTSTODS</en-US>
+      <fr-FR>TransmissionDS</fr-FR>
+    </Field>
+    <Field Name="DAYSDELAYRESULTSDS" Prompt="REPLACEME">
+      <en-US>DAYSDELAYRESULTSDS</en-US>
+    </Field>
+    <Field Name="OBSERVATIONS" Prompt="REPLACEME">
+      <en-US>OBSERVATIONS</en-US>
+      <fr-FR>ObservationsLNR</fr-FR>
+    </Field>
+    <Field Name="CASECLASSIFY" Prompt="REPLACEME">
+      <en-US>CASECLASSIFY</en-US>
+      <fr-FR>Classificationfinale</fr-FR>
+      <!--<fr-FR>FinalClassification</fr-FR> db name change-->
+    </Field>
+    <Field Name="LABOFFICERNAME" Prompt="REPLACEME">
+      <en-US>LABOFFICERNAME</en-US>
+    </Field>
+    <Field Name="LABOFFICERTITLE" Prompt="REPLACEME">
+      <en-US>LABOFFICERTITLE</en-US>
+    </Field>
+    <Field Name="LABOFFICERPHONE" Prompt="REPLACEME">
+      <en-US>LABOFFICERPHONE</en-US>
+    </Field>
+    <Field Name="LABOFFICERSIGN" Prompt="REPLACEME">
+      <en-US>LABOFFICERSIGN</en-US>
+    </Field>
+  </Fields>
+</FieldNameTranslationLookup>

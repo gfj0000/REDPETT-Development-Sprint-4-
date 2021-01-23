@@ -1,0 +1,628 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <projectPath>Menafrinet_NE.prj</projectPath>
+    <viewName>FichedeNotification</viewName>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <lineListGadget top="50" left="0" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="94329afa-8da8-4728-a83b-fe21dfc1864f">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>2000</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>True</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Données Manquantes Demographique et Clinique</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <customusercolumnsort>EpidShow^Region^District^CaseNumber^EpidYear^EpidWeek^AgeYear^AgeMonths^Sex^DateConsultation^VaccinationStatus^MenA^Outcome^SpecimenCollected^DateSpecimenCollected^DateReceivedNRL</customusercolumnsort>
+      <dataFilters recordProcessScope="undeleted">
+        <filterCondition>
+          <condition>(([EpidShow] = '' or [EpidShow]is null))</condition>
+          <friendlyCondition>The value of [EpidShow] is missing </friendlyCondition>
+          <columnName>[EpidShow]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>EpidShow</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>
+          </joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([EpidWeek] is null )</condition>
+          <friendlyCondition>The value of [EpidWeek] is missing </friendlyCondition>
+          <columnName>[EpidWeek]</columnName>
+          <columnType>System.Double</columnType>
+          <rawColumnName>EpidWeek</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([EpidYear] is null )</condition>
+          <friendlyCondition>The value of [EpidYear] is missing </friendlyCondition>
+          <columnName>[EpidYear]</columnName>
+          <columnType>System.Double</columnType>
+          <rawColumnName>EpidYear</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([CaseNumber] is null )</condition>
+          <friendlyCondition>The value of [CaseNumber] is missing </friendlyCondition>
+          <columnName>[CaseNumber]</columnName>
+          <columnType>System.Double</columnType>
+          <rawColumnName>CaseNumber</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([AgeYear] is null )</condition>
+          <friendlyCondition>The value of [AgeYear] is missing </friendlyCondition>
+          <columnName>[AgeYear]</columnName>
+          <columnType>System.Double</columnType>
+          <rawColumnName>AgeYear</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([AgeMonths] is null )</condition>
+          <friendlyCondition>The value of [AgeMonths] is missing </friendlyCondition>
+          <columnName>[AgeMonths]</columnName>
+          <columnType>System.Double</columnType>
+          <rawColumnName>AgeMonths</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([Sex] = '' or [Sex]is null))</condition>
+          <friendlyCondition>The value of [Sex] is missing </friendlyCondition>
+          <columnName>[Sex]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>Sex</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([Outcome] = '' or [Outcome]is null))</condition>
+          <friendlyCondition>The value of [Outcome] is missing </friendlyCondition>
+          <columnName>[Outcome]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>Outcome</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([VaccinationStatus] = '' or [VaccinationStatus]is null))</condition>
+          <friendlyCondition>The value of [VaccinationStatus] is missing </friendlyCondition>
+          <columnName>[VaccinationStatus]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>VaccinationStatus</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([MenA] = 0)</condition>
+          <friendlyCondition>The value of [MenA] is equal to No</friendlyCondition>
+          <columnName>[MenA]</columnName>
+          <columnType>System.Boolean</columnType>
+          <rawColumnName>MenA</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is equal to</friendlyOperand>
+          <value>0</value>
+          <friendlyValue>No</friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([DateConsultation] is null )</condition>
+          <friendlyCondition>The value of [DateConsultation] is missing Missing</friendlyCondition>
+          <columnName>[DateConsultation]</columnName>
+          <columnType>System.DateTime</columnType>
+          <rawColumnName>DateConsultation</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>Missing</friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([SpecimenCollected] = '' or [SpecimenCollected]is null))</condition>
+          <friendlyCondition>The value of [SpecimenCollected] is missing </friendlyCondition>
+          <columnName>[SpecimenCollected]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>SpecimenCollected</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([DateSpecimenCollected] is null )</condition>
+          <friendlyCondition>The value of [DateSpecimenCollected] is missing Missing</friendlyCondition>
+          <columnName>[DateSpecimenCollected]</columnName>
+          <columnType>System.DateTime</columnType>
+          <rawColumnName>DateSpecimenCollected</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>Missing</friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>([DateReceivedNRL] is null )</condition>
+          <friendlyCondition>The value of [DateReceivedNRL] is missing Missing</friendlyCondition>
+          <columnName>[DateReceivedNRL]</columnName>
+          <columnType>System.DateTime</columnType>
+          <rawColumnName>DateReceivedNRL</rawColumnName>
+          <operand>is null</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>
+          </value>
+          <friendlyValue>Missing</friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+      </dataFilters>
+      <listFields>
+        <listField>EpidShow</listField>
+        <listField>EpidWeek</listField>
+        <listField>EpidYear</listField>
+        <listField>CaseNumber</listField>
+        <listField>AgeYear</listField>
+        <listField>AgeMonths</listField>
+        <listField>Sex</listField>
+        <listField>Region</listField>
+        <listField>District</listField>
+        <listField>Outcome</listField>
+        <listField>VaccinationStatus</listField>
+        <listField>MenA</listField>
+        <listField>DateConsultation</listField>
+        <listField>SpecimenCollected</listField>
+        <listField>DateSpecimenCollected</listField>
+        <listField>DateReceivedNRL</listField>
+      </listFields>
+      <sortFields>
+        <sortField>Region (ascending)</sortField>
+        <sortField>District (ascending)</sortField>
+      </sortFields>
+    </lineListGadget>
+    <lineListGadget top="679" left="0" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="4ad88997-6080-4492-9522-9af2756f5706">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>2000</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>True</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Données Manquantes Laboratoire</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <anchorTop>94329afa-8da8-4728-a83b-fe21dfc1864f</anchorTop>
+      <dataFilters recordProcessScope="undeleted">
+        <filterCondition>
+          <condition>(([GramDistrict] = '' or [GramDistrict]is null))</condition>
+          <friendlyCondition>The value of [GramDistrict] is missing </friendlyCondition>
+          <columnName>[GramDistrict]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>GramDistrict</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>
+          </joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([GramRegion] = '' or [GramRegion]is null))</condition>
+          <friendlyCondition>The value of [GramRegion] is missing </friendlyCondition>
+          <columnName>[GramRegion]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>GramRegion</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([GramNRL] = '' or [GramNRL]is null))</condition>
+          <friendlyCondition>The value of [GramNRL] is missing </friendlyCondition>
+          <columnName>[GramNRL]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>GramNRL</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([CultureNRL] = '' or [CultureNRL]is null))</condition>
+          <friendlyCondition>The value of [CultureNRL] is missing </friendlyCondition>
+          <columnName>[CultureNRL]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>CultureNRL</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([PCR] = '' or [PCR]is null))</condition>
+          <friendlyCondition>The value of [PCR] is missing </friendlyCondition>
+          <columnName>[PCR]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>PCR</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([LatexNRL] = '' or [LatexNRL]is null))</condition>
+          <friendlyCondition>The value of [LatexNRL] is missing </friendlyCondition>
+          <columnName>[LatexNRL]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>LatexNRL</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([TDR_MeningitisNRL] = '' or [TDR_MeningitisNRL]is null))</condition>
+          <friendlyCondition>The value of [TDR_MeningitisNRL] is missing </friendlyCondition>
+          <columnName>[TDR_MeningitisNRL]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>TDR_MeningitisNRL</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+        <filterCondition>
+          <condition>(([FinalResultNRL] = '' or [FinalResultNRL]is null))</condition>
+          <friendlyCondition>The value of [FinalResultNRL] is missing </friendlyCondition>
+          <columnName>[FinalResultNRL]</columnName>
+          <columnType>System.String</columnType>
+          <rawColumnName>FinalResultNRL</rawColumnName>
+          <operand>=</operand>
+          <friendlyOperand>is missing</friendlyOperand>
+          <value>''</value>
+          <friendlyValue>
+          </friendlyValue>
+          <highValue>
+          </highValue>
+          <friendlyHighValue>
+          </friendlyHighValue>
+          <lowValue>
+          </lowValue>
+          <friendlyLowValue>
+          </friendlyLowValue>
+          <isBetween>false</isBetween>
+          <isEnabled>true</isEnabled>
+          <joinType>or</joinType>
+        </filterCondition>
+      </dataFilters>
+      <listFields>
+        <listField>EpidShow</listField>
+        <listField>District</listField>
+        <listField>Region</listField>
+        <listField>GramDistrict</listField>
+        <listField>GramNRL</listField>
+        <listField>GramRegion</listField>
+        <listField>CultureNRL</listField>
+        <listField>PCR</listField>
+        <listField>LatexNRL</listField>
+        <listField>TDR_MeningitisNRL</listField>
+        <listField>FinalResultNRL</listField>
+        <listField>TINRL</listField>
+        <listField>TIDistrict</listField>
+        <listField>TIRegion</listField>
+      </listFields>
+      <sortFields>
+        <sortField>Region (ascending)</sortField>
+        <sortField>District (ascending)</sortField>
+      </sortFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>True</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Nettoyage des Données</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

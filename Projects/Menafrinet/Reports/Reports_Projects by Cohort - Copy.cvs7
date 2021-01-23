@@ -1,0 +1,83 @@
+<DashboardCanvas>
+  <dashboardHelper>
+    <connectionString>zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROEx1dBu7oDktE6Ce/5MoQJmXBKekn4mzijsd5/Ja4wWCKINurEjIpiZyeWhBdsBvd6I9LrDAYjBQn9IqO0N7DRds8mVa7HaZXRsAMT8BO4FrCz1IFtelaU77nA+RpaYjix</connectionString>
+    <customSQLQuery>SELECT ReportTable.projecttitle AS [Project Title], ReportTable.DiseaseSuspected AS [Disease Suspected], ReportTable.DateAssigned AS [Date Assigned], Trainees8.ResidentName2 AS [Lead Resident Name], Trainees8.CohortNumber AS [Lead Cohort Number], ProjectsByCohort_NumberofProjects.CountOfFETP AS [Number of Residents on Project], ReportTable.ResidentNames AS [Resident Names]
+FROM (ReportTable INNER JOIN (Trainees8 INNER JOIN Trainees ON Trainees8.GlobalRecordId = Trainees.GlobalRecordId) ON ReportTable.GlobalRecordId = Trainees.FKEY) INNER JOIN ProjectsByCohort_NumberofProjects ON ReportTable.GlobalRecordId = ProjectsByCohort_NumberofProjects.GlobalRecordId
+WHERE (((Trainees8.ResidentPosition2)="Lead"));</customSQLQuery>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <standardTextReportGadget top="48" left="84" id="5accdece-4938-441c-af76-4dadcc64284e" width="140" height="43" collapsed="false" gadgetType="EpiDashboard.Gadgets.Reporting.StandardTextControl">
+      <text>Created: &lt;b&gt;09/12/2018&lt;/b&gt;</text>
+      <fontWeight>regular</fontWeight>
+      <fontSize>14</fontSize>
+      <fontStretch>Normal</fontStretch>
+      <fontStyle>Normal</fontStyle>
+      <fontFamily>Global User Interface</fontFamily>
+      <textDecorations>
+      </textDecorations>
+      <foregroundColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+      </foregroundColor>
+    </standardTextReportGadget>
+    <lineListGadget top="138" left="45" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="a62c47b6-5018-4628-a7e6-697129c1febf" actualHeight="211.33">
+      <dataFilters recordProcessScope="undeleted" />
+      <groupVariable>
+      </groupVariable>
+      <groupVariableSecondary>
+      </groupVariableSecondary>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <usepromptsforcolumnnames>False</usepromptsforcolumnnames>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>True</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Line List</customHeading>
+      <customDescription>
+      </customDescription>
+      <maxRows>50</maxRows>
+      <maxColumnNameLength>50</maxColumnNameLength>
+      <maxWidth>1500</maxWidth>
+      <maxHeight>500</maxHeight>
+      <listFields>
+        <listField>Date Assigned</listField>
+        <listField>DiseaseSuspected</listField>
+        <listField>IsResidentPositionClicked</listField>
+        <listField>Lead Cohort Number</listField>
+        <listField>Lead Resident Name</listField>
+        <listField>Number of Residents on Project</listField>
+        <listField>Project Title</listField>
+        <listField>Resident Names</listField>
+      </listFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>False</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <defaultChartWidth>800</defaultChartWidth>
+    <defaultChartHeight>500</defaultChartHeight>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Projects by Cohort</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

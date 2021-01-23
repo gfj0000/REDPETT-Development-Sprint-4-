@@ -1,0 +1,16 @@
+﻿<ProjectPackagingScript>
+  <projectLocation>Projects\TrackingMaster\TrackingMasterNew.prj</projectLocation>
+  <formToPackage>codeFieldSites</formToPackage>
+  <packageLocation>Projects\TrackingMaster\ImportExport</packageLocation>
+  <packageName>codeFieldSites</packageName>
+  <includeGridData>True</includeGridData>
+  <includeCodeTables>False</includeCodeTables>
+  <formInclusionType>0</formInclusionType>
+  <appendTimestamp>False</appendTimestamp>
+  <fieldsToNull>
+  </fieldsToNull>
+  <keyFields>
+  </keyFields>
+  <gridColumnsToNull>
+  </gridColumnsToNull>
+</ProjectPackagingScript>

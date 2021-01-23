@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta name="description" content="Dashboard Output" />
+  <meta name="keywords" content="Epi, Info, Dashboard" />
+  <meta name="author" content="Epi Info 7" />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <style type="text/css">
+            
+body 
+{
+	background-color: white;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 11pt;
+}
+    
+td 
+{
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 13px;
+	border-right: 1px solid rgb(23, 54, 93);
+	border-bottom: 1px solid rgb(23, 54, 93);
+	text-align: right;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+    
+td.blank 
+{
+	border-right: 0px solid rgb(23, 54, 93);
+	border-bottom: 0px solid rgb(23, 54, 93);
+}
+    
+td.noborder 
+{
+	border-right: 0px solid rgb(23, 54, 93);
+	border-bottom: 0px solid rgb(23, 54, 93);
+}
+    
+td.twobyTwoColoredSquareCell 
+{
+	border-right: 0px solid rgb(23, 54, 93);
+	border-bottom: 0px solid rgb(23, 54, 93);
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+    
+td.value 
+{
+	text-align: left;
+}
+    
+td.highlightedRow 
+{
+	font-weight: bold;
+	background-color: rgb(217, 150, 148);
+}
+    
+tr.altcolor
+{
+	background-color: #EEEEEE;
+}
+    
+th
+{
+	font-family: Calibri, sans-serif;
+	background-color: #4a7ac9;
+	font-weight: bold;
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-right: 1px solid rgb(23, 54, 93);
+	border-bottom: 1px solid rgb(23, 54, 93);
+	min-width: 50px;
+}
+    
+h1
+{
+	color: #4a7ac9;
+	font-family: Cambria, 'Times New Roman', serif;
+}
+    
+h2
+{
+	font-family: Cambria, 'Times New Roman', serif;
+}
+h2.gadgetHeading
+{
+	visibility: hidden;
+	height: 1px;
+}
+p.gadgetOptions
+{
+	visibility: hidden;
+	height: 1px;
+}
+p.summary
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+    
+p.gadgetSummary
+{
+	font-size: 11pt;
+	font-family: Calibri, Arial, Verdana, sans-serif;
+}
+    
+table 
+{
+	border-left: 1px solid rgb(23, 54, 93);
+	border-top: 1px solid rgb(23, 54, 93);
+}
+    
+table.noborder 
+{
+	border-left: 0px solid rgb(23, 54, 93);
+	border-top: 0px solid rgb(23, 54, 93);
+}
+    
+table.twoByTwoColoredSquares 
+{
+	border-left: 0px solid rgb(23, 54, 93);
+	border-top: 0px solid rgb(23, 54, 93);
+	width: 200px;
+	height: 200px;
+}
+    
+div.percentBar
+{
+	height: 8px;
+	background-color: rgb(34, 177, 76);
+}
+    
+.total
+{
+	font-weight: bold;
+}
+    
+.warning
+{
+	font-weight: bold;
+	color: red;
+}
+    
+.bold
+{
+	font-weight: bold;
+}
+    
+caption
+{
+	font-weight: bold;
+}
+    
+  </style>
+    
+  <title>Dashboard Output</title>
+ </head>
+<body>
+<h1>Classification du Cas</h1>
+<hr>
+ 
+<h2 class="gadgetHeading">Crosstabulation (MxN, 2x2)</h2>
+<p class="gadgetOptions"><small>
+<em>Main variable:</em> <strong>District</strong>
+<br />
+<em>Crosstab variable:</em> <strong>FinalClassification</strong>
+<br />
+<em>Weight variable:</em> <strong></strong>
+<br />
+<em>Include missing:</em> <strong>True</strong>
+<br />
+</small></p>
+<div style="height: 7px;"></div>
+<table border="0" cellpadding="0" cellspacing="0">
+<caption>District * FinalClassification</caption>
+<tr>
+<th>District</th>
+<th>1-Confirmé</th>
+<th>2-Probable</th>
+<th>3-Suspect</th>
+<th><span class="total">TOTAL</span></th>
+</tr>
+<tr>
+<td class="value">Agadez</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">2</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">3</span></td>
+</tr>
+<tr>
+<td class="value">Arlit</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">2</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">3</span></td>
+</tr>
+<tr>
+<td class="value">Bilma</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Diffa</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Goure</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Keita</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Kollo</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Madarounfa</td>
+<td style="background-color: rgb(255, 255, 255);">2</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">2</span></td>
+</tr>
+<tr>
+<td class="value">Magaria</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Matameye</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Mirriah</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Niamey II</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Niamey III</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Tchintabaraden</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Tera</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td style="background-color: rgb(255, 255, 255);">0</td>
+<td><span class="total">1</span></td>
+</tr>
+<tr>
+<td class="value">Zinder</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td style="background-color: rgb(255, 255, 255);">1</td>
+<td><span class="total">3</span></td>
+</tr>
+<tr>
+<td class="value"><span class="total">TOTAL</span></td>
+<td><span class="total">9</span></td>
+<td><span class="total">7</span></td>
+<td><span class="total">7</span></td>
+<td><span class="total">23</span></td>
+</tr>
+</table>
+<p></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<th>Chi-square</th>
+<th>df</th>
+<th>Probability</th>
+<tr>
+<td>31.1534</td>
+<td>30</td>
+<td>0.4079</td>
+</table>
+
+<p>&nbsp;</p>
+ 
+</body>
+</html>

@@ -1,0 +1,200 @@
+﻿<UserControl x:Class="Menafrinet.View.Controls.FrontLinePanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Menafrinet.View.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="800" Loaded="dgRecordsFrontLine_Loaded" xmlns:ml="clr-namespace:Menafrinet.View.ml_resources" xmlns:m="clr-namespace:MultiLanguageMarkup">
+    <!--d:DesignHeight="300" d:DesignWidth="800" Loaded="UserControl_Loaded">-->
+
+    <Grid x:Name="grdHomeFrontLine" VerticalAlignment="Stretch" Background="White" Height="Auto" Style="{StaticResource GradientGrid}" Margin="0,0,0,-182">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="grdMainFrontLine" Margin="8,0,8,44" Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=ActualHeight}">
+
+            <Grid x:Name="grdRecordsLayoutFrontLine" Margin="0,0,0,10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <StackPanel Height="5" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" FontSize="14" Text="{m:Lang res4}" x:Uid="ML_1352"></TextBlock>
+                        <TextBox x:Name="txtSearchFrontLine" Grid.Column="1" FontSize="14" Margin="10, 0, 10, 0" TextChanged="txtSearchFrontLine_TextChanged" />
+                        <CheckBox Name="DelRecFrontLine" Grid.Column="2" HorizontalAlignment="Left" Margin="0.333,0,0,-0.333" FontStyle="Italic" FontWeight="Light" Checked="DelRecFrontLine_Checked" Unchecked="DelRecFrontLine_Unchecked" ToolTip="If checked: DELETED records will be inlculded in the Linelist." Height="19" VerticalAlignment="Bottom" Content="{m:Lang Deleted}" x:Uid="ML_5126" />
+                    </Grid>
+                </StackPanel>
+                <StackPanel x:Name="panelRecordsFrontLine" Margin="0,5,0,0" Grid.Row="2" Grid.IsSharedSizeScope="True">
+                    <Border Background="#C00000">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin="5" FontWeight="SemiBold" FontSize="16" Foreground="White" Text="{m:Lang Records}" x:Uid="ML_1360"></TextBlock>
+                                <TextBlock Margin="5, 5, 0, 5" FontWeight="SemiBold" FontSize="16" Foreground="White">(</TextBlock>
+                                <TextBlock x:Name="RecordCountResident" Margin="0, 5, 0, 5" FontWeight="SemiBold" FontSize="16" Foreground="White"></TextBlock>
+                                <TextBlock Margin="0, 5, 5, 5" FontWeight="SemiBold" FontSize="16" Foreground="White">)</TextBlock>
+                            </StackPanel>
+                            <StackPanel Margin="2" Orientation="Horizontal" Grid.Column="1">
+                                <Button x:Name="btnNewRecordFrontLine" Margin="1" Background="#7F7F7F" Width="155" Height="18" Style="{StaticResource FlatButtonStyle}" Click="btnNewRecordFrontLine_Click">
+                                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="125" Text="{m:Lang NewRecord}" x:Uid="ML_1366"></TextBlock>
+                                </Button>
+                                <Button x:Name="btnPrintRecordsFrontLine" Margin="1" Background="#7F7F7F" Width="115" Height="18" Style="{StaticResource FlatButtonStyle}" Click="btnPrintRecordsFrontLine_Click">
+                                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{m:Lang Print}" x:Uid="ML_1368" />
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <DataGrid x:Name="dgRecordsFrontLine" Height="404"
+                   VirtualizingStackPanel.IsVirtualizing="True"
+                  VirtualizingStackPanel.VirtualizationMode="Recycling"
+                              MouseDoubleClick="dgRecords_MouseDoubleClickFrontLine"
+                          AutoGenerateColumns="False" SelectionChanged="dgRecordsFrontLine_SelectionChanged">
+
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Style.Triggers>
+                                    <MultiDataTrigger>
+                                        <MultiDataTrigger.Conditions>
+                                            <Condition Binding="{Binding RECSTATUS}" Value="0" />
+                                        </MultiDataTrigger.Conditions>
+                                        <MultiDataTrigger.Setters>
+                                            <Setter Property="Background" Value="LightGray" />
+                                        </MultiDataTrigger.Setters>
+                                    </MultiDataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
+
+                        <DataGrid.Columns>
+
+                            <!--<DataGridTemplateColumn Header=" ">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <controls:CaseActionsRowControl DataContext="{Binding}"
+                                                                        DeleteCaseRequested="CaseActionsRowControl_DeleteCaseRequested"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>-->
+
+                            <!--<DataGridTemplateColumn Header="Status">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <controls:CaseStatusRowDisplay DataContext="{Binding}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>-->
+                            <!--<DataGridCheckBoxColumn Header="Sélectionnez Dossiers" Binding="{Binding Select Record}" IsReadOnly="True"/>-->
+                            <!--<DataGridTextColumn Header="Année" Binding="{Binding Year}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="Semaine Epi" Binding="{Binding EpiWeek}" IsReadOnly="True" />-->
+                            <!--<DataGridTextColumn Header="LP réalisée" Binding="{Binding LPPerformed}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="résultat finale" Binding="{Binding FinalLabResult}" IsReadOnly="True" />-->
+                            <!--<DataGridTextColumn Header="{x:Static p:Resources.ColHeaderClassification}" Binding="{Binding Classification}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="évolution" Binding="{Binding Outcome}" IsReadOnly="True" />-->
+
+                            <!--<DataGridTextColumn Header="Created" Binding="{Binding DateRecordCreated, StringFormat='dd/MM/yyyy'}" IsReadOnly="True"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Updated" Binding="{Binding DateRecordUpdated, StringFormat='dd/MM/yyyy'}" IsReadOnly="True"></DataGridTextColumn>-->
+
+
+                            <!--<DataGridTextColumn Header="District of Residence" Binding="{Binding DistrictResidence}" IsReadOnly="True" />
+                            
+                            <DataGridTextColumn Header="Date of Onset" Binding="{Binding DateOnset, StringFormat='dd/MM/yyyy'}" IsReadOnly="True"></DataGridTextColumn>-->
+                            <!--<DataGridTextColumn Binding="{Binding DateLastLabSampleCollected, StringFormat='dd/MM/yyyy'}" IsReadOnly="True">
+                                <DataGridTextColumn.HeaderTemplate>
+                                    <DataTemplate>
+                                        <TextBlock>
+                                        Date Last
+                                    <LineBreak />
+                                        Sample Collected
+                                        </TextBlock>
+                                    </DataTemplate>
+                                </DataGridTextColumn.HeaderTemplate>
+                            </DataGridTextColumn>-->
+                            <!--<DataGridTextColumn Header="Sample Interpretation" Binding="{Binding LastSampleInterpretation}" IsReadOnly="True" />-->
+                            <!--<DataGridTextColumn Header="PCR Result of Last Lab Sample" Binding="{Binding LastSamplePCRResult}" IsReadOnly="True" />-->
+                            <!--<DataGridTextColumn Header="{x:Static p:Resources.ColHeaderEPID}" Binding="{Binding EPID}" IsReadOnly="True"></DataGridTextColumn>-->
+
+                            <DataGridTextColumn Header="{m:Lang res22}" Binding="{Binding RPFL1_CohortNumber}" IsReadOnly="True" x:Uid="ML_1371" />
+                            <DataGridTextColumn Header="{m:Lang Cohort_Start_Date}" Binding="{Binding RPFL2_CohortStart}" IsReadOnly="True" x:Uid="ML_1370" />
+                            <DataGridTextColumn Header="{m:Lang Cohort_End_Date}" Binding="{Binding RPFL3_CohortEnd}" IsReadOnly="True" x:Uid="ML_1372" />
+                            <DataGridTextColumn Header="{m:Lang res5}" Binding="{Binding RPFL7_FullName}" IsReadOnly="True" x:Uid="ML_1373" />
+                            <DataGridTextColumn Header="{m:Lang Email}" Binding="{Binding RPFL10_Email}" IsReadOnly="True" x:Uid="ML_1374" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!--<Grid x:Name="grdRecordsHeader" Height="Auto">
+                        <Grid.Resources>
+                            <SolidColorBrush x:Key="textColorHeading" Color="#FF2E8BCC"></SolidColorBrush>
+                        </Grid.Resources>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="18" MaxHeight="18"></RowDefinition>
+                            <RowDefinition Height="1" MaxHeight="1"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition SharedSizeGroup="A" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="B" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="C" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="D" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="E" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="F" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="G" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="H" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="I" Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition SharedSizeGroup="J" Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">KEY</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">EPID</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">Surname</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">First Name</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="4" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">City</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="5" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">District</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="6" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">Age</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="7" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">Sex</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="8" Foreground="{StaticResource textColorHeading}" HorizontalAlignment="Left" Margin="{StaticResource gridHeaderMargin}">Case Cls</TextBlock>
+
+                        <StackPanel Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="1" Background="{StaticResource textColorHeading}"></StackPanel>
+                    </Grid>-->
+
+                    <!--<ScrollViewer MaxHeight="400">
+                        <Grid x:Name="grdRecords" Height="Auto">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition SharedSizeGroup="A" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="B" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="C" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="D" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="E" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="F" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="G" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="H" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="I" Width="Auto"></ColumnDefinition>
+                                <ColumnDefinition SharedSizeGroup="J" Width="Auto"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ScrollViewer>-->
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <!--</ScrollViewer>-->
+    </Grid>
+</UserControl>

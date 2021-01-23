@@ -1,0 +1,7 @@
+<Project id="194890ce-121c-01fc-e270-5e298831127e" name="Menafrinet_NE" location="C:\Users\yfe7\Desktop\Menafrinet - Test Code\Menafrinet\MenAfriNet 5-5-2014\Menafrinet.Core\Projects\Menafrinet" description="" schemaVersion="102" epiVersion="" createDate="12/30/2014 12:51:52" useMetadataDbForCollectedData="" useBackgroundOnAllPages="False">
+  <CollectedData>
+    <Database connectionString="zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROEObQjjBNpAqfBpRexgf2IoubCuTLO+JUKN0f2pDVwhMSRd3gTQCckNAp77DgNuFQqQCCOxUqEYxxG5P+XyCEHxHvDACZ3QO+w4zjLBn3ml+onYKg41dRqfjzxF3B1zTtY" dataDriver="Epi.Data.Office.AccessDBFactory, Epi.Data.Office" />
+  </CollectedData>
+  <Metadata source="2" />
+  <EnterMakeviewInterpreter source="Epi.Core.EnterInterpreter" />
+</Project>

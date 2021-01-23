@@ -1,0 +1,87 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <projectPath>Menafrinet_NE.prj</projectPath>
+    <viewName>FichedeNotification</viewName>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules>
+      <rule ruleType="EpiDashboard.Rules.Rule_ConditionalAssign">
+        <friendlyRule>Assign NRLDate the value 1 when the value of [DateReceivedNRL] is not missing Missing</friendlyRule>
+        <destinationColumnName>NRLDate</destinationColumnName>
+        <destinationColumnType>System.Decimal</destinationColumnType>
+        <assignValue>1</assignValue>
+        <useElse>False</useElse>
+        <dataFilters recordProcessScope="undeleted">
+          <filterCondition>
+            <condition>([DateReceivedNRL] is not null )</condition>
+            <friendlyCondition>The value of [DateReceivedNRL] is not missing Missing</friendlyCondition>
+            <columnName>[DateReceivedNRL]</columnName>
+            <columnType>System.DateTime</columnType>
+            <rawColumnName>DateReceivedNRL</rawColumnName>
+            <operand>is not null</operand>
+            <friendlyOperand>is not missing</friendlyOperand>
+            <value>
+            </value>
+            <friendlyValue>Missing</friendlyValue>
+            <highValue>
+            </highValue>
+            <friendlyHighValue>
+            </friendlyHighValue>
+            <lowValue>
+            </lowValue>
+            <friendlyLowValue>
+            </friendlyLowValue>
+            <isBetween>false</isBetween>
+            <isEnabled>true</isEnabled>
+            <joinType>
+            </joinType>
+          </filterCondition>
+        </dataFilters>
+      </rule>
+    </dashboardRules>
+  </dashboardHelper>
+  <Gadgets>
+    <frequencyGadget top="219" left="609" collapsed="False" gadgetType="EpiDashboard.FrequencyControl" id="22be734a-2b81-4a26-8249-58f1ccd2ca2e">
+      <mainVariable>District</mainVariable>
+      <weightVariable>NRLDate</weightVariable>
+      <sort>
+      </sort>
+      <allValues>False</allValues>
+      <precision>2</precision>
+      <showListLabels>False</showListLabels>
+      <useFieldPrompts>True</useFieldPrompts>
+      <columnsToShow>1,2,6</columnsToShow>
+      <includeMissing>False</includeMissing>
+      <customHeading>Frequency</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <dataFilters recordProcessScope="undeleted" />
+    </frequencyGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>True</showCanvasSummaryInfo>
+    <showGadgetHeadings>True</showGadgetHeadings>
+    <showGadgetSettings>True</showGadgetSettings>
+    <useAlternatingColors>False</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>
+    </customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

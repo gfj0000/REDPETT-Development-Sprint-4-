@@ -1,0 +1,14 @@
+﻿System levels are as follows:
+-----------------------------
+-1 = health facility (should not be included in code because HF do not have computers and therefore only generate paper forms)
+0  = district
+1  = national ref lab
+2  = region
+3  = MoH
+4  = Menafrinet
+
+Data flows:
+
+HF -> District -> (Region and NRL) -> MoH -> Menafrinet
+
+Additionally, some NRL data flows back to region and/or district.

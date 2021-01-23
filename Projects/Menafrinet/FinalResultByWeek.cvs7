@@ -1,0 +1,74 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <connectionString>zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROEhyw74eaUAZiyj4Np4qCcKEPrl87ihwobAVSBlcJVuHNXibJ1PV/BVRFIqNFutrzMgCXvI6x4kpwy0z/lgBhpzOcMJIW0fgf1g0DsLHlFM04vbxPEX4HNheCVvj2trCVghKt+3xJUAm/PwwKsS6UUyA==</connectionString>
+    <customSQLQuery>SELECT FichedeNotification1.EpidWeek, Count(*) AS Cas, Count(*) AS SpecimenCollected, Count(*) AS DateReceivedNRL, Sum(IIf(PCR ='02' Or PCR ='03' Or PCR ='04' Or PCR ='05' Or PCR ='06' Or PCR ='07' Or PCR ='08' Or PCR ='09' Or PCR ='10' Or PCR ='11' Or PCR ='12' Or PCR ='13' Or PCR ='14',1,0)) AS [Nombre de PCR], Sum(IIf(FinalResultNRL ='13',1,0)) AS [contaminé], Sum(IIf(FinalResultNRL ='14',1,0)) AS [Negatif], Sum(IIf(FinalResultNRL ='01',1,0)) AS [NmA], Sum(IIf(FinalResultNRL ='05',1,0)) AS [NmB], Sum(IIf(FinalResultNRL ='04',1,0)) AS [NmY], Sum(IIf(FinalResultNRL ='02',1,0)) AS [NmC], Sum(IIf(FinalResultNRL ='03',1,0)) AS [NmW], Sum(IIf(FinalResultNRL ='06',1,0)) AS [NmX], Sum(IIf(FinalResultNRL ='07',1,0)) AS [Nm Indeterminé], Sum(IIf(FinalResultNRL ='08',1,0)) AS [S pneumoniae], Sum(IIf(FinalResultNRL ='09',1,0)) AS [Hib], Sum(IIf(FinalResultNRL ='10',1,0)) AS [H Influenze (non-B)], Sum(IIf(FinalResultNRL ='12',1,0)) AS [Autres germes] FROM FichedeNotification1 INNER JOIN FichedeNotification6 ON FichedeNotification1.GlobalRecordId = FichedeNotification6.GlobalRecordId
+GROUP BY FichedeNotification1.EpidWeek;</customSQLQuery>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <lineListGadget top="20" left="70" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="2e3622f9-676e-450e-855d-659462022028">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>2000</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>True</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Résultat final par Semaine</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <customusercolumnsort>Line^EpidWeek^Cas^SpecimenCollected^DateReceivedNRL^Nombre de PCR^contaminé^Negatif^NmA^NmB^NmY^NmC^NmW^NmX^Nm Indeterminé^S pneumoniae^Hib^H Influenze (non-B)^Autres germes</customusercolumnsort>
+      <dataFilters recordProcessScope="undeleted" />
+      <listFields>
+        <listField>Nombre de PCR</listField>
+        <listField>contaminé</listField>
+        <listField>Negatif</listField>
+        <listField>NmA</listField>
+        <listField>NmB</listField>
+        <listField>NmC</listField>
+        <listField>NmY</listField>
+        <listField>NmW</listField>
+        <listField>NmX</listField>
+        <listField>Nm Indeterminé</listField>
+        <listField>S pneumoniae</listField>
+        <listField>Hib</listField>
+        <listField>H Influenze (non-B)</listField>
+        <listField>Autres germes</listField>
+        <listField>Cas</listField>
+        <listField>EpidWeek</listField>
+        <listField>DateReceivedNRL</listField>
+        <listField>SpecimenCollected</listField>
+      </listFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>True</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Résultat final par Semaine</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

@@ -1,0 +1,1084 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_1" xml:space="preserve">
+    <value>merge</value>
+    <comment>1</comment>
+  </data>
+  <data name="_2" xml:space="preserve">
+    <value>Age</value>
+    <comment>1</comment>
+  </data>
+  <data name="_3" xml:space="preserve">
+    <value>Classification</value>
+    <comment>1</comment>
+  </data>
+  <data name="_4" xml:space="preserve">
+    <value>Created on</value>
+    <comment>1</comment>
+  </data>
+  <data name="_5" xml:space="preserve">
+    <value>EPID</value>
+    <comment>1</comment>
+  </data>
+  <data name="_6" xml:space="preserve">
+    <value>Epi Week</value>
+    <comment>1</comment>
+  </data>
+  <data name="_7" xml:space="preserve">
+    <value>Final Lab Result</value>
+    <comment>1</comment>
+  </data>
+  <data name="_8" xml:space="preserve">
+    <value>First Name</value>
+    <comment>1</comment>
+  </data>
+  <data name="_9" xml:space="preserve">
+    <value>Health Facility</value>
+    <comment>1</comment>
+  </data>
+  <data name="_10" xml:space="preserve">
+    <value>Last Name</value>
+    <comment>1</comment>
+  </data>
+  <data name="_11" xml:space="preserve">
+    <value>LP Performed</value>
+    <comment>1</comment>
+  </data>
+  <data name="_12" xml:space="preserve">
+    <value>Outcome</value>
+    <comment>1</comment>
+  </data>
+  <data name="_13" xml:space="preserve">
+    <value>Reporting District</value>
+    <comment>1</comment>
+  </data>
+  <data name="_14" xml:space="preserve">
+    <value>Sex</value>
+    <comment>1</comment>
+  </data>
+  <data name="_15" xml:space="preserve">
+    <value>Status</value>
+    <comment>1</comment>
+  </data>
+  <data name="_16" xml:space="preserve">
+    <value>Updated on</value>
+    <comment>1</comment>
+  </data>
+  <data name="_17" xml:space="preserve">
+    <value>Year</value>
+    <comment>1</comment>
+  </data>
+  <data name="_18" xml:space="preserve">
+    <value>create data packet</value>
+    <comment>1</comment>
+  </data>
+  <data name="_19" xml:space="preserve">
+    <value>Export destination site:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_20" xml:space="preserve">
+    <value>Export destination type:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_21" xml:space="preserve">
+    <value>End date:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_22" xml:space="preserve">
+    <value>Date of last export:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_23" xml:space="preserve">
+    <value>User ID of last export:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_24" xml:space="preserve">
+    <value>open transmisison folder</value>
+    <comment>1</comment>
+  </data>
+  <data name="_25" xml:space="preserve">
+    <value>purge old transmission files</value>
+    <comment>1</comment>
+  </data>
+  <data name="_26" xml:space="preserve">
+    <value>Records exported:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_27" xml:space="preserve">
+    <value>Start date:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_28" xml:space="preserve">
+    <value>Export status:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_29" xml:space="preserve">
+    <value>Export type:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_30" xml:space="preserve">
+    <value>Export all</value>
+    <comment>1</comment>
+  </data>
+  <data name="_31" xml:space="preserve">
+    <value>Export all since last</value>
+    <comment>1</comment>
+  </data>
+  <data name="_32" xml:space="preserve">
+    <value>Dates</value>
+    <comment>1</comment>
+  </data>
+  <data name="_33" xml:space="preserve">
+    <value>Month</value>
+    <comment>1</comment>
+  </data>
+  <data name="_34" xml:space="preserve">
+    <value>Date of last merge:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_35" xml:space="preserve">
+    <value>User ID of last merge:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_36" xml:space="preserve">
+    <value>The Management System of Case-by-Case Surveillance Database</value>
+    <comment>1</comment>
+  </data>
+  <data name="_37" xml:space="preserve">
+    <value>Merge status:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_38" xml:space="preserve">
+    <value>      New Record</value>
+    <comment>2</comment>
+  </data>
+  <data name="_39" xml:space="preserve">
+    <value>open merge folder</value>
+    <comment>1</comment>
+  </data>
+  <data name="_40" xml:space="preserve">
+    <value>Package files merged:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_41" xml:space="preserve">
+    <value>Print</value>
+    <comment>1</comment>
+  </data>
+  <data name="_42" xml:space="preserve">
+    <value>Records</value>
+    <comment>1</comment>
+  </data>
+  <data name="_43" xml:space="preserve">
+    <value>Records merged:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_44" xml:space="preserve">
+    <value>Site Merge Status</value>
+    <comment>1</comment>
+  </data>
+  <data name="_45" xml:space="preserve">
+    <value>Analysis</value>
+    <comment>1</comment>
+  </data>
+  <data name="_46" xml:space="preserve">
+    <value>Data Entry</value>
+    <comment>1</comment>
+  </data>
+  <data name="_47" xml:space="preserve">
+    <value>Home</value>
+    <comment>1</comment>
+  </data>
+  <data name="_48" xml:space="preserve">
+    <value>Merge</value>
+    <comment>1</comment>
+  </data>
+  <data name="_49" xml:space="preserve">
+    <value>Data Merging</value>
+    <comment>1</comment>
+  </data>
+  <data name="_50" xml:space="preserve">
+    <value>Transmission</value>
+    <comment>1</comment>
+  </data>
+  <data name="_51" xml:space="preserve">
+    <value>Data Transmission</value>
+    <comment>1</comment>
+  </data>
+  <data name="_52" xml:space="preserve">
+    <value>Projects</value>
+    <comment>1</comment>
+  </data>
+  <data name="_53" xml:space="preserve">
+    <value>Import</value>
+    <comment>1</comment>
+  </data>
+  <data name="_54" xml:space="preserve">
+    <value>Export</value>
+    <comment>1</comment>
+  </data>
+  <data name="_55" xml:space="preserve">
+    <value>Residents</value>
+    <comment>1</comment>
+  </data>
+  <data name="_56" xml:space="preserve">
+    <value>Consultants</value>
+    <comment>1</comment>
+  </data>
+  <data name="_57" xml:space="preserve">
+    <value>Reports</value>
+    <comment>1</comment>
+  </data>
+  <data name="_58" xml:space="preserve">
+    <value>Exit</value>
+    <comment>1</comment>
+  </data>
+  <data name="_59" xml:space="preserve">
+    <value>Settings</value>
+    <comment>2</comment>
+  </data>
+  <data name="_60" xml:space="preserve">
+    <value>_Enter Field Site</value>
+    <comment>1</comment>
+  </data>
+  <data name="_61" xml:space="preserve">
+    <value>_User Settings</value>
+    <comment>1</comment>
+  </data>
+  <data name="_62" xml:space="preserve">
+    <value>This record has been updated and needs review.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_63" xml:space="preserve">
+    <value>This project has a similar Project Classification and aproximate Date assigned.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_64" xml:space="preserve">
+    <value>Beginning Date</value>
+    <comment>1</comment>
+  </data>
+  <data name="_65" xml:space="preserve">
+    <value>Ending Date</value>
+    <comment>1</comment>
+  </data>
+  <data name="_66" xml:space="preserve">
+    <value>Clear</value>
+    <comment>1</comment>
+  </data>
+  <data name="_67" xml:space="preserve">
+    <value>Search</value>
+    <comment>1</comment>
+  </data>
+  <data name="_68" xml:space="preserve">
+    <value>Full Name</value>
+    <comment>1</comment>
+  </data>
+  <data name="_69" xml:space="preserve">
+    <value>Professional Affiliation</value>
+    <comment>1</comment>
+  </data>
+  <data name="_70" xml:space="preserve">
+    <value>Mentor</value>
+    <comment>1</comment>
+  </data>
+  <data name="_71" xml:space="preserve">
+    <value>Supervisor</value>
+    <comment>1</comment>
+  </data>
+  <data name="_72" xml:space="preserve">
+    <value>Mobile Phone</value>
+    <comment>1</comment>
+  </data>
+  <data name="_73" xml:space="preserve">
+    <value>Consultant Email</value>
+    <comment>1</comment>
+  </data>
+  <data name="_74" xml:space="preserve">
+    <value>Reviewed</value>
+    <comment>1</comment>
+  </data>
+  <data name="_75" xml:space="preserve">
+    <value>Created</value>
+    <comment>1</comment>
+  </data>
+  <data name="_76" xml:space="preserve">
+    <value>Updated</value>
+    <comment>1</comment>
+  </data>
+  <data name="_77" xml:space="preserve">
+    <value>Overview</value>
+    <comment>1</comment>
+  </data>
+  <data name="_78" xml:space="preserve">
+    <value>Project Classification:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_79" xml:space="preserve">
+    <value>Suspected Disease</value>
+    <comment>1</comment>
+  </data>
+  <data name="_80" xml:space="preserve">
+    <value>Initial ICD10 Name:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_81" xml:space="preserve">
+    <value>Disease Category:   </value>
+    <comment>1</comment>
+  </data>
+  <data name="_82" xml:space="preserve">
+    <value>Record Entered By:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_83" xml:space="preserve">
+    <value>ReDPeTT User Guide</value>
+    <comment>1</comment>
+  </data>
+  <data name="_84" xml:space="preserve">
+    <value>Status of the merge</value>
+    <comment>1</comment>
+  </data>
+  <data name="_85" xml:space="preserve">
+    <value>Resident</value>
+    <comment>1</comment>
+  </data>
+  <data name="_86" xml:space="preserve">
+    <value>Cohort</value>
+    <comment>1</comment>
+  </data>
+  <data name="_87" xml:space="preserve">
+    <value>Previous import date</value>
+    <comment>1</comment>
+  </data>
+  <data name="_88" xml:space="preserve">
+    <value>Days</value>
+    <comment>1</comment>
+  </data>
+  <data name="_89" xml:space="preserve">
+    <value>Help</value>
+    <comment>1</comment>
+  </data>
+  <data name="_90" xml:space="preserve">
+    <value>Date of the last import</value>
+    <comment>1</comment>
+  </data>
+  <data name="_91" xml:space="preserve">
+    <value>Files packaged:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_92" xml:space="preserve">
+    <value>2. Import</value>
+    <comment>1</comment>
+  </data>
+  <data name="_93" xml:space="preserve">
+    <value>1. Open import folder</value>
+    <comment>1</comment>
+  </data>
+  <data name="_94" xml:space="preserve">
+    <value>Import status</value>
+    <comment>1</comment>
+  </data>
+  <data name="_95" xml:space="preserve">
+    <value>FullName</value>
+    <comment>1</comment>
+  </data>
+  <data name="_96" xml:space="preserve">
+    <value>Cohort Number</value>
+    <comment>1</comment>
+  </data>
+  <data name="_97" xml:space="preserve">
+    <value>University/Training Institution</value>
+    <comment>1</comment>
+  </data>
+  <data name="_98" xml:space="preserve">
+    <value>Graduation Status</value>
+    <comment>1</comment>
+  </data>
+  <data name="_99" xml:space="preserve">
+    <value>FETP Track</value>
+    <comment>1</comment>
+  </data>
+  <data name="_100" xml:space="preserve">
+    <value>Trainee Email</value>
+    <comment>1</comment>
+  </data>
+  <data name="_101" xml:space="preserve">
+    <value>1. Create a data packet</value>
+    <comment>1</comment>
+  </data>
+  <data name="_102" xml:space="preserve">
+    <value>Last export date</value>
+    <comment>1</comment>
+  </data>
+  <data name="_103" xml:space="preserve">
+    <value>Deidentify</value>
+    <comment>1</comment>
+  </data>
+  <data name="_104" xml:space="preserve">
+    <value>Add Residents and Consultants</value>
+    <comment>1</comment>
+  </data>
+  <data name="_105" xml:space="preserve">
+    <value>Ending Date</value>
+    <comment>2</comment>
+  </data>
+  <data name="_106" xml:space="preserve">
+    <value>Beginning Date</value>
+    <comment>2</comment>
+  </data>
+  <data name="_107" xml:space="preserve">
+    <value>Status of the export</value>
+    <comment>1</comment>
+  </data>
+  <data name="_108" xml:space="preserve">
+    <value>Project Type:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_109" xml:space="preserve">
+    <value>Cohort</value>
+    <comment>2</comment>
+  </data>
+  <data name="_110" xml:space="preserve">
+    <value>ICD10 Code:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_111" xml:space="preserve">
+    <value>University/Institution:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_112" xml:space="preserve">
+    <value>Setting:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_113" xml:space="preserve">
+    <value>City:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_114" xml:space="preserve">
+    <value>Residentes</value>
+    <comment>1</comment>
+  </data>
+  <data name="_115" xml:space="preserve">
+    <value>Consultoras</value>
+    <comment>1</comment>
+  </data>
+  <data name="_116" xml:space="preserve">
+    <value>Reports</value>
+    <comment>2</comment>
+  </data>
+  <data name="_117" xml:space="preserve">
+    <value>Resident Name:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_118" xml:space="preserve">
+    <value>You can not merge data if user settings are not properly configured.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_119" xml:space="preserve">
+    <value>There are no data packages in the import folder.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_120" xml:space="preserve">
+    <value>Package {0} was not included in the merge because of incorrect file names or validation errors.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_121" xml:space="preserve">
+    <value>Copy and paste the data package or multiple packages in this window that you want to import.</value>
+    <comment>2</comment>
+  </data>
+  <data name="_122" xml:space="preserve">
+    <value>Opening - decrypting package...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_123" xml:space="preserve">
+    <value>Merging data for: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_124" xml:space="preserve">
+    <value>Projects A D D E D...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_125" xml:space="preserve">
+    <value>Consultants A D D E D...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_126" xml:space="preserve">
+    <value>Trainees A D D E D...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_127" xml:space="preserve">
+    <value>TraineesFilter</value>
+    <comment>1</comment>
+  </data>
+  <data name="_128" xml:space="preserve">
+    <value>Projects filtered for </value>
+    <comment>1</comment>
+  </data>
+  <data name="_129" xml:space="preserve">
+    <value>Import successfully completed.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_130" xml:space="preserve">
+    <value>Export processing...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_131" xml:space="preserve">
+    <value>Exporting consultants...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_132" xml:space="preserve">
+    <value>Consultants de-identified</value>
+    <comment>1</comment>
+  </data>
+  <data name="_133" xml:space="preserve">
+    <value>Exporting projects...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_134" xml:space="preserve">
+    <value>Exporting residents...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_135" xml:space="preserve">
+    <value>Projects de-identified</value>
+    <comment>1</comment>
+  </data>
+  <data name="_136" xml:space="preserve">
+    <value>Export sucessfully completed.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_137" xml:space="preserve">
+    <value>An error occurred exporting:</value>
+    <comment>1</comment>
+  </data>
+  <data name="_138" xml:space="preserve">
+    <value>Trainee Information DeIdentified...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_139" xml:space="preserve">
+    <value>Residents de-identified</value>
+    <comment>1</comment>
+  </data>
+  <data name="_140" xml:space="preserve">
+    <value>Copy the ReDPeTT file from the Exports folder.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_141" xml:space="preserve">
+    <value>Message</value>
+    <comment>1</comment>
+  </data>
+  <data name="_142" xml:space="preserve">
+    <value>Home</value>
+    <comment>1</comment>
+  </data>
+  <data name="_143" xml:space="preserve">
+    <value>test</value>
+    <comment>1</comment>
+  </data>
+  <data name="_144" xml:space="preserve">
+    <value>Projects A D D E D...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_145" xml:space="preserve">
+    <value>Archiving: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_146" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Date Assigned&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_147" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Lead Resident&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_148" xml:space="preserve">
+    <value>&lt;th style="width: 80px;"&gt;Lead Cohort&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_149" xml:space="preserve">
+    <value>&lt;th style="width: 90px;"&gt;Mentor Full Name&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_150" xml:space="preserve">
+    <value>&lt;th style="width: 90px;"&gt;Supervisor Full Name&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_151" xml:space="preserve">
+    <value>&lt;th style="width: 60px;"&gt;Created&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_152" xml:space="preserve">
+    <value>&lt;th style="width: 100px;"&gt;Updated&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_153" xml:space="preserve">
+    <value>&lt;th style="width: 180px;"&gt;Project Title&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_154" xml:space="preserve">
+    <value>&lt;tr style="border-top: 0px solid black;"&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_155" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold;"&gt;Date printed: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_156" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt;Project Line List&lt;/p&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_157" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold; clear: left; text-decoration: underline;"&gt;Resident Driven Project Tracking Tool (ReDPeTT)&lt;/p&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_158" xml:space="preserve">
+    <value>&lt;th style="width: 180px;"&gt;Full Name&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_159" xml:space="preserve">
+    <value>&lt;th style="width: 180px;"&gt;Cohort Number&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_160" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;University/Training Institution&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_161" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Graduation Status&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_162" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;FETP Track&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_163" xml:space="preserve">
+    <value>&lt;th style="width: 30px;"&gt;Mobile Phone&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_164" xml:space="preserve">
+    <value>&lt;th style="width: 30px;"&gt;Trainee Email&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_165" xml:space="preserve">
+    <value>&lt;/tr&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_166" xml:space="preserve">
+    <value>&lt;th style="width: 100px;"&gt;Created&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_167" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt;Resident Line List&lt;/p&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_168" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold;"&gt;Filter: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_169" xml:space="preserve">
+    <value>&lt;th style="width: 100px;"&gt;Consultant Email&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_170" xml:space="preserve">
+    <value>&lt;th style="width: 30px;"&gt;Supervisor&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_171" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Mentor&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_172" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Professional Affiliation&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_173" xml:space="preserve">
+    <value>&lt;th style="width: 180px;"&gt;Full Name&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_174" xml:space="preserve">
+    <value>&lt;th style="width: 100px;"&gt;Created&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_175" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold;"&gt;Filter: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_176" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt;Consultant Line List&lt;/p&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_177" xml:space="preserve">
+    <value>Created: &lt;b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_178" xml:space="preserve">
+    <value>&lt;th style="width: 60px;"&gt;Updated&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_179" xml:space="preserve">
+    <value>Merging data for: </value>
+    <comment>2</comment>
+  </data>
+  <data name="_180" xml:space="preserve">
+    <value>Consultants A D D E D...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_181" xml:space="preserve">
+    <value>Residents A D D E D...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_182" xml:space="preserve">
+    <value>Archiving: </value>
+    <comment>2</comment>
+  </data>
+  <data name="_183" xml:space="preserve">
+    <value>&lt;th style="width: 90px;"&gt;Project Status&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_191" xml:space="preserve">
+    <value>&lt;th style="width: 90px;"&gt;Project Status&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_192" xml:space="preserve">
+    <value>Field Sites A D D E D...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_193" xml:space="preserve">
+    <value>Exporting Field Sites...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_194" xml:space="preserve">
+    <value>Status of the Export</value>
+    <comment>1</comment>
+  </data>
+  <data name="_195" xml:space="preserve">
+    <value>Add Residents, Consultants and Field Sites</value>
+    <comment>1</comment>
+  </data>
+  <data name="_196" xml:space="preserve">
+    <value>Last Export Date: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_197" xml:space="preserve">
+    <value>De-Identify</value>
+    <comment>1</comment>
+  </data>
+  <data name="_198" xml:space="preserve">
+    <value>1. Create a Data Package</value>
+    <comment>1</comment>
+  </data>
+  <data name="_199" xml:space="preserve">
+    <value>Residents A D D E D...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_200" xml:space="preserve">
+    <value>Frontline Information DeIdentified...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_201" xml:space="preserve">
+    <value>            Site Settings</value>
+    <comment>1</comment>
+  </data>
+  <data name="_202" xml:space="preserve">
+    <value>           User Settings</value>
+    <comment>1</comment>
+  </data>
+  <data name="_203" xml:space="preserve">
+    <value>          Language Settings</value>
+    <comment>1</comment>
+  </data>
+  <data name="_204" xml:space="preserve">
+    <value>Frontline A D D E D...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_205" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt;Frontline Line List&lt;/p&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_206" xml:space="preserve">
+    <value>Frontline</value>
+    <comment>1</comment>
+  </data>
+  <data name="_207" xml:space="preserve">
+    <value>Exporting Frontline data...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_208" xml:space="preserve">
+    <value>Deleted</value>
+    <comment>1</comment>
+  </data>
+  <data name="_209" xml:space="preserve">
+    <value>The app settings have been changed. The user setting changes will take full effect the next time you start the program. Please close the application and restart.</value>
+    <comment>1</comment>
+  </data>
+  <data name="_210" xml:space="preserve">
+    <value>ReDPeTT Alert: </value>
+    <comment>1</comment>
+  </data>
+  <data name="_211" xml:space="preserve">
+    <value>This project was not installed in the correctly. Please ensure the application is installed correctly.</value>
+    <comment>2</comment>
+  </data>
+  <data name="_212" xml:space="preserve">
+    <value>&lt;br /&gt;  Institution: &lt;b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_213" xml:space="preserve">
+    <value>ALL</value>
+    <comment>1</comment>
+  </data>
+  <data name="_214" xml:space="preserve">
+    <value>&lt;br /&gt;   &lt;b&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_215" xml:space="preserve">
+    <value>&lt;/b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_216" xml:space="preserve">
+    <value>&lt;br /&gt;  Cohort number: &lt;b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_217" xml:space="preserve">
+    <value>&lt;br /&gt;  Resident: &lt;b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_218" xml:space="preserve">
+    <value>&lt;br /&gt;  Ending Reporting Date:  &lt;b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_219" xml:space="preserve">
+    <value>&lt;br /&gt;   Beginning Reporting Date:  &lt;b&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_220" xml:space="preserve">
+    <value>(Deidentified)</value>
+    <comment>1</comment>
+  </data>
+  <data name="_221" xml:space="preserve">
+    <value>(FULL)</value>
+    <comment>1</comment>
+  </data>
+  <data name="_222" xml:space="preserve">
+    <value>Exporting project data...</value>
+    <comment>1</comment>
+  </data>
+  <data name="_223" xml:space="preserve">
+    <value>Report Format</value>
+    <comment>1</comment>
+  </data>
+  <data name="_224" xml:space="preserve">
+    <value>Output format: Report viewer or Epi Info</value>
+    <comment>1</comment>
+  </data>
+  <data name="_225" xml:space="preserve">
+    <value>C</value>
+    <comment>1</comment>
+  </data>
+  <data name="_226" xml:space="preserve">
+    <value>ohort</value>
+    <comment>1</comment>
+  </data>
+  <data name="_227" xml:space="preserve">
+    <value>&lt;th style="width: 180px;"&gt;Cohort Start Date&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_228" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Cohort End Date&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_229" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Full Name&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_230" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Email&lt;/th&gt;</value>
+    <comment>1</comment>
+  </data>
+  <data name="_231" xml:space="preserve">
+    <value>This project was not installed in the correctly. Please ensure the application is installed correctly</value>
+    <comment>1</comment>
+  </data>
+  <data name="_232" xml:space="preserve">
+    <value>User Settings</value>
+    <comment>2</comment>
+  </data>
+  <data name="_233" xml:space="preserve">
+    <value>Language Settings</value>
+    <comment>2</comment>
+  </data>
+  <data name="_234" xml:space="preserve">
+    <value>          User Settings</value>
+    <comment>1</comment>
+  </data>
+  <data name="_235" xml:space="preserve">
+    <value>         Language Settings</value>
+    <comment>1</comment>
+  </data>
+  <data name="_236" xml:space="preserve">
+    <value>Cohort Start Date</value>
+    <comment>1</comment>
+  </data>
+  <data name="_237" xml:space="preserve">
+    <value>Cohort End Date</value>
+    <comment>1</comment>
+  </data>
+  <data name="_238" xml:space="preserve">
+    <value>Email</value>
+    <comment>1</comment>
+  </data>
+  <data name="_239" xml:space="preserve">
+    <value>Full: Add Residents, Consultants and Field Sites</value>
+    <comment>2</comment>
+  </data>
+  <data name="_240" xml:space="preserve">
+    <value>Institution</value>
+    <comment>1</comment>
+  </data>
+  <data name="_241" xml:space="preserve">
+    <value>Full: Add Residents, Consultants and Field Sites</value>
+    <comment>1</comment>
+  </data>
+  <data name="_242" xml:space="preserve">
+    <value>Select Item</value>
+    <comment>1</comment>
+  </data>
+  <data name="_243" xml:space="preserve">
+    <value>ReDPeTT User Videos</value>
+    <comment>1</comment>
+  </data>
+  <data name="_244" xml:space="preserve">
+    <value>Full: Add Residents, Consultants and Field Sites</value>
+    <comment>1</comment>
+  </data>
+  <data name="_245" xml:space="preserve">
+    <value>.Properties.Resources</value>
+    <comment>1</comment>
+  </data>
+  <data name="_246" xml:space="preserve">
+    <value>Projects\TrackingMaster\ImportExport\Attachments\</value>
+    <comment>1</comment>
+  </data>
+  <data name="_247" xml:space="preserve">
+    <value>UPDATE LanguageSettings96LanguageTranslation INNER JOIN metaFields ON LanguageSettings96LanguageTranslation.FieldName = metaFields.Name SET metaFields.PromptText = [LanguageSettings96LanguageTranslation].[TypeLabel</value>
+    <comment>1</comment>
+  </data>
+  <data name="_248" xml:space="preserve">
+    <value>Consultant Information DeIdentified...</value>
+    <comment>1</comment>
+  </data>
+</root>

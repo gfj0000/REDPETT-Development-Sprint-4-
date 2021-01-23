@@ -1,0 +1,452 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:Menafrinet.ViewModel;assembly=Menafrinet.ViewModel"
+        xmlns:controls="clr-namespace:Menafrinet.View.Controls"
+        xmlns:p="clr-namespace:Menafrinet.View.Properties"
+        xmlns:local="clr-namespace:Menafrinet.View"
+        xmlns:view="clr-namespace:Menafrinet.View"
+        xmlns:ml="clr-namespace:Menafrinet.View.ml_resources" xmlns:m="clr-namespace:MultiLanguageMarkup" xmlns:Options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options" x:Class="Menafrinet.View.MainWindow"
+        Loaded="Window_Loaded"
+        SizeChanged="Window_SizeChanged"
+        Closing="Window_Closing"
+        Title="ReDPeTT v4.0" MinHeight="200" MinWidth="800" Height="{Binding WindowHeight, Mode=TwoWay, Source={x:Static p:Settings.Default}}" Width="944" WindowState="{Binding WindowState, Mode=TwoWay, Source={x:Static p:Settings.Default}}">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="bvc" />
+        <Color x:Key="HighlightColor" A="255" R="154" G="29" B="32" />
+        <Color x:Key="PressedColor" A="255" R="205" G="230" B="252" />
+        <Color x:Key="DarkTextColor" A="255"            R="51 " G="51 " B="51" />
+        <Color x:Key="MediumTextColor" A="255"          R="98 " G="98 " B="98 " />
+        <Color x:Key="MediumLightTextColor" A="255"     R="133 " G="133" B="133 " />
+        <Color x:Key="LightTextColor" A="255"           R="244 " G="244 " B="244 " />
+        <Color x:Key="WindowBackgroundDarkColor" A="255" R="45 " G="45 " B="48 " />
+
+        <SolidColorBrush x:Key="RowHighlightBackgroundBrush" Color="#CDCDCD" />
+        <SolidColorBrush x:Key="RowHighlightForegroundBrush" Color="#727272" />
+        <SolidColorBrush x:Key="WindowBackgroundDarkBrush" Color="{StaticResource WindowBackgroundDarkColor}" />
+        <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#EDEDEA" />
+        <SolidColorBrush x:Key="WindowBorderBrush" Color="#333333" />
+        <SolidColorBrush x:Key="DataGridHeaderBackgroundBrush" Color="Transparent" />
+        <SolidColorBrush x:Key="DataGridHeaderForegroundBrush" Color="{StaticResource MediumTextColor}" />
+        <SolidColorBrush x:Key="DataGridGridLineBrush" Color="#D5D5D5" />
+        <SolidColorBrush x:Key="DataGridColumnHeaderBackgroundBrush" Color="#C9C9C7" />
+        <SolidColorBrush x:Key="DataGridColumnHeaderForegroundBrush" Color="#D5D5D5" />
+        <SolidColorBrush x:Key="DataGridColumnHeaderBorderBrush" Color="#D5D5D5" />
+        <SolidColorBrush x:Key="DarkTextBrush" Color="{StaticResource DarkTextColor}" />
+        <SolidColorBrush x:Key="MediumTextBrush" Color="{StaticResource MediumTextColor}" />
+        <SolidColorBrush x:Key="MediumLightTextBrush" Color="{StaticResource MediumLightTextColor}" />
+        <SolidColorBrush x:Key="LightTextBrush" Color="{StaticResource LightTextColor}" />
+        <SolidColorBrush x:Key="IndividualReportBorderBrush" Color="#333333" />
+        <SolidColorBrush x:Key="HatchForegroundBrush" Color="#D7D7D5" />
+        <SolidColorBrush x:Key="HatchBackgroundBrush" Color="#E6E6E2" />
+        <SolidColorBrush x:Key="TabUnderlineBrush" Color="#C9C9C7" />
+        <SolidColorBrush x:Key="TabUnderlineSelectedBrush" Color="#6E6E6E" />
+        <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource HighlightColor}" />
+        <SolidColorBrush x:Key="RoundedButtonTextForegroundBrush" Color="Black" />
+        <SolidColorBrush x:Key="RoundedButtonShapeForegroundBrush" Color="{StaticResource HighlightColor}" />
+        <SolidColorBrush x:Key="RoundedButtonBackgroundBrush" Color="Transparent" />
+        <SolidColorBrush x:Key="RoundedButtonBorderBrush" Color="Transparent" />
+        <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}" />
+        <SolidColorBrush x:Key="PressedBrush" Color="{StaticResource PressedColor}" />
+        <SolidColorBrush x:Key="DefaultButtonBrush" Color="{StaticResource MediumTextColor}" />
+
+        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}" x:Key="RoundedButtonStyle">
+            <Setter Property="Background" Value="{StaticResource ResourceKey=RoundedButtonBackgroundBrush}" />
+            <Setter Property="Foreground" Value="{StaticResource ResourceKey=RoundedButtonTextForegroundBrush}" />
+            <Setter Property="TextBlock.Foreground" Value="{StaticResource ResourceKey=RoundedButtonTextForegroundBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource ResourceKey=RoundedButtonBorderBrush}" />
+            <Setter Property="Height" Value="Auto" />
+            <Setter Property="Width" Value="Auto" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="{StaticResource MediumTextBrush}" />
+                    <Setter Property="Background" Value="{StaticResource RoundedButtonBackgroundBrush}" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Foreground" Value="{StaticResource AccentBrush}" />
+                    <Setter Property="Background" Value="{StaticResource RoundedButtonBackgroundBrush}" />
+                </Trigger>
+            </Style.Triggers>
+
+
+
+        </Style>
+
+
+        <Style TargetType="{x:Type MenuItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border>
+                            <Button Command="{TemplateBinding MenuItem.Command}"
+						        Content="{TemplateBinding HeaderedItemsControl.Header}"
+										 ClickMode="Release"
+						        >
+                                <Button.Triggers>
+                                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <BooleanAnimationUsingKeyFrames
+											                                Storyboard.TargetProperty="IsOpen"
+											                                >
+                                                    <DiscreteBooleanKeyFrame Value="False" KeyTime="0:0:0.1" />
+                                                </BooleanAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </Button.Triggers>
+
+                            </Button>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+        <!--<SolidColorBrush x:Key="DefaultButtonBrush" Color="#428BC1" />-->
+        <SolidColorBrush x:Key="DefaultButtonBrush2" Color="#5887BB" Options:Freeze="True" />
+
+        <Color x:Key="HighlightColor2" A="255" R="116" G ="185" B="248"/>
+        <SolidColorBrush x:Key="HighlightBrush2" Color="{StaticResource HighlightColor}" Options:Freeze="True" />
+
+        <SolidColorBrush x:Key="PressedBrush2" Color="{StaticResource PressedColor}" Options:Freeze="True" />
+
+
+    </Window.Resources>
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo ProgressState="{Binding TaskbarProgressState}" ProgressValue="{Binding TaskbarProgressValue}" />
+    </Window.TaskbarItemInfo>
+    <Window.DataContext>
+        <vm:DataHelper />
+    </Window.DataContext>
+    <Grid x:Name="grdMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width=".9*"/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="88" />
+            <RowDefinition MaxHeight="95" Height="0*" />
+            <RowDefinition Height="Auto" MinHeight="55.2" />
+            <RowDefinition MaxHeight="8" Height="8*" />
+            <RowDefinition MinHeight="4" Height="531*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="White" Orientation="Horizontal" HorizontalAlignment="Left" Width="436" Margin="0,10,0,54" Grid.RowSpan="3">
+            <!--<Image x:Name="imageMainPanel" Margin="-16,0,-1,32" Source="{Binding Source={x:Static p:Settings.Default}, Path=MapImagePath, Mode=OneWay}" />-->
+            <Image x:Name="logoMainPanel" Width="430" Margin="0,0,0,-9.8" Source="{Binding LogoImagePath, Mode=OneWay, Source={x:Static p:Settings.Default}}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="White" Orientation="Horizontal" HorizontalAlignment="Right" Width="502" Margin="0,0,0,34">
+
+            <Label x:Name="lblSiteName1" Foreground="#222222" Width="129">
+                <Run Text="{m:Lang String9}" x:Uid="ML_4395" />
+            </Label>
+            <Label x:Name="lblSiteName" Foreground="#222222" Width="171" Margin="0,0,0,0.4">
+                <Run Text="{Binding SiteName, Mode=OneWay, Source={x:Static p:Settings.Default}, StringFormat=\{0\}}" />
+            </Label>
+
+
+            <Label x:Name="lblSiteCode" Foreground="#222222" Margin="0,0,0,0.4" Width="9">
+                <!--<Run Text="{Binding Source={x:Static p:Settings.Default}, Path=SiteCode, Mode=OneWay, StringFormat='Site Code: \{0\}'}"/>-->
+            </Label>
+
+            <!--<Label x:Name="lblCulture" Foreground="#222222">
+                <Run Text="{Binding Source={x:Static p:Settings.Default}, Path=Language, Mode=OneWay}"/>
+            </Label>
+
+            <Label x:Name="lblVersion" Foreground="#222222" HorizontalAlignment="Right" HorizontalContentAlignment="Right">
+
+            </Label>-->
+            <!--<Label x:Name="label" Content="                 ** BETA VERSION **" Margin="0,0,0,0" Width="451" FontSize="24" Visibility="Hidden"/>-->
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,5,34" HorizontalAlignment="Right" Width="161" Grid.ColumnSpan="2">
+
+            <Button x:Name="EpiInfo" Click="btnEpiInfoLoad" Style="{StaticResource RoundedButtonStyle}">
+
+                <!--<Button Content="EPI Info" Height="59" VerticalAlignment="Top" Width="75"/>-->
+                <!--<StackPanel>
+                    <Image Source="Images/epi_icon.png"/>
+                </StackPanel>-->
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Times New Roman" FontSize="16"><Run Text="ei"/></TextBlock>
+                    <Path HorizontalAlignment="Center" Grid.Row="0" Margin="6, 2, 6, 2" Width="28" Height="28" Stretch="Fill" Fill="Black" Data="F1 M 38,0.791664C 58.5496,0.791664 75.2083,17.4504 75.2083,38C 75.2083,58.5496 58.5496,75.2083 38,75.2083C 17.4504,75.2083 0.791662,58.5496 0.791662,38C 0.791662,17.4504 17.4504,0.791664 38,0.791664 Z M 38,5.54166C 20.0738,5.54166 5.54167,20.0738 5.54167,38C 5.54167,55.9262 20.0738,70.4583 38,70.4583C 55.9262,70.4583 70.4583,55.9262 70.4583,38C 70.4583,20.0738 55.9262,5.54166 38,5.54166 Z " />
+
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Margin="1" FontSize="8pt" Text="Epi Info" />
+                </Grid>
+            </Button>
+            <!--Added home button-->
+            <!--<Button Content="Home" Height="59" VerticalAlignment="Top" Width="60"/>-->
+
+
+
+            <!--No longer using this feature for editing regions. It's done in EpiInfo-->
+            <!--<Button x:Name="btnRegionEditor" Click="btnRegionEditor_Click" Command="{Binding ToggleRegionEditorCommand}" CommandParameter="{StaticResource True}" Style="{StaticResource RoundedButtonStyle}" IsEnabled="False">
+                <Button.Content>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Path HorizontalAlignment="Center" Grid.Row="0" Margin="6, 2, 6, 2" Width="16" Height="16" Stretch="Fill" Fill="Black" Data="F1 M 27.5314,21.8628L 33.0126,19.4224L 34.7616,23.3507C 36.6693,22.9269 38.6044,22.8903 40.4668,23.2026L 42.0083,19.1868L 47.6098,21.337L 46.0683,25.3528C 47.6612,26.3669 49.0747,27.6889 50.2088,29.2803L 54.1371,27.5313L 56.5776,33.0126L 52.6493,34.7616C 53.0731,36.6693 53.1097,38.6043 52.7974,40.4668L 56.8131,42.0083L 54.6629,47.6097L 50.6472,46.0683C 49.6331,47.6613 48.3111,49.0748 46.7197,50.2089L 48.4686,54.1372L 42.9874,56.5776L 41.2384,52.6493C 39.3307,53.0731 37.3957,53.1097 35.5333,52.7974L 33.9918,56.8131L 28.3903,54.6629L 29.9318,50.6472C 28.3388,49.6331 26.9252,48.3111 25.7911,46.7196L 21.8628,48.4686L 19.4224,42.9873L 23.3507,41.2383C 22.9269,39.3307 22.8903,37.3957 23.2026,35.5332L 19.1869,33.9918L 21.3371,28.3903L 25.3528,29.9318C 26.3669,28.3388 27.6889,26.9252 29.2804,25.7911L 27.5314,21.8628 Z M 34.3394,29.7781C 29.7985,31.7998 27.7564,37.1198 29.7781,41.6606C 31.7998,46.2015 37.1198,48.2436 41.6606,46.2219C 46.2015,44.2002 48.2436,38.8802 46.2219,34.3394C 44.2002,29.7985 38.8802,27.7564 34.3394,29.7781 Z "/>
+                        <Path HorizontalAlignment="Center" Grid.Row="0" Margin="6, 2, 6, 2" Width="28" Height="28" Stretch="Fill" Fill="Black" Data="F1 M 38,0.791664C 58.5496,0.791664 75.2083,17.4504 75.2083,38C 75.2083,58.5496 58.5496,75.2083 38,75.2083C 17.4504,75.2083 0.791662,58.5496 0.791662,38C 0.791662,17.4504 17.4504,0.791664 38,0.791664 Z M 38,5.54166C 20.0738,5.54166 5.54167,20.0738 5.54167,38C 5.54167,55.9262 20.0738,70.4583 38,70.4583C 55.9262,70.4583 70.4583,55.9262 70.4583,38C 70.4583,20.0738 55.9262,5.54166 38,5.54166 Z "/>
+
+                        <TextBlock HorizontalAlignment="Center" Grid.Row="1" Margin="1" FontSize="8pt" Text="Region Editor" />
+                    </Grid>
+                </Button.Content>
+            </Button>-->
+
+            <Button x:Name="btnSettings" Style="{StaticResource RoundedButtonStyle}" Margin="0,1,0,-0.6">
+
+                <Button.Triggers>
+                    <EventTrigger RoutedEvent="ButtonBase.Click">
+                        <BeginStoryboard>
+                            <Storyboard Storyboard.TargetName="Spanel">
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity" 
+                        To="100"
+                        
+                        Duration="0:1:0.0" />
+                                <ObjectAnimationUsingKeyFrames 
+                        Storyboard.TargetProperty="Visibility">
+                                    <DiscreteObjectKeyFrame KeyTime="0:0:0.01"   
+                            Value="{x:Static Visibility.Visible}" />
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Button.Triggers>
+
+                <Grid Height="48">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{m:Lang res36}" Grid.Row="1" Grid.Column="0" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="15,0,14.2,-11"/>
+                    <Path HorizontalAlignment="Center" Grid.Row="0" Margin="21.6,8,21.6,0" Width="16" Height="16" Stretch="Fill" Fill="Black" Data="F1 M 27.5314,21.8628L 33.0126,19.4224L 34.7616,23.3507C 36.6693,22.9269 38.6044,22.8903 40.4668,23.2026L 42.0083,19.1868L 47.6098,21.337L 46.0683,25.3528C 47.6612,26.3669 49.0747,27.6889 50.2088,29.2803L 54.1371,27.5313L 56.5776,33.0126L 52.6493,34.7616C 53.0731,36.6693 53.1097,38.6043 52.7974,40.4668L 56.8131,42.0083L 54.6629,47.6097L 50.6472,46.0683C 49.6331,47.6613 48.3111,49.0748 46.7197,50.2089L 48.4686,54.1372L 42.9874,56.5776L 41.2384,52.6493C 39.3307,53.0731 37.3957,53.1097 35.5333,52.7974L 33.9918,56.8131L 28.3903,54.6629L 29.9318,50.6472C 28.3388,49.6331 26.9252,48.3111 25.7911,46.7196L 21.8628,48.4686L 19.4224,42.9873L 23.3507,41.2383C 22.9269,39.3307 22.8903,37.3957 23.2026,35.5332L 19.1869,33.9918L 21.3371,28.3903L 25.3528,29.9318C 26.3669,28.3388 27.6889,26.9252 29.2804,25.7911L 27.5314,21.8628 Z M 34.3394,29.7781C 29.7985,31.7998 27.7564,37.1198 29.7781,41.6606C 31.7998,46.2015 37.1198,48.2436 41.6606,46.2219C 46.2015,44.2002 48.2436,38.8802 46.2219,34.3394C 44.2002,29.7985 38.8802,27.7564 34.3394,29.7781 Z " VerticalAlignment="Top" />
+                    <Path HorizontalAlignment="Center" Grid.Row="0" Margin="6, 2, 6, 2" Width="28" Height="28" Stretch="Fill" Fill="Black" Data="F1 M 38,0.791664C 58.5496,0.791664 75.2083,17.4504 75.2083,38C 75.2083,58.5496 58.5496,75.2083 38,75.2083C 17.4504,75.2083 0.791662,58.5496 0.791662,38C 0.791662,17.4504 17.4504,0.791664 38,0.791664 Z M 38,5.54166C 20.0738,5.54166 5.54167,20.0738 5.54167,38C 5.54167,55.9262 20.0738,70.4583 38,70.4583C 55.9262,70.4583 70.4583,55.9262 70.4583,38C 70.4583,20.0738 55.9262,5.54166 38,5.54166 Z " />
+
+                    <!--<TextBlock HorizontalAlignment="Center" Grid.Row="1" Margin="1" FontSize="8pt" Text="Settings" />-->
+                    <!--<Menu DockPanel.Dock="Bottom" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+                            <MenuItem Header="{m:Lang res36}" FontFamily="Calibri" FontWeight="Bold" FontSize="14" Background="White" Width="Auto" Height="20" RenderTransformOrigin="0.5,0.5" x:Uid="ML_1517">
+                                <MenuItem Header="{m:Lang res37}" Click="MenuItemFieldSites_Click" x:Uid="ML_1518" />
+                                <MenuItem Header="{m:Lang res38}" Click="MenuItemUserSettings_Click" x:Uid="ML_1519" />
+                                <MenuItem Header="Language Settings" Click="LanguageSettings_Click" x:Uid="ML_1519" />
+                                -->
+                    <!--<MenuItem Header="_Save"/>-->
+                    <!--
+                            </MenuItem>
+                        </Menu>-->
+
+                    <!--<Grid.ContextMenu>
+                            <ContextMenu x:Name="popupC" IsOpen="False" StaysOpen="False" MouseLeave="testmouse">
+                                <MenuItem Header="{m:Lang res37}" Click="MenuItemFieldSites_Click" StaysOpenOnClick="False"/>
+                                <MenuItem Header="{m:Lang res38}" Click="MenuItemUserSettings_Click" StaysOpenOnClick="False"/>
+                                <MenuItem Header="Language Settings" Click="LanguageSettings_Click" StaysOpenOnClick="False"/>
+                            </ContextMenu>
+                        </Grid.ContextMenu>-->
+
+
+
+                </Grid>
+
+            </Button>
+
+            <Border x:Name="Spanel" Visibility="Collapsed"   CornerRadius="3" BorderBrush="#727272" BorderThickness="1.1" Margin="-252,18,0,-30" Width="184" Height="66">
+                <!--<Border.Effect>
+                    <DropShadowEffect BlurRadius="1" Opacity="9" ShadowDepth=".2" Color="#727272"/>
+                </Border.Effect>-->
+
+                <StackPanel x:Name="Spanel2" Panel.ZIndex="1" Grid.Column="0" Focusable="True" Visibility="Visible" Background="White" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="180" LostFocus="SpanelLostFocus">
+                    <StackPanel.Triggers>
+                        <EventTrigger RoutedEvent="UIElement.MouseLeave">
+                            <BeginStoryboard>
+                                <Storyboard Storyboard.TargetName="Spanel">
+                                    <DoubleAnimation Storyboard.TargetProperty="Opacity" 
+                        To="0"
+                        
+                        Duration="0:1:1.9" />
+                                    <ObjectAnimationUsingKeyFrames 
+                        Storyboard.TargetProperty="Visibility">
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:1"   
+                            Value="{x:Static Visibility.Collapsed}" />
+                                    </ObjectAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </StackPanel.Triggers>
+                    <Button x:Name="btnSites" Height="22" Width="180" FontFamily="calibri" FontSize="15" FontStyle="Normal" Foreground="Black" Style="{StaticResource RoundedButtonStyle}" Click="MenuItemFieldSites_Click">
+                        <StackPanel Width="180" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <Image x:Name="SettingsButton4" Margin="0,0,0,0" Width="25" HorizontalAlignment="Left" Source="Images/SettingsButton4.jpg" />
+                            <TextBlock Margin="17,-20,0,0" Text="{m:Lang _Site_Settings}"   Width="140" Height="21" x:Uid="ML_4939" />
+                        </StackPanel>
+                    </Button>
+                    <Button Height="22" Width="180" FontFamily="calibri" FontSize="15" Style="{StaticResource RoundedButtonStyle}" Click="MenuItemUserSettings_Click" Margin="0,0,0,0">
+                        <StackPanel Width="180" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <Image Margin="0,0,0,0" Width="24" HorizontalAlignment="Left" Source="/Images\SettingsButton5.jpg" />
+                            <TextBlock Margin="17,-20,0,0" Text="{m:Lang _User_Settings0}"   Width="140" Height="21" x:Uid="ML_4943" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="btnLanguage" Height="22" Width="Auto" FontFamily="calibri" FontSize="15" Style="{StaticResource RoundedButtonStyle}" Click="LanguageSettings_Click" Margin="0,0,0,0">
+                        <StackPanel Width="180" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <Image Margin="-1,-2,0,0" Width="26" HorizontalAlignment="Left" Source="/Images\SettingsButton3.jpg" />
+                            <TextBlock Margin="0,-21,6,0" Text="{m:Lang _Language_Settings0}"   Width="150" Height="21" HorizontalAlignment="Right" x:Uid="ML_4947" />
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+            </Border>
+            <!--Exit button to close the appliation.-->
+
+            <Button x:Name="Exit" Click="Exit_Click" Style="{StaticResource RoundedButtonStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Path HorizontalAlignment="Center" Grid.Row="0" Margin="6, 2, 6, 2" Width="16" Height="16" Stretch="Fill" Fill="Black" Data="F1 M 26.9166,22.1667L 37.9999,33.25L 49.0832,22.1668L 53.8332,26.9168L 42.7499,38L 53.8332,49.0834L 49.0833,53.8334L 37.9999,42.75L 26.9166,53.8334L 22.1666,49.0833L 33.25,38L 22.1667,26.9167L 26.9166,22.1667 Z " />
+                    <Path HorizontalAlignment="Center" Grid.Row="0" Margin="6, 2, 6, 2" Width="28" Height="28" Stretch="Fill" Fill="Black" Data="F1 M 38,0.791664C 58.5496,0.791664 75.2083,17.4504 75.2083,38C 75.2083,58.5496 58.5496,75.2083 38,75.2083C 17.4504,75.2083 0.791662,58.5496 0.791662,38C 0.791662,17.4504 17.4504,0.791664 38,0.791664 Z M 38,5.54166C 20.0738,5.54166 5.54167,20.0738 5.54167,38C 5.54167,55.9262 20.0738,70.4583 38,70.4583C 55.9262,70.4583 70.4583,55.9262 70.4583,38C 70.4583,20.0738 55.9262,5.54166 38,5.54166 Z " />
+                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Margin="1" FontSize="8pt" Text="{m:Lang res39}" x:Uid="ML_1526" />
+                </Grid>
+
+            </Button>
+
+        </StackPanel>
+        <!--<StackPanel Grid.Row="1" Grid.Column="1" Margin="8,0,7.6,131.6" Grid.RowSpan="2">-->
+        <Grid Margin="0,2,936,8" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" MinHeight="5.2" />
+                <RowDefinition Height="Auto" MinHeight="12.8" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="921.6"/>
+            </Grid.ColumnDefinitions>
+            <!--<WebBrowser Grid.Column="0" x:Name="browser" VerticalAlignment="Top" HorizontalAlignment="Left" DataContext="{Binding}"    />-->
+        </Grid>
+        <!--</StackPanel>-->
+        <controls:DataEntryPanel x:Name="panelDataEntry" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabEntry, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+        <controls:TransmitPanel x:Name="panelTransmit" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabTransmit, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+        <controls:MergePanel x:Name="panelMerge" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabMerge, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+        <controls:ResidentPanel x:Name="panelResident" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabResidents, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+        <controls:FrontLinePanel x:Name="panelFrontLine" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabFrontLine, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+        <controls:ConsultantPanel x:Name="panelConsultant" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabConsultants, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+        <controls:AnalysisPanel x:Name="panelAnalysis" Grid.Column="1" Grid.Row="5" Visibility="{Binding IsChecked, ElementName=btnTabAnalysis, Converter={StaticResource bvc}}" Grid.ColumnSpan="2" Margin="0,0.8,-0.4,0.4" />
+
+
+
+
+        <!--<DockPanel Grid.RowSpan="5" Height="auto" HorizontalAlignment="Stretch" Margin="-4,-1,4,1" Name="dockPanelLogin" VerticalAlignment="Stretch" Width="auto"  Background="#B4898181" Opacity="10" LastChildFill="True" Grid.ColumnSpan="2" >
+            <Border BorderBrush="AliceBlue" CornerRadius="0" Background="Black" BorderThickness="20" Width="auto">
+            <StackPanel Width="auto" DockPanel.Dock="Right">-->
+        <!--<Button x:Name="buttonCloseMainWindow" Content="Close" Height="29" VerticalAlignment="Top" HorizontalAlignment="Right"  Width="93"  Click="Button_Click" Background="Gray" Foreground="White" Margin="0,20,20,0"/>-->
+
+        <!--Adjusted downward to allow for configureable grid-->
+        <Grid x:Name="grdMenuItems" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1" Height="54" Margin="0,1,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--<controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabStatus" Grid.Column="8" IsChecked="False" Content="Status" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" />-->
+
+            <!-- Page d'accueil-->
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabConsultants" AssociatedPage="{Binding ElementName=panelConsultant}" Grid.Column="12" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang res42}" x:Uid="ML_1235" />
+
+            <!-- Page d'accueil-->
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabHome" AssociatedPage="{Binding ElementName=panelHome}" Grid.Column="0" IsChecked="True" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang TabHome}" x:Uid="ML_0683" />
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabEntry" AssociatedPage="{Binding ElementName=panelDataEntry}" Grid.Column="2" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang TabTransmissionHeader}" x:Uid="ML_0684" />
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabMerge" AssociatedPage="{Binding ElementName=panelMerge}" Grid.Column="8" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang res40}" x:Uid="ML_0685" />
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabTransmit" AssociatedPage="{Binding ElementName=panelTransmit}" Grid.Column="6" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang res27}" x:Uid="ML_0686" />
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabResidents" AssociatedPage="{Binding ElementName=panelResident}" Grid.Column="10" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang res41}" x:Uid="ML_0687" />
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabFrontLine" AssociatedPage="{Binding ElementName=btnTabFrontLine}" Grid.Column="4" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang String13}" x:Uid="ML_0687" Height="54" VerticalAlignment="Bottom" />
+            <controls:TabButton Style="{StaticResource TabButtonStyle}" x:Name="btnTabAnalysis" AssociatedPage="{Binding ElementName=panelAnalysis}" Grid.Column="14" IsChecked="False" Checked="btnTab_Checked" Unchecked="btnTab_Unchecked" Content="{m:Lang res43}" x:Uid="ML_1236" />
+
+        </Grid>
+
+        <controls:HomePanel x:Name="panelHome" Grid.Row="4" Visibility="{Binding IsChecked, Converter={StaticResource bvc}, ElementName=btnTabHome}" Grid.ColumnSpan="2" Margin="10,58,0,35" />
+
+        <!--</StackPanel>
+
+
+            </Border>
+        </DockPanel>-->
+
+        <Grid Grid.RowSpan="5" Grid.ColumnSpan="2"
+              Background="#88000000" Visibility="{Binding IsShowingRegionDistrictEditor, Converter={StaticResource bvc}, FallbackValue=Collapsed}">
+            <controls:RegionDistrictNameEditor Margin="0, 200, 0, 0"
+              x:Name="regionDistrictNameEditor" DataContext="{Binding}" Width="800" Height="700" />
+        </Grid>
+
+        <!--<Button x:Name="btnVideos" x:Uid="ML_1091" Width="206" VerticalAlignment="Bottom" Visibility="{Binding JobAid1Visibility, Mode=OneWay, Source={x:Static p:Settings.Default}}" Style="{StaticResource FlatButtonStyle}" Grid.Row="4" Margin="29,0,0,10" HorizontalAlignment="Left" Content="{m:Lang String19}" Click="btnVideos_Click" Grid.ColumnSpan="2" Background="#C00000"/>-->
+        <Button x:Name="btnVideos" x:Uid="ML_1091" Width="206" VerticalAlignment="Bottom" Visibility="Hidden" Style="{StaticResource FlatButtonStyle}" Grid.Row="4" Margin="29,0,0,10" HorizontalAlignment="Left" Content="{m:Lang String19}" Click="btnVideos_Click" Grid.ColumnSpan="2" Background="#C00000"/>
+        <Rectangle x:Name="ShadeBox" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Height="auto" Grid.RowSpan="5" Stroke="Black" VerticalAlignment="Stretch" Width="auto" Opacity="0.7" Fill="#FF5D5D66"/>
+        <Rectangle x:Name="StartArrow"    Visibility="Hidden" VerticalAlignment="Center" Margin="110,0,0,65" HorizontalAlignment="Left" Grid.ColumnSpan="2" Fill="#FF5D5D66" Height="40" Grid.Row="4" Stroke="Black" Width="37" RenderTransformOrigin="0.5,0.5" >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="StartBox"      Visibility="Hidden" VerticalAlignment="Center" Margin="30,0,0,171"   Grid.ColumnSpan="2" HorizontalAlignment="Left" Fill="#FF5D5D66" Height="109" Stroke="Black" Width="200" Grid.Row="4" RadiusX="5" RadiusY="5" StrokeThickness="1.2"  />
+        <TextBlock x:Name="StartText"     Visibility="Hidden" VerticalAlignment="Center" Margin="69,0,0,237" Grid.ColumnSpan="2" HorizontalAlignment="Left" Grid.Row="4" TextWrapping="Wrap" Text="User videos are here." Height="19" Width="128" />
+        <CheckBox  x:Name="StartCheckbox" Visibility="Hidden" VerticalAlignment="Center" Margin="57,0,0,95"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Content="Got it! Do not show this." Grid.Row="4" Checked="StartCheckbox_Checked" />
+        <Rectangle x:Name="StartArrow2"   Visibility="Hidden" VerticalAlignment="Center" Margin="0,60,70,0"  Grid.ColumnSpan="2" HorizontalAlignment="Right" Fill="#FF5D5D66" Height="40" Stroke="Black" Width="37" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="45.188"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="StartBox2" Visibility="Hidden" Margin="0,-50,10,0" Grid.ColumnSpan="2" Fill="#FF5D5D66" HorizontalAlignment="Right" Height="109" Stroke="Black" VerticalAlignment="Top" Width="200" Grid.Row="4"/>
+        <TextBlock x:Name="StartText2" Visibility="Hidden" Margin="0,20,29,0" Grid.ColumnSpan="2" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Resident name must be set before adding projects" VerticalAlignment="Top" Height="41" Width="152" Grid.Row="2" Grid.RowSpan="2"/>
+        <CheckBox x:Name="StartCheckbox2" Visibility="Hidden" Margin="0,35,37,0" Grid.ColumnSpan="2" Content="Got it! Do not show this." HorizontalAlignment="Right"  Grid.Row="4" VerticalAlignment="Top" Checked="StartCheckbox2_Checked"/>
+        <Button x:Name="StartButton2" Visibility="Hidden" Margin="0,4,72,0" Panel.ZIndex="1" Grid.ColumnSpan="2" Content="Got It" HorizontalAlignment="Right" Grid.Row="4" VerticalAlignment="Top" Width="75" Foreground="Black" BorderBrush="#FF111213" Click="StartButton2_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FF8A0606" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="StartButton" Visibility="Hidden" Margin="89,0,0,165" VerticalAlignment="Center" Panel.ZIndex="1" Grid.ColumnSpan="2" Content="Got It" HorizontalAlignment="Left" Grid.Row="4" Width="75" Foreground="Black" BorderBrush="#FF111213" Click="StartBox_First" >
+            <Button.Background>
+                <SolidColorBrush Color="#FF8A0606" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <Rectangle x:Name="StartBoxFirst" Grid.ColumnSpan="2" Fill="#FF5D5D66" HorizontalAlignment="Center" Height="109" Stroke="Black" VerticalAlignment="Center" Width="200" Margin="0,-180,0,0" Grid.Row="4" RadiusX="5" RadiusY="5" StrokeThickness="1.3" />
+        <TextBlock x:Name="StartTextFirst" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontStretch="Medium" Margin="10,-220,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="22" Height="56" Width="143"><Run Text="Welcome to"/><LineBreak/><Run Text="   ReDPeTT!"/></TextBlock>
+        <Button x:Name="StartButtonFirst" Panel.ZIndex="1" Grid.ColumnSpan="2" Content="OK" HorizontalAlignment="Center" Margin="0,-100,0,0" Grid.Row="4" VerticalAlignment="Center" Width="75" Foreground="Black" BorderBrush="#FF111213" Click="StartButtonFirstClick">
+            <Button.Background>
+                <SolidColorBrush Color="#FF8A0606" Opacity="0.6"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="StartTextFirst2" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontStretch="Medium" Margin="5,-140,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14" Height="18" Width="164" Text="Let's take a look around."/>
+
+    </Grid>
+</Window>

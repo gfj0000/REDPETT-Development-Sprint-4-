@@ -1,0 +1,758 @@
+<Districts Country="ResidentsList">
+  <District Name="National Resident Advisor" Code="9" Region="National Resident Advisor" RegionCode="National Resident Advisor">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Addis Ababa RA" Code="1" Region="Addis Ababa RA" RegionCode="Addis Ababa RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bahirdar RA" Code="9" Region="Bahirdar RA" RegionCode="Bahirdar RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Haramaya RA" Code="1" Region="Haramaya RA" RegionCode="Haramaya RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hawassa RA" Code="1" Region="Hawassa RA" RegionCode="Hawassa RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Jimma RA" Code="1" Region="Jimma RA" RegionCode="Jimma RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mekelle RA" Code="1" Region="Mekelle RA" RegionCode="Mekelle RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="SPHMMC RA" Code="1" Region="SPHMMC RA" RegionCode="SPHMMC RA">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="W/Kidan, Endale " Code="2" Region="Endale " RegionCode="W/Kidan">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gebremedhin, Gebregziabher" Code="1" Region="Gebregziabher" RegionCode="Gebremedhin">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abicho, Getachew" Code="9" Region="Getachew" RegionCode="Abicho">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Fitesa, Worku " Code="3" Region="Worku " RegionCode="Fitesa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Debie, Etsehiwot" Code="3" Region="Etsehiwot" RegionCode="Debie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Solomon, Henok" Code="3" Region="Henok" RegionCode="Solomon">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tafere, Natnaeal " Code="9" Region="Natnaeal " RegionCode="Tafere">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kedir, Umer " Code="9" Region="Umer " RegionCode="Kedir">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Wosene, Admasu  " Code="2" Region="Admasu  " RegionCode="Wosene">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Dejene, Filagot " Code="2" Region="Filagot " RegionCode="Dejene">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Belachew, Tesfaye" Code="3" Region="Tesfaye" RegionCode="Belachew">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Albeshir, Abdulmuniem" Code="4" Region="Abdulmuniem" RegionCode="Albeshir">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Demise, Amare" Code="4" Region="Amare" RegionCode="Demise">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Alemu, Daniel" Code="2" Region="Daniel" RegionCode="Alemu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Biru, Enyew" Code="3" Region="Enyew" RegionCode="Biru">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kebede, Enyew " Code="2" Region="Enyew " RegionCode="Kebede">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gelle, Abdulahi" Code="4" Region="Abdulahi" RegionCode="Gelle">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kasim Mohammed, Abduletif" Code="3" Region="Abduletif" RegionCode="Kasim Mohammed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Muname T, Tamirat " Code="3" Region="Tamirat " RegionCode="Muname T">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Belay, Abay" Code="3" Region="Abay" RegionCode="Belay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Wakjira Terfa, Hika " Code="4" Region="Hika " RegionCode="Wakjira Terfa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Yeneneh, Dereje " Code="2" Region="Dereje " RegionCode="Yeneneh">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdi Badal, Mowlid " Code="3" Region="Mowlid " RegionCode="Abdi Badal">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Sedoka, Mitike " Code="3" Region="Mitike " RegionCode="Sedoka">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Alemayehu, Mulusew " Code="3" Region="Mulusew " RegionCode="Alemayehu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Chemeda, Gemechu" Code="1" Region="Gemechu" RegionCode="Chemeda">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ameha, Askale" Code="1" Region="Askale" RegionCode="Ameha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Betseha, Tigist " Code="1" Region="Tigist " RegionCode="Betseha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Yohannis, Dejachew " Code="2" Region="Dejachew " RegionCode="Yohannis">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hassan, Abdihirsi" Code="3" Region="Abdihirsi" RegionCode="Hassan">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Belay, Abadi  " Code="1" Region="Abadi  " RegionCode="Belay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Amogne, Nigussie" Code="3" Region="Nigussie" RegionCode="Amogne">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Belay, Kassahun " Code="2" Region="Kassahun " RegionCode="Belay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gebregziabher, Letebirhan" Code="2" Region="Letebirhan" RegionCode="Gebregziabher">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Yesuf, Jemal" Code="2" Region="Jemal" RegionCode="Yesuf">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Jemal, Mohamed" Code="4" Region="Mohamed" RegionCode="Jemal">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Diriba, Dereje " Code="9" Region="Dereje " RegionCode="Diriba">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tilahun, Tedy" Code="3" Region="Tedy" RegionCode="Tilahun">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bisrat, Hailesillasie" Code="2" Region="Hailesillasie" RegionCode="Bisrat">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kebede, Muluken " Code="2" Region="Muluken " RegionCode="Kebede">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdoo Ibro, Jamal " Code="4" Region="Jamal " RegionCode="Abdoo Ibro">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdishu, Mahamadawwal" Code="4" Region="Mahamadawwal" RegionCode="Abdishu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Seid Kahsay, Abdurkadr" Code="4" Region="Abdurkadr" RegionCode="Seid Kahsay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hassen, Mohammed " Code="3" Region="Mohammed " RegionCode="Hassen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hussien, Chanie" Code="2" Region="Chanie" RegionCode="Hussien">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ibrahim, Beshir" Code="2" Region="Beshir" RegionCode="Ibrahim">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kedir, Muhaba " Code="2" Region="Muhaba " RegionCode="Kedir">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Belete, Muluemebet " Code="2" Region="Muluemebet " RegionCode="Belete">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Molla, Hailu " Code="2" Region="Hailu " RegionCode="Molla">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Getu, Desalew " Code="2" Region="Desalew " RegionCode="Getu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Lemma, Diriba" Code="9" Region="Diriba" RegionCode="Lemma">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Elias, Kebena" Code="3" Region="Kebena" RegionCode="Elias">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Yikeber, Demisew " Code="2" Region="Demisew " RegionCode="Yikeber">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tolossa, Asegid " Code="3" Region="Asegid " RegionCode="Tolossa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hadush, Yemane" Code="3" Region="Yemane" RegionCode="Hadush">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hersa H., Muluken" Code="3" Region="Muluken" RegionCode="Hersa H.">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mohammed, Kassim" Code="3" Region="Kassim" RegionCode="Mohammed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Seid, Mohammed" Code="3" Region="Mohammed" RegionCode="Seid">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Haile, Temesgen " Code="2" Region="Temesgen " RegionCode="Haile">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gamibura K., Asrat " Code="3" Region="Asrat " RegionCode="Gamibura K.">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Alebie, Fentahun" Code="3" Region="Fentahun" RegionCode="Alebie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bushra, Gedamu" Code="3" Region="Gedamu" RegionCode="Bushra">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Welde-Abzgi, Askale" Code="2" Region="Askale" RegionCode="Welde-Abzgi">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hailu, Kumneger " Code="2" Region="Kumneger " RegionCode="Hailu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdi, Hussein" Code="3" Region="Hussein" RegionCode="Abdi">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Wondimu, Kidan " Code="9" Region="Kidan " RegionCode="Wondimu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kebede, Waktole" Code="1" Region="Waktole" RegionCode="Kebede">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Wubshet, Mesfin" Code="1" Region="Mesfin" RegionCode="Wubshet">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Sani, Falaho" Code="3" Region="Falaho" RegionCode="Sani">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Adafrie, Yeshalem" Code="2" Region="Yeshalem" RegionCode="Adafrie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Endris, Mohammed" Code="3" Region="Mohammed" RegionCode="Endris">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Jufar, Kidist " Code="9" Region="Kidist " RegionCode="Jufar">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hussen, Mukemel " Code="9" Region="Mukemel " RegionCode="Hussen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tadesse, Measho" Code="2" Region="Measho" RegionCode="Tadesse">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Degebsa, Zerihun" Code="1" Region="Zerihun" RegionCode="Degebsa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hassen Abdilahi, Mahammad " Code="3" Region="Mahammad " RegionCode="Hassen Abdilahi">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Utulo G., Mesay " Code="3" Region="Mesay " RegionCode="Utulo G.">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kiros, Muruts" Code="3" Region="Muruts" RegionCode="Kiros">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hunduma, Fufa" Code="3" Region="Fufa" RegionCode="Hunduma">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mengistu, Roman" Code="9" Region="Roman" RegionCode="Mengistu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gebremicael, Mekonen" Code="2" Region="Mekonen" RegionCode="Gebremicael">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdu, Mussa" Code="3" Region="Mussa" RegionCode="Abdu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bekele, Amrachu" Code="2" Region="Amrachu" RegionCode="Bekele">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Manzura, Kinfu" Code="3" Region="Kinfu" RegionCode="Manzura">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Matusala, Misgana " Code="2" Region="Misgana " RegionCode="Matusala">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mude, Kedir " Code="1" Region="Kedir " RegionCode="Mude">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Wondimnew, Tade" Code="9" Region="Tade" RegionCode="Wondimnew">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abere, Getie" Code="4" Region="Getie" RegionCode="Abere">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Asrat, Yoseph" Code="3" Region="Yoseph" RegionCode="Asrat">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tefera, Addis" Code="2" Region="Addis" RegionCode="Tefera">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Golie, Belay" Code="4" Region="Belay" RegionCode="Golie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Nigusie, Derebe" Code="4" Region="Derebe" RegionCode="Nigusie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Komtu, Yitages" Code="2" Region="Yitages" RegionCode="Komtu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Sara, Jarso  " Code="1" Region="Jarso  " RegionCode="Sara">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Sileshi, Engdashet" Code="4" Region="Engdashet" RegionCode="Sileshi">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Malkie, Mathewos " Code="2" Region="Mathewos " RegionCode="Malkie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mekonnen, Yizengaw" Code="4" Region="Yizengaw" RegionCode="Mekonnen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Dadi, Girma" Code="3" Region="Girma" RegionCode="Dadi">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Teklu, Gebreyohannes" Code="2" Region="Gebreyohannes" RegionCode="Teklu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ereso Chaku, Ahimed" Code="4" Region="Ahimed" RegionCode="Ereso Chaku">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Reshid, Abdi" Code="2" Region="Abdi" RegionCode="Reshid">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tilo G., Tamirat " Code="3" Region="Tamirat " RegionCode="Tilo G.">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tumicha, Degife " Code="2" Region="Degife " RegionCode="Tumicha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bonsa, Mitiku" Code="1" Region="Mitiku" RegionCode="Bonsa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Debebe, Geatasew" Code="4" Region="Geatasew" RegionCode="Debebe">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Urmale, Deycanto " Code="2" Region="Deycanto " RegionCode="Urmale">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mohhamed, Keder" Code="3" Region="Keder" RegionCode="Mohhamed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tesfay, Mulu" Code="3" Region="Mulu" RegionCode="Tesfay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Girma Yigezu, Tadesse" Code="4" Region="Tadesse" RegionCode="Girma Yigezu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hussen, Indris" Code="3" Region="Indris" RegionCode="Hussen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdulkadir, Abdulbar" Code="2" Region="Abdulbar" RegionCode="Abdulkadir">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Shehmolo, Muze " Code="2" Region="Muze " RegionCode="Shehmolo">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gulilat, Misrak " Code="3" Region="Misrak " RegionCode="Gulilat">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Teshome, Bahiru" Code="3" Region="Bahiru" RegionCode="Teshome">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abeje, Getachew " Code="2" Region="Getachew " RegionCode="Abeje">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Dassalegn, Yeshiwas " Code="2" Region="Yeshiwas " RegionCode="Dassalegn">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Salie, Esubalew" Code="4" Region="Esubalew" RegionCode="Salie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Demesse, Zerihun " Code="9" Region="Zerihun " RegionCode="Demesse">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Adhanu, Birhanu " Code="9" Region="Birhanu " RegionCode="Adhanu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Shimeles, Kalkidan" Code="9" Region="Kalkidan" RegionCode="Shimeles">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Assena, Tehelku " Code="1" Region="Tehelku " RegionCode="Assena">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Girmay, Tsige" Code="3" Region="Tsige" RegionCode="Girmay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Aman, Zeynaba" Code="4" Region="Zeynaba" RegionCode="Aman">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mohammed, Abdella" Code="2" Region="Abdella" RegionCode="Mohammed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mota, Abraham" Code="2" Region="Abraham" RegionCode="Mota">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Adare J., Bachore " Code="3" Region="Bachore " RegionCode="Adare J.">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Margie, Mark " Code="2" Region="Mark " RegionCode="Margie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mebratu, Abeba" Code="4" Region="Abeba" RegionCode="Mebratu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gelano Goro, Temesgen" Code="4" Region="Temesgen" RegionCode="Gelano Goro">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kebede, Getahun" Code="2" Region="Getahun" RegionCode="Kebede">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mamo, Sintayehu" Code="4" Region="Sintayehu" RegionCode="Mamo">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Teklemicael, Aregawi" Code="3" Region="Aregawi" RegionCode="Teklemicael">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Fayyissa, Zenabu" Code="9" Region="Zenabu" RegionCode="Fayyissa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ali, Abdu" Code="1" Region="Abdu" RegionCode="Ali">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tadesse, Dawit" Code="2" Region="Dawit" RegionCode="Tadesse">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Degefu, Debebe " Code="2" Region="Debebe " RegionCode="Degefu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gizachewe, Lehageru" Code="3" Region="Lehageru" RegionCode="Gizachewe">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="G/mariam, Tadesse" Code="9" Region="Tadesse" RegionCode="G/mariam">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bekele, Yelemshewa" Code="3" Region="Yelemshewa" RegionCode="Bekele">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Admas, Abraham  " Code="2" Region="Abraham  " RegionCode="Admas">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Damtie, Gebeyaw" Code="3" Region="Gebeyaw" RegionCode="Damtie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abiso, Habite " Code="2" Region="Habite " RegionCode="Abiso">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Guteta, Driba" Code="2" Region="Driba" RegionCode="Guteta">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mengist, Habtamu" Code="3" Region="Habtamu" RegionCode="Mengist">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mulu, Eyob " Code="1" Region="Eyob " RegionCode="Mulu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Degito, Biniyam  " Code="2" Region="Biniyam  " RegionCode="Degito">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="G/ Selasse, G/medhin" Code="9" Region="G/medhin" RegionCode="G/ Selasse">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Melese, Mesfin " Code="3" Region="Mesfin " RegionCode="Melese">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hassen, Shikur" Code="2" Region="Shikur" RegionCode="Hassen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Beshir, Husen " Code="3" Region="Husen " RegionCode="Beshir">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Okugn, Odagn" Code="2" Region="Odagn" RegionCode="Okugn">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abduraman, Mehamed" Code="4" Region="Mehamed" RegionCode="Abduraman">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Reda, Gebremeskel" Code="2" Region="Gebremeskel" RegionCode="Reda">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kebede, Endaweke" Code="3" Region="Endaweke" RegionCode="Kebede">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Teshale, Alemshet" Code="3" Region="Alemshet" RegionCode="Teshale">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Edssa, Moti " Code="3" Region="Moti " RegionCode="Edssa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mahamed Abdi, Kadar " Code="4" Region="Kadar " RegionCode="Mahamed Abdi">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abera, Negash " Code="3" Region="Negash " RegionCode="Abera">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Amsalu, Abraham " Code="1" Region="Abraham " RegionCode="Amsalu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abdi Kalinle, Ahmad " Code="3" Region="Ahmad " RegionCode="Abdi Kalinle">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hussein, Abdikafi" Code="3" Region="Abdikafi" RegionCode="Hussein">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Denbeba, Sisay " Code="2" Region="Sisay " RegionCode="Denbeba">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Lemma, Tariku" Code="3" Region="Tariku" RegionCode="Lemma">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Teshome, Shimelis" Code="1" Region="Shimelis" RegionCode="Teshome">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Geshura, Gezahagn " Code="3" Region="Gezahagn " RegionCode="Geshura">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mustafa, Nuriya " Code="1" Region="Nuriya " RegionCode="Mustafa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tesfay, Kissanet" Code="2" Region="Kissanet" RegionCode="Tesfay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Siyum, Melaku" Code="9" Region="Melaku" RegionCode="Siyum">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Addis, Simeneh" Code="4" Region="Simeneh" RegionCode="Addis">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Fisseha, Gebretsadikan" Code="3" Region="Gebretsadikan" RegionCode="Fisseha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ali, Mohammed" Code="2" Region="Mohammed" RegionCode="Ali">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Koyto, Desalegn" Code="3" Region="Desalegn" RegionCode="Koyto">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Zenebe, Endale" Code="2" Region="Endale" RegionCode="Zenebe">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mohammed, Abdulwuhab" Code="3" Region="Abdulwuhab" RegionCode="Mohammed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ande, Genet" Code="2" Region="Genet" RegionCode="Ande">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Alemayehu, Belay " Code="2" Region="Belay " RegionCode="Alemayehu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mesha, Mamacha" Code="2" Region="Mamacha" RegionCode="Mesha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mohammed, Abdu" Code="2" Region="Abdu" RegionCode="Mohammed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Fisseha, Millat" Code="2" Region="Millat" RegionCode="Fisseha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kitaba, Gezahegn " Code="1" Region="Gezahegn " RegionCode="Kitaba">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hailemariam, Fissaha" Code="3" Region="Fissaha" RegionCode="Hailemariam">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kassahun, Mengistie" Code="3" Region="Mengistie" RegionCode="Kassahun">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Merga, Teshale " Code="3" Region="Teshale " RegionCode="Merga">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Bala W., Asrat " Code="3" Region="Asrat " RegionCode="Bala W.">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Alemayehu, Derebe " Code="2" Region="Derebe " RegionCode="Alemayehu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tasie, Adugna" Code="3" Region="Adugna" RegionCode="Tasie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Umer, Nuriya" Code="3" Region="Nuriya" RegionCode="Umer">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Shishay, Weldehawryat" Code="3" Region="Weldehawryat" RegionCode="Shishay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Degefa, Guteta" Code="1" Region="Guteta" RegionCode="Degefa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Merhaba, Kibatu" Code="2" Region="Kibatu" RegionCode="Merhaba">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Dessie, Bekele" Code="3" Region="Bekele" RegionCode="Dessie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tesfahunegn, Afewerki" Code="2" Region="Afewerki" RegionCode="Tesfahunegn">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Hailu, Chekol" Code="2" Region="Chekol" RegionCode="Hailu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Lelisa, Dessalegn  " Code="3" Region="Dessalegn  " RegionCode="Lelisa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ambachew, Ayanaw " Code="2" Region="Ayanaw " RegionCode="Ambachew">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Yemane, Hadas" Code="2" Region="Hadas" RegionCode="Yemane">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Temesgen, Tesfay" Code="2" Region="Tesfay" RegionCode="Temesgen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Utura, Takala" Code="2" Region="Takala" RegionCode="Utura">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Shiabaw, Andargachew" Code="4" Region="Andargachew" RegionCode="Shiabaw">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Lema, Zemenework" Code="4" Region="Zemenework" RegionCode="Lema">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Beshir, Wondiye " Code="2" Region="Wondiye " RegionCode="Beshir">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Beyene, Getahun " Code="3" Region="Getahun " RegionCode="Beyene">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Agumas, Melkamu " Code="2" Region="Melkamu " RegionCode="Agumas">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tesfaye, Niamen " Code="9" Region="Niamen " RegionCode="Tesfaye">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Regassa, Hailu" Code="1" Region="Hailu" RegionCode="Regassa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Berhe, Tekien" Code="2" Region="Tekien" RegionCode="Berhe">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Wochebo, Wondimu " Code="2" Region="Wondimu " RegionCode="Wochebo">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Belay, Adanu" Code="1" Region="Adanu" RegionCode="Belay">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Shitu, Desalew" Code="9" Region="Desalew" RegionCode="Shitu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mekonen, Sintayehu " Code="2" Region="Sintayehu " RegionCode="Mekonen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Andargie, Malede" Code="2" Region="Malede" RegionCode="Andargie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Gose, Tola  " Code="1" Region="Tola  " RegionCode="Gose">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tsige, Gulima " Code="2" Region="Gulima " RegionCode="Tsige">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ahmed, Fuad " Code="3" Region="Fuad " RegionCode="Ahmed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Temesgen, Sisay " Code="3" Region="Sisay " RegionCode="Temesgen">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Kassa, Zerihun" Code="3" Region="Zerihun" RegionCode="Kassa">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Shte, Mebratu " Code="2" Region="Mebratu " RegionCode="Shte">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abera, Abtew" Code="3" Region="Abtew" RegionCode="Abera">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Desu, Bekele" Code="2" Region="Bekele" RegionCode="Desu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Birhane, Gebremedhin" Code="3" Region="Gebremedhin" RegionCode="Birhane">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Anbessie, Abiy " Code="2" Region="Abiy " RegionCode="Anbessie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Mohammed, Ahmed" Code="3" Region="Ahmed" RegionCode="Mohammed">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ambelie, Adamnesh" Code="4" Region="Adamnesh" RegionCode="Ambelie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tebeje, Firehiwot" Code="2" Region="Firehiwot" RegionCode="Tebeje">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tsegaye, Wondimu " Code="3" Region="Wondimu " RegionCode="Tsegaye">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Geregziabher, Zafu" Code="2" Region="Zafu" RegionCode="Geregziabher">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Lemecha, Gemechis" Code="4" Region="Gemechis" RegionCode="Lemecha">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="G/Silasie, Tsegaye" Code="2" Region="Tsegaye" RegionCode="G/Silasie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Yimam, Fentaw" Code="3" Region="Fentaw" RegionCode="Yimam">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Nigus, Birhanu" Code="2" Region="Birhanu" RegionCode="Nigus">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Jemberu, Alebie" Code="4" Region="Alebie" RegionCode="Jemberu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Teka, Gizaw" Code="3" Region="Gizaw" RegionCode="Teka">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tilahun, Habtamu " Code="9" Region="Habtamu " RegionCode="Tilahun">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Zewdie, Bantayehu" Code="4" Region="Bantayehu" RegionCode="Zewdie">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Lombamo, Fantu" Code="3" Region="Fantu" RegionCode="Lombamo">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Niguse , Temesgen " Code="3" Region="Temesgen " RegionCode="Niguse ">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Tona, Buno " Code="2" Region="Buno " RegionCode="Tona">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Amene, Kefyalew" Code="9" Region="Kefyalew" RegionCode="Amene">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ejigu, Kefale " Code="2" Region="Kefale " RegionCode="Ejigu">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Abraahim Saani, Adnan" Code="3" Region="Adnan" RegionCode="Abraahim Saani">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Girma, Darbe " Code="9" Region="Darbe " RegionCode="Girma">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Serjeba, Darkela " Code="2" Region="Darkela " RegionCode="Serjeba">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Ali, Yesuf" Code="2" Region="Yesuf" RegionCode="Ali">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+  <District Name="Worku, Mulugeta " Code="9" Region="Mulugeta " RegionCode="Worku">
+    <LastReported>636780039481982551</LastReported>
+  </District>
+</Districts>

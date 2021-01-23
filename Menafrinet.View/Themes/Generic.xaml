@@ -1,0 +1,390 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Menafrinet.View"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:controls="clr-namespace:Menafrinet.View.Controls"
+    xmlns:p="clr-namespace:Menafrinet.View.Properties"
+    xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options" 
+    >
+
+
+    <sys:Boolean x:Key="False">false</sys:Boolean>
+    <sys:Boolean x:Key="True">true</sys:Boolean>
+
+    <Color x:Key="DefaultColor" A="255" R="17" G ="135" B="242"/>
+    <Color x:Key="HighlightColor" A="255" R="116" G ="185" B="248"/>
+    <Color x:Key="PressedColor" A="255" R="205" G ="230" B="252"/>
+
+    <LinearGradientBrush x:Key="GridGradientBackgroundBrush" StartPoint="0,0" EndPoint="0,1" PresentationOptions:Freeze="True">
+        <!--<GradientStop Offset="0" Color="#F4F4F4" />-->
+        <GradientStop Offset="0" Color="#DFEEF9" />
+        <GradientStop Offset="0.3"  Color="#FFFFFF" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="DefaultBrush" Color="{StaticResource DefaultColor}" PresentationOptions:Freeze="True" />
+    <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource HighlightColor}" PresentationOptions:Freeze="True" />
+    <SolidColorBrush x:Key="PressedBrush" Color="{StaticResource PressedColor}" PresentationOptions:Freeze="True" />
+    <!--<SolidColorBrush x:Key="DefaultButtonBrush" Color="#428BC1" />-->
+    <SolidColorBrush x:Key="DefaultButtonBrush" Color="#5887BB" PresentationOptions:Freeze="True" />
+
+    <Style x:Key="PageHeaderTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="#006699" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="FontWeight" Value="Light" />
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+
+    <LinearGradientBrush x:Key="DefaultButtonGradientBrush" StartPoint="0,0" EndPoint="0,1" PresentationOptions:Freeze="True" >
+        <GradientStop Offset="0.0" Color="#DBF1FC" />
+        <GradientStop Offset="0.5" Color="#D0E6F1" />
+        <GradientStop Offset="1.0" Color="#BBD4E1" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="RowDisableBackgroundBrush" Color="#CDCDCD"  PresentationOptions:Freeze="True"  />
+    <SolidColorBrush x:Key="RowDisableForegroundBrush" Color="#727272"  PresentationOptions:Freeze="True"  />
+
+    <SolidColorBrush x:Key="RowDuplicateBackgroundBrush" Color="#FFFF59" PresentationOptions:Freeze="True"  />
+    <SolidColorBrush x:Key="RowDuplicateForegroundBrush" Color="Black" PresentationOptions:Freeze="True"  />
+
+    <SolidColorBrush x:Key="RowInvalidEPIDBackgroundBrush" Color="#FF7575" PresentationOptions:Freeze="True"  />
+    <SolidColorBrush x:Key="RowInvalidEPIDForegroundBrush" Color="Black" PresentationOptions:Freeze="True"  />
+
+    <Style x:Key="RightAlignStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="TextAlignment" Value="Right" />
+    </Style>
+
+    <Style x:Key="GradientGrid" TargetType="Grid">
+        <Setter Property="Background" Value="{StaticResource GridGradientBackgroundBrush}"/>
+    </Style>
+
+    <Style x:Key="TabButtonStyle" TargetType="controls:TabButton">
+        <Setter Property="Foreground" Value="#414141"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid x:Name="Grid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="16" />
+                        </Grid.RowDefinitions>
+                        <Border 
+                                    x:Name="Border" 
+                                    Height="38"
+                                    CornerRadius="0" 
+                                    BorderThickness="0, 0, 0, 4"
+                                    Margin="0, 0, 0, 0"
+                                    Background="#F0F1F4"
+                                TextBlock.FontSize="15"
+                                    BorderBrush="#C00000">
+                            <ContentPresenter 
+                                    Margin="2"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    RecognizesAccessKey="True"/>
+                        </Border>
+
+                        <Path x:Name="Path" Grid.Row="1" Grid.RowSpan="1" Grid.Column="0" Canvas.ZIndex="2000" Height="7" Width="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,-1,15.375,0" Fill="#C00000"
+                  Stretch="Fill"  Stroke="#FF5B99BA" Data="M85,25 L85,25 L87.5,30 L90,25 z" RenderTransformOrigin="3.083,-1.417" Visibility="Collapsed"
+                  StrokeThickness="0" />
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <!--<Trigger Property="IsKeyboardFocused" Value="true">
+                                    <Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DefaultedBorderBrush}" />
+                                </Trigger>-->
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Foreground" Value="#FFF2F2F2"/>
+                            <Setter TargetName="Border" Property="Background" Value="#C00000" />
+                            <Setter TargetName="Path" Property="Visibility" Value="Visible" />
+                            <Setter TargetName="Border" Property="BorderBrush" Value="#C00000" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Foreground" Value="#414141"/>
+                            <Setter TargetName="Border" Property="Background" Value="#F7F7F7" />
+                            <Setter TargetName="Border" Property="BorderBrush" Value="#C00000" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter TargetName="Border" Property="Background" Value="#777879" />
+                            <!--<Setter TargetName="Border" Property="BorderBrush" Value="{StaticResource DisabledBorderBrush}" />-->
+                            <Setter Property="Foreground" Value="#D8DADA"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Background" Value="{StaticResource DefaultButtonGradientBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="#ABC7DE" />
+        <Setter Property="Foreground" Value="#002A7D" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    Background="{TemplateBinding Background}" 
+                    Padding="{TemplateBinding Padding}" 
+                    CornerRadius="3">
+                        <ContentControl VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="Black" />
+                <Setter Property="BorderBrush" Value="#8AB0D0" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Foreground" Value="Red" />
+                <Setter Property="BorderBrush" Value="#EEF4F9" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Button" x:Key="FlatButtonStyle">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Background" Value="{StaticResource DefaultButtonBrush}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="BorderBrush" Value="Black" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Width" Value="100" />
+        <Setter Property="Height" Value="20" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderThickness="{TemplateBinding BorderThickness}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    Background="{TemplateBinding Background}" 
+                    Padding="{TemplateBinding Padding}" 
+                    CornerRadius="0">
+                        <ContentControl VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource HighlightBrush}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="{StaticResource PressedBrush}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#7A7A7A" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style 
+       TargetType="{x:Type DataGridRow}">
+        <Style.Triggers>
+
+            <!--<Trigger Property="AlternationIndex" Value="1" >
+                    <Setter Property="Background" Value="#EEF5FB" />
+                </Trigger>
+                <Trigger Property="AlternationIndex" Value="0">
+                    <Setter Property="Background" Value="White" />
+                </Trigger>-->
+
+            <!--<DataTrigger Binding="{Binding FlagAsDuplicate}" Value="True">
+                    <Setter Property="Background" Value="{StaticResource RowDuplicateBackgroundBrush}"/>
+                    <Setter Property="Foreground" Value="{StaticResource RowDuplicateForegroundBrush}"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding FlagEPIDAsInvalid}" Value="True">
+                    <Setter Property="Background" Value="{StaticResource RowInvalidEPIDBackgroundBrush}"/>
+                    <Setter Property="Foreground" Value="{StaticResource RowInvalidEPIDForegroundBrush}"/>
+                </DataTrigger>-->
+
+            <DataTrigger Binding="{Binding RecStatus}" Value="0">
+                <Setter Property="Background" Value="{StaticResource RowDisableBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{StaticResource RowDisableForegroundBrush}"/>
+            </DataTrigger>
+
+            <DataTrigger Binding="{Binding FlagEPIDAsAttachment}" Value="True">
+                <Setter Property="Background" Value="{StaticResource RowInvalidEPIDBackgroundBrush}"/>
+                <Setter Property="Foreground" Value="{StaticResource RowInvalidEPIDForegroundBrush}"/>
+            </DataTrigger>
+
+        </Style.Triggers>
+    </Style>
+
+    <Style 
+       TargetType="{x:Type DataGridRow}" x:Key="SiteRowStyle">
+        <Setter Property="Background" Value="#FF7575"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="0">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="1">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="2">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="3">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="4">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="5">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="6">
+                <Setter Property="Background" Value="LightGreen"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="7">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="8">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="9">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="10">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="11">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="12">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding DaysElapsed}" Value="13">
+                <Setter Property="Background" Value="#FFFF59"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style 
+       TargetType="{x:Type DataGrid}">
+        <!--<Setter Property="VerticalGridLinesBrush" Value="#D5D5D5" />
+            <Setter Property="HorizontalGridLinesBrush" Value="#D5D5D5" />-->
+        <Setter Property="VerticalGridLinesBrush" Value="#D9E8F1" />
+        <Setter Property="HorizontalGridLinesBrush" Value="#D9E8F1" />
+        <Setter Property="Foreground" Value="#333333"/>
+        <Setter Property="FontFamily" Value="Calibri"/>
+        <Setter Property="AutoGenerateColumns" Value="False" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="EnableRowVirtualization" Value="True" />
+        <Setter Property="EnableColumnVirtualization" Value="True" />
+        <Setter Property="RowDetailsVisibilityMode" Value="VisibleWhenSelected" />
+        <Setter Property="AlternationCount" Value="2" />
+        <Setter Property="CanUserAddRows" Value="False" />
+        <Setter Property="CanUserDeleteRows" Value="False" />
+        <Setter Property="CanUserResizeColumns" Value="True" />
+        <Setter Property="CanUserResizeRows" Value="False" />
+        <Setter Property="CanUserSortColumns" Value="True" />
+        <Setter Property="SelectionUnit" Value="FullRow" />
+        <Setter Property="HeadersVisibility" Value="All" />
+        <Setter Property="AreRowDetailsFrozen" Value="False" />
+        <Setter Property="SelectionMode" Value="Single" />
+    </Style>
+
+    <LinearGradientBrush x:Key="mainPanelBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <!--<GradientStop Offset="0" Color="#F4F4F4" />-->
+        <GradientStop Offset="0" Color="#DFEEF9" />
+        <GradientStop Offset="0.3"  Color="#FFFFFF" />
+    </LinearGradientBrush>
+ <!--gfj-->
+    <LinearGradientBrush x:Key="gridHeaderBrush" StartPoint="0,0" EndPoint="0,1">
+        <!--<GradientStop Offset="0" Color="#F4F4F4" />-->
+        <GradientStop Offset="0" Color="#1D5987" />
+        <GradientStop Offset="1" Color="#1D5987" />
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="RowHeaderBackgroundBrush" Color="#FFFFCC"/>
+
+    <Style TargetType="DataGridColumnHeader">
+        <Setter Property="Background" Value="{StaticResource RowHeaderBackgroundBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,1,1" />
+        <Setter Property="BorderBrush" Value="#D5D5D5" />
+        <Setter Property="Padding" Value="4" />
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Style.Triggers>
+            <Trigger Property="SortDirection" Value="{x:Null}">
+                <Setter Property="Background" Value="{DynamicResource RowHeaderBackgroundBrush}" />
+                <Setter Property="BorderBrush"  Value="#D5D5D5" />
+            </Trigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="True" />
+                    <Condition Property="SortDirection" Value="{x:Null}" />
+                </MultiTrigger.Conditions>
+                <Setter Property="Background" Value="#FFFFEE" />
+                <Setter Property="BorderBrush" Value="#D5D5D5" />
+            </MultiTrigger>
+
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="true" />
+                    <Condition Property="SortDirection" Value="{x:Null}" />
+                </MultiTrigger.Conditions>
+                <Setter Property="Background" Value="#FFFFEE" />
+                <Setter Property="BorderBrush" Value="#D5D5D5" />
+            </MultiTrigger>
+            <Trigger Property="SortDirection" Value="Ascending">
+                <Setter Property="Background" Value="#FFE4CC" />
+            </Trigger>
+            <Trigger Property="SortDirection" Value="Descending">
+                <Setter Property="Background" Value="#FFE4CC" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type DataGridCell}">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="FontSize" Value="13" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type DataGridCell}">
+                    <Border Background="{TemplateBinding Background}" 
+                                Padding="2, 4, 2, 4"
+                  BorderBrush="{TemplateBinding BorderBrush}"  
+                  BorderThickness="{TemplateBinding BorderThickness}" 
+                  SnapsToDevicePixels="True">
+                        <ContentPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsSelected"
+                        Value="True">
+                <Setter Property="Background"
+                        Value="#CCFFFF" />
+                <Setter Property="BorderBrush"
+                        Value="#CCFFFF" />
+                <Setter Property="Foreground"
+                        Value="Black" />
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+    <!--<SolidColorBrush x:Key="RowBackgroundAlternationIndex2Brush" Color="#EDEDED"/>-->
+    <SolidColorBrush x:Key="RowBackgroundAlternationIndex2Brush" Color="#EEF5FB"/>
+    <SolidColorBrush x:Key="RowBackgroundAlternationIndex3Brush" Color="#FFFFFF"/>
+</ResourceDictionary>

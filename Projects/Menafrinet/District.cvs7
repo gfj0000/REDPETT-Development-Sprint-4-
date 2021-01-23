@@ -1,0 +1,89 @@
+<DashboardCanvas>
+  <dashboardHelper>
+    <connectionString>zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROECsCogaeOpySVGrbxqpU3Hw0WtgnbKJSq8U4vFlZb9CGBk82mptl6LRNRbGcom/KxWZhaCru07sbIYWYH6eYN8TuDMcVRppDv0KaBPJhe4YU9RnXyfdJ3bCkP4u+KOfkN</connectionString>
+    <customSQLQuery>SELECT FichedeNotification1.Region, FichedeNotification1.District, Format(PopulationTable21.POPULATIONCOUNT,"#,###") AS Population, Count(*) AS Cas, Sum(IIf(Outcome='2',1,0)) AS Décès, Format(Décès/[Cas],"Percent") AS [Décès (pct)], Sum(IIf(SpecimenCollected='1',1,0)) AS [Ponction Lombaire (n)], Format(([Ponction Lombaire (n)]/[Cas]),"Percent") AS [Ponction Lombaire (pct)], Round([Cas]/[PopulationTable21.POPULATIONCOUNT]*100000,2) AS [Taux d'Attaque], FichedeNotification1.EpidWeek, PopulationTable21.POPULATIONCOUNT, FichedeNotification1.EpidYear
+FROM PopulationTable21 INNER JOIN FichedeNotification1 ON PopulationTable21.PopulationDistrict = FichedeNotification1.District
+GROUP BY FichedeNotification1.Region, FichedeNotification1.District, FichedeNotification1.EpidWeek, PopulationTable21.POPULATIONCOUNT, FichedeNotification1.EpidYear;</customSQLQuery>
+    <advancedDataFilterCondition>(district = permanent_district AND permanent_district  NOT= (.)) OR (district  NOT= (.) AND permanent_district = 'AAA') AND (epidyear &gt;= permanent_year_beg AND epidyear &lt;= permanent_year_end) AND (epidweek = permanent_epidweek AND permanent_epidweek  NOT= '99') OR (epidweek  NOT= 99 AND permanent_epidweek = '99')
+
+
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>True</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <standardTextReportGadget top="47" left="89" width="178" height="44" collapsed="false" gadgetType="EpiDashboard.Gadgets.Reporting.StandardTextControl">
+      <text>Created: &lt;b&gt;09/11/2018&lt;/b&gt;</text>
+      <fontWeight>regular</fontWeight>
+      <fontSize>14</fontSize>
+      <fontStretch>Normal</fontStretch>
+      <fontStyle>Normal</fontStyle>
+      <fontFamily>Global User Interface</fontFamily>
+      <textDecorations>
+      </textDecorations>
+      <foregroundColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+      </foregroundColor>
+    </standardTextReportGadget>
+    <lineListGadget top="199" left="77" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="e6e774b9-ba67-4197-b8b7-09e2b0b2c878">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>50</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>False</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Line List</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <customusercolumnsort>Region^District^EpidYear^EpidWeek^Population^Cas^Décès^Décès (pct)^Ponction Lombaire (n)^Ponction Lombaire (pct)^Taux d'Attaque</customusercolumnsort>
+      <dataFilters recordProcessScope="undeleted" />
+      <listFields>
+        <listField>EpidWeek</listField>
+        <listField>Cas</listField>
+        <listField>Décès</listField>
+        <listField>Décès (pct)</listField>
+        <listField>District</listField>
+        <listField>EpidYear</listField>
+        <listField>Ponction Lombaire (n)</listField>
+        <listField>Ponction Lombaire (pct)</listField>
+        <listField>Population</listField>
+        <listField>Region</listField>
+        <listField>Taux d'Attaque</listField>
+      </listFields>
+      <sortFields>
+        <sortField>EpidYear (ascending)</sortField>
+        <sortField>EpidWeek (ascending)</sortField>
+      </sortFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>False</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Situtation Epidemiologique</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

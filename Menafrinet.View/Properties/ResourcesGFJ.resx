@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TabTransmissionHeader" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="ButtonMerge" xml:space="preserve">
+    <value>merge</value>
+  </data>
+  <data name="ColHeaderAge" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="ColHeaderClassification" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="ColHeaderCreatedOn" xml:space="preserve">
+    <value>Created on</value>
+  </data>
+  <data name="ColHeaderEPID" xml:space="preserve">
+    <value>EPID</value>
+  </data>
+  <data name="ColHeaderEpiWeek" xml:space="preserve">
+    <value>Epi Week</value>
+  </data>
+  <data name="ColHeaderFinalLabResult" xml:space="preserve">
+    <value>Final Lab Result</value>
+  </data>
+  <data name="ColHeaderFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="ColHeaderHealthFacility" xml:space="preserve">
+    <value>Health Facility</value>
+  </data>
+  <data name="ColHeaderLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="ColHeaderLPPerformed" xml:space="preserve">
+    <value>LP Performed</value>
+  </data>
+  <data name="ColHeaderOutcome" xml:space="preserve">
+    <value>Outcome</value>
+  </data>
+  <data name="ColHeaderReportingDistrict" xml:space="preserve">
+    <value>Reporting District</value>
+  </data>
+  <data name="ColHeaderSex" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="ColHeaderStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ColHeaderUpdatedOn" xml:space="preserve">
+    <value>Updated on</value>
+  </data>
+  <data name="ColHeaderYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="ExportCreateDataPackage" xml:space="preserve">
+    <value>create data packet</value>
+  </data>
+  <data name="ExportDestinationSite" xml:space="preserve">
+    <value>Export destination site:</value>
+  </data>
+  <data name="ExportDestinationType" xml:space="preserve">
+    <value>Export destination type:</value>
+  </data>
+  <data name="ExportEndDate" xml:space="preserve">
+    <value>End date:</value>
+  </data>
+  <data name="ExportLastExportDate" xml:space="preserve">
+    <value>Date of last export:</value>
+  </data>
+  <data name="ExportLastExportUserID" xml:space="preserve">
+    <value>User ID of last export:</value>
+  </data>
+  <data name="ExportOpenTransmissionFolder" xml:space="preserve">
+    <value>open transmisison folder</value>
+  </data>
+  <data name="ExportPurgeFiles" xml:space="preserve">
+    <value>purge old transmission files</value>
+  </data>
+  <data name="ExportRecordsExported" xml:space="preserve">
+    <value>Records exported:</value>
+  </data>
+  <data name="ExportStartDate" xml:space="preserve">
+    <value>Start date:</value>
+  </data>
+  <data name="ExportStatus" xml:space="preserve">
+    <value>Export status:</value>
+  </data>
+  <data name="ExportType" xml:space="preserve">
+    <value>Export type:</value>
+  </data>
+  <data name="ExportTypeAll" xml:space="preserve">
+    <value>Export all</value>
+  </data>
+  <data name="ExportTypeAllSinceLast" xml:space="preserve">
+    <value>Export all since last</value>
+  </data>
+  <data name="ExportTypeDates" xml:space="preserve">
+    <value>Dates</value>
+  </data>
+  <data name="ExportTypeMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="LastMergeDate" xml:space="preserve">
+    <value>Date of last merge:</value>
+  </data>
+  <data name="LastMergeUserID" xml:space="preserve">
+    <value>User ID of last merge:</value>
+  </data>
+  <data name="MainHeading" xml:space="preserve">
+    <value>The Management System of Case-by-Case Surveillance Database</value>
+  </data>
+  <data name="MergeStatus" xml:space="preserve">
+    <value>Merge status:</value>
+  </data>
+  <data name="NewRecord" xml:space="preserve">
+    <value>New Record</value>
+  </data>
+  <data name="OpenMergeFolder" xml:space="preserve">
+    <value>open merge folder</value>
+  </data>
+  <data name="PackagesMerged" xml:space="preserve">
+    <value>Package files merged:</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Records" xml:space="preserve">
+    <value>Records</value>
+  </data>
+  <data name="RecordsMerged" xml:space="preserve">
+    <value>Records merged:</value>
+  </data>
+  <data name="SiteMergeStatus" xml:space="preserve">
+    <value>Site Merge Status</value>
+  </data>
+  <data name="TabAnalysis" xml:space="preserve">
+    <value>Analysis</value>
+  </data>
+  <data name="TabDataEntry" xml:space="preserve">
+    <value>Data Entry</value>
+  </data>
+  <data name="TabHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="TabMerge" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="TabMergeHeader" xml:space="preserve">
+    <value>Data Merging</value>
+  </data>
+  <data name="TabTransmission" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+</root>

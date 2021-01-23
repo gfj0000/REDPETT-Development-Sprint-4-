@@ -1,0 +1,128 @@
+﻿<Districts Country="Niger">
+  <District Name="Agadez" Code="AGA" Region="Agadez" RegionCode="AGA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Arlit" Code="ARL" Region="Agadez" RegionCode="AGA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Bilma" Code="BIL" Region="Agadez" RegionCode="AGA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tchirozerine" Code="TCH" Region="Agadez" RegionCode="AGA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Diffa" Code="DIF" Region="Diffa" RegionCode="DIF">
+    <LastReported>635180000000000000</LastReported>
+  </District>
+  <District Name="Maïne Soroa" Code="MAI" Region="Diffa" RegionCode="DIF">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="N'guigmi" Code="NGU" Region="Diffa" RegionCode="DIF">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Boboye" Code="BOB" Region="Dosso" RegionCode="DOS">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Dogon-Doutchi" Code="DOU" Region="Dosso" RegionCode="DOS">
+    <LastReported>635189000000000000</LastReported>
+  </District>
+  <District Name="Dosso" Code="DOS" Region="Dosso" RegionCode="DOS">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Gaya" Code="GAY" Region="Dosso" RegionCode="DOS">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Loga" Code="LOG" Region="Dosso" RegionCode="DOS">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Aguie" Code="AGU" Region="Maradi" RegionCode="MAR">
+    <LastReported>635170000000000000</LastReported>
+  </District>
+  <District Name="Dakoro" Code="DAK" Region="Maradi" RegionCode="MAR">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Guidan-Roumdji" Code="GRO" Region="Maradi" RegionCode="MAR">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Madarounfa" Code="MAD" Region="Maradi" RegionCode="MAR">
+    <LastReported>635160000000000000</LastReported>
+  </District>
+  <District Name="Maradi" Code="MAR" Region="Maradi" RegionCode="MAR">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Mayadi" Code="MAY" Region="Maradi" RegionCode="MAR">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tessaoua" Code="TES" Region="Maradi" RegionCode="MAR">
+    <LastReported>635150000000000000</LastReported>
+  </District>
+  <District Name="Niamey I" Code="NY1" Region="Niamey" RegionCode="NIA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Niamey II" Code="NY2" Region="Niamey" RegionCode="NIA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Niamey III" Code="NY3" Region="Niamey" RegionCode="NIA">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Abalak" Code="ABA" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Birni N'Konni" Code="KON" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Bouza" Code="BOU" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Illela" Code="ILL" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Keita" Code="KEI" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Madaoua" Code="MAD" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tahoua" Code="TAH" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tchintabaraden" Code="TCH" Region="Tahoua" RegionCode="TAH">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Filingue" Code="FIL" Region="Tillaberi" RegionCode="TIL">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Kollo" Code="KOL" Region="Tillaberi" RegionCode="TIL">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Ouallam" Code="QUA" Region="Tillaberi" RegionCode="TIL">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Say" Code="SAY" Region="Tillaberi" RegionCode="TIL">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tera" Code="TER" Region="Tillaberi" RegionCode="TIL">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tillaberi" Code="TIL" Region="Tillaberi" RegionCode="TIL">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Goure" Code="GOU" Region="Zinder" RegionCode="ZIN">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Magaria" Code="MAG" Region="Zinder" RegionCode="ZIN">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Matameye" Code="MAT" Region="Zinder" RegionCode="ZIN">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Mirriah" Code="MIR" Region="Zinder" RegionCode="ZIN">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Tanout" Code="TAN" Region="Zinder" RegionCode="ZIN">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+  <District Name="Zinder" Code="ZIN" Region="Zinder" RegionCode="ZIN">
+    <LastReported>635190000000000000</LastReported>
+  </District>
+</Districts>

@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_1_Create_a_Data_Package" xml:space="preserve">
+    <value>1. Створіть пакет даних</value>
+  </data>
+  <data name="_1_Open_import_folder" xml:space="preserve">
+    <value>1. Відкрийте папку імпорту</value>
+  </data>
+  <data name="_2_Import" xml:space="preserve">
+    <value>2. Імпорт</value>
+  </data>
+  <data name="_Language_Settings" xml:space="preserve">
+    <value>       Налаштування мови</value>
+  </data>
+  <data name="_Language_Settings0" xml:space="preserve">
+    <value>Налаштування мови</value>
+  </data>
+  <data name="_m_Lang_Language_Settings" xml:space="preserve">
+    <value>Налаштування мови</value>
+  </data>
+  <data name="_m_Lang_User_Settings" xml:space="preserve">
+    <value>Настройок користувача</value>
+  </data>
+  <data name="_Site_Settings" xml:space="preserve">
+    <value>Налаштування сайту</value>
+  </data>
+  <data name="_User_Settings" xml:space="preserve">
+    <value>Налаштування користувача</value>
+  </data>
+  <data name="_User_Settings0" xml:space="preserve">
+    <value>Налаштування користувача</value>
+  </data>
+  <data name="Add_Residents_Consultants_and_" xml:space="preserve">
+    <value>Додайте мешканців, консультантів та місця роботи</value>
+  </data>
+  <data name="ButtonMerge" xml:space="preserve">
+    <value>об'єднати</value>
+  </data>
+  <data name="C" xml:space="preserve">
+    <value>С</value>
+  </data>
+  <data name="Cohort" xml:space="preserve">
+    <value>Когорта</value>
+  </data>
+  <data name="Cohort_End_Date" xml:space="preserve">
+    <value>Дата закінчення когорти</value>
+  </data>
+  <data name="Cohort_Start_Date" xml:space="preserve">
+    <value>Дата початку когорти</value>
+  </data>
+  <data name="ColHeaderAge" xml:space="preserve">
+    <value>Вік</value>
+  </data>
+  <data name="ColHeaderClassification" xml:space="preserve">
+    <value>Класифікація</value>
+  </data>
+  <data name="ColHeaderCreatedOn" xml:space="preserve">
+    <value>Створено на</value>
+  </data>
+  <data name="ColHeaderEpiWeek" xml:space="preserve">
+    <value>Тиждень Епі</value>
+  </data>
+  <data name="ColHeaderFinalLabResult" xml:space="preserve">
+    <value>Результат остаточної лабораторії</value>
+  </data>
+  <data name="ColHeaderFirstName" xml:space="preserve">
+    <value>Ім'я</value>
+  </data>
+  <data name="ColHeaderHealthFacility" xml:space="preserve">
+    <value>Здоров'я</value>
+  </data>
+  <data name="ColHeaderLastName" xml:space="preserve">
+    <value>Прізвище</value>
+  </data>
+  <data name="ColHeaderLPPerformed" xml:space="preserve">
+    <value>Виконано LP</value>
+  </data>
+  <data name="ColHeaderOutcome" xml:space="preserve">
+    <value>Результат</value>
+  </data>
+  <data name="ColHeaderReportingDistrict" xml:space="preserve">
+    <value>Звітний район</value>
+  </data>
+  <data name="ColHeaderSex" xml:space="preserve">
+    <value>Секс</value>
+  </data>
+  <data name="ColHeaderStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="ColHeaderUpdatedOn" xml:space="preserve">
+    <value>Оновлено</value>
+  </data>
+  <data name="ColHeaderYear" xml:space="preserve">
+    <value>Рік</value>
+  </data>
+  <data name="Date_of_the_last_import" xml:space="preserve">
+    <value>Дата останнього імпорту</value>
+  </data>
+  <data name="Days" xml:space="preserve">
+    <value>Дні</value>
+  </data>
+  <data name="De_Identify" xml:space="preserve">
+    <value>Де-ідентифікувати</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Видалено</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Електронна пошта</value>
+  </data>
+  <data name="ExportCreateDataPackage" xml:space="preserve">
+    <value>створювати пакет даних</value>
+  </data>
+  <data name="ExportDestinationSite" xml:space="preserve">
+    <value>Експортувати цільовий сайт:</value>
+  </data>
+  <data name="ExportDestinationType" xml:space="preserve">
+    <value>Експорт типу призначення:</value>
+  </data>
+  <data name="ExportEndDate" xml:space="preserve">
+    <value>Дата закінчення:</value>
+  </data>
+  <data name="ExportLastExportDate" xml:space="preserve">
+    <value>Дата останнього експорту:</value>
+  </data>
+  <data name="ExportLastExportUserID" xml:space="preserve">
+    <value>Ідентифікатор користувача останнього експорту:</value>
+  </data>
+  <data name="ExportOpenTransmissionFolder" xml:space="preserve">
+    <value>відкрити папку transmisison</value>
+  </data>
+  <data name="ExportPurgeFiles" xml:space="preserve">
+    <value>очистити старі файли передачі</value>
+  </data>
+  <data name="ExportRecordsExported" xml:space="preserve">
+    <value>Експортовані записи:</value>
+  </data>
+  <data name="ExportStartDate" xml:space="preserve">
+    <value>Дата початку:</value>
+  </data>
+  <data name="ExportStatus" xml:space="preserve">
+    <value>Статус експорту:</value>
+  </data>
+  <data name="ExportType" xml:space="preserve">
+    <value>Тип експорту:</value>
+  </data>
+  <data name="ExportTypeAll" xml:space="preserve">
+    <value>Експортувати всі</value>
+  </data>
+  <data name="ExportTypeAllSinceLast" xml:space="preserve">
+    <value>Експортувати всі останні</value>
+  </data>
+  <data name="ExportTypeDates" xml:space="preserve">
+    <value>Дати</value>
+  </data>
+  <data name="ExportTypeMonth" xml:space="preserve">
+    <value>Місяць</value>
+  </data>
+  <data name="Files_packaged" xml:space="preserve">
+    <value>Файли упаковані:</value>
+  </data>
+  <data name="Import_status" xml:space="preserve">
+    <value>Стан імпортування</value>
+  </data>
+  <data name="Last_Export_Date" xml:space="preserve">
+    <value>Остання дата експорту:</value>
+  </data>
+  <data name="LastMergeDate" xml:space="preserve">
+    <value>Дата останнього злиття:</value>
+  </data>
+  <data name="LastMergeUserID" xml:space="preserve">
+    <value>Ідентифікатор користувача останнього об'єднання:</value>
+  </data>
+  <data name="MainHeading" xml:space="preserve">
+    <value>Система управління базою даних нагляду за окремими випадками</value>
+  </data>
+  <data name="MergeStatus" xml:space="preserve">
+    <value>Статус об'єднання:</value>
+  </data>
+  <data name="NewRecord" xml:space="preserve">
+    <value>      Новий запис</value>
+  </data>
+  <data name="ohort" xml:space="preserve">
+    <value>оорт</value>
+  </data>
+  <data name="OpenMergeFolder" xml:space="preserve">
+    <value>відкрити папку злиття</value>
+  </data>
+  <data name="Output_format_Report_viewer_or" xml:space="preserve">
+    <value>Формат виводу: переглядач звітів або інформація про Epi</value>
+  </data>
+  <data name="PackagesMerged" xml:space="preserve">
+    <value>Файли пакетів об'єднані:</value>
+  </data>
+  <data name="Previous_import_date" xml:space="preserve">
+    <value>Попередня дата імпорту</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Друк</value>
+  </data>
+  <data name="Records" xml:space="preserve">
+    <value>Записи</value>
+  </data>
+  <data name="RecordsMerged" xml:space="preserve">
+    <value>Об’єднані записи:</value>
+  </data>
+  <data name="Report_Format" xml:space="preserve">
+    <value>Формат звіту</value>
+  </data>
+  <data name="res" xml:space="preserve">
+    <value>Цей запис був оновлений і потребує перегляду.</value>
+  </data>
+  <data name="res0" xml:space="preserve">
+    <value>Цей проект має подібну класифікацію проектів та присвоєний дату.</value>
+  </data>
+  <data name="res1" xml:space="preserve">
+    <value>Початкова дата</value>
+  </data>
+  <data name="res10" xml:space="preserve">
+    <value>Електронна пошта консультанта</value>
+  </data>
+  <data name="res11" xml:space="preserve">
+    <value>Переглянуто</value>
+  </data>
+  <data name="res12" xml:space="preserve">
+    <value>Створено</value>
+  </data>
+  <data name="res13" xml:space="preserve">
+    <value>Оновлено</value>
+  </data>
+  <data name="res14" xml:space="preserve">
+    <value>ОГЛЯД</value>
+  </data>
+  <data name="res15" xml:space="preserve">
+    <value>Класифікація проектів:</value>
+  </data>
+  <data name="res16" xml:space="preserve">
+    <value>Підозрювана хвороба</value>
+  </data>
+  <data name="res17" xml:space="preserve">
+    <value>Початкові ICD10 ім'я:</value>
+  </data>
+  <data name="res18" xml:space="preserve">
+    <value>Категорія хвороби:</value>
+  </data>
+  <data name="res19" xml:space="preserve">
+    <value>Запис, введений користувачем:</value>
+  </data>
+  <data name="res2" xml:space="preserve">
+    <value>Дата закінчення</value>
+  </data>
+  <data name="res20" xml:space="preserve">
+    <value>Посібник користувача ReDPeTT</value>
+  </data>
+  <data name="res21" xml:space="preserve">
+    <value>Повне ім'я</value>
+  </data>
+  <data name="res22" xml:space="preserve">
+    <value>Номер когорти</value>
+  </data>
+  <data name="res23" xml:space="preserve">
+    <value>Університет / навчальний заклад</value>
+  </data>
+  <data name="res24" xml:space="preserve">
+    <value>Статус випускника</value>
+  </data>
+  <data name="res25" xml:space="preserve">
+    <value>Маршрут FETP</value>
+  </data>
+  <data name="res26" xml:space="preserve">
+    <value>Навчальник електронної пошти</value>
+  </data>
+  <data name="res27" xml:space="preserve">
+    <value>Експорт</value>
+  </data>
+  <data name="res28" xml:space="preserve">
+    <value>Довідка</value>
+  </data>
+  <data name="res29" xml:space="preserve">
+    <value>1. Створіть пакет даних</value>
+  </data>
+  <data name="res3" xml:space="preserve">
+    <value>Очистити</value>
+  </data>
+  <data name="res30" xml:space="preserve">
+    <value>Дата останнього експорту</value>
+  </data>
+  <data name="res31" xml:space="preserve">
+    <value>Визначити</value>
+  </data>
+  <data name="res32" xml:space="preserve">
+    <value>Додати резидентів і консультантів</value>
+  </data>
+  <data name="res33" xml:space="preserve">
+    <value>Дата закінчення</value>
+  </data>
+  <data name="res34" xml:space="preserve">
+    <value>Початкова дата</value>
+  </data>
+  <data name="res35" xml:space="preserve">
+    <value>Стан експорту</value>
+  </data>
+  <data name="res36" xml:space="preserve">
+    <value>Опції</value>
+    <comment>Previous text: _Settings</comment>
+  </data>
+  <data name="res37" xml:space="preserve">
+    <value>Новий запис</value>
+  </data>
+  <data name="res38" xml:space="preserve">
+    <value>_Налаштування користувача</value>
+  </data>
+  <data name="res39" xml:space="preserve">
+    <value>Вихід</value>
+  </data>
+  <data name="res4" xml:space="preserve">
+    <value>Пошук</value>
+  </data>
+  <data name="res40" xml:space="preserve">
+    <value>Імпорт</value>
+  </data>
+  <data name="res41" xml:space="preserve">
+    <value>Мешканці</value>
+  </data>
+  <data name="res42" xml:space="preserve">
+    <value>Консультанти</value>
+  </data>
+  <data name="res43" xml:space="preserve">
+    <value>Звіти</value>
+  </data>
+  <data name="res5" xml:space="preserve">
+    <value>Повне ім'я</value>
+  </data>
+  <data name="res6" xml:space="preserve">
+    <value>Професійна приналежність</value>
+  </data>
+  <data name="res7" xml:space="preserve">
+    <value>Наставник</value>
+  </data>
+  <data name="res8" xml:space="preserve">
+    <value>Супервайзер</value>
+  </data>
+  <data name="res9" xml:space="preserve">
+    <value>Мобільний телефон</value>
+  </data>
+  <data name="Resident" xml:space="preserve">
+    <value>Резидент</value>
+  </data>
+  <data name="Select_Item" xml:space="preserve">
+    <value>Виберіть пункт</value>
+  </data>
+  <data name="SiteMergeStatus" xml:space="preserve">
+    <value>Статус об'єднання</value>
+  </data>
+  <data name="Status_of_the_Export" xml:space="preserve">
+    <value>Статус експорту</value>
+  </data>
+  <data name="Status_of_the_merge" xml:space="preserve">
+    <value>Статус об'єднання</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Тип проекту:</value>
+    <comment>Previous text: Tipo de Proyecto:</comment>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>Когорта</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>У папці імпорту немає пакетів даних.</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>Звіти</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>Передня лінія</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>Ім'я резидента:</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>Повна: Додайте резидентів, консультантів та польові сайти</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>Установа</value>
+  </data>
+  <data name="String17" xml:space="preserve">
+    <value>Формат звіту</value>
+  </data>
+  <data name="String18" xml:space="preserve">
+    <value>Формат виводу: переглядач звітів або інформація про Epi</value>
+  </data>
+  <data name="String19" xml:space="preserve">
+    <value>Відео користувачів ReDPeTT</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>Код ICD10:</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>Університет / інститут:</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>Домен:</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>Місто:</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>Мешканці</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>Консультації</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>Звіти</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>Ім'я резидента:</value>
+  </data>
+  <data name="TabAnalysis" xml:space="preserve">
+    <value>Аналіз</value>
+  </data>
+  <data name="TabDataEntry" xml:space="preserve">
+    <value>Введення даних</value>
+  </data>
+  <data name="TabHome" xml:space="preserve">
+    <value>Головна</value>
+  </data>
+  <data name="TabMerge" xml:space="preserve">
+    <value>Об'єднати</value>
+  </data>
+  <data name="TabMergeHeader" xml:space="preserve">
+    <value>Злиття даних</value>
+  </data>
+  <data name="TabTransmission" xml:space="preserve">
+    <value>Трансмісія</value>
+  </data>
+  <data name="TabTransmissionHeader" xml:space="preserve">
+    <value>Проекти</value>
+    <comment>	</comment>
+  </data>
+</root>

@@ -1,0 +1,28 @@
+﻿TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/App.config because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/App.xaml because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/App.xaml.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/ApplicationForm.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/ApplicationForm.Designer.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/ApplicationForm.resx because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/CreateForm.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/CreateForm.Designer.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/CreateForm.resx because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/LoginAndRegister.csproj because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/LoginAndRegister.csproj.vspscc because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/LoginForm.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/LoginForm.Designer.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/LoginForm.resx because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/MainWindow.xaml because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/MainWindow.xaml.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Program.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Resources.Designer.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Resources.resx because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Settings.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Properties/AssemblyInfo.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Properties/Resources.Designer.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Properties/Resources.resx because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Properties/Settings.Designer.cs because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/LoginAndRegister/Properties/Settings.settings because it already has a pending change that is not compatible.
+TF14050: Cannot change item $/MenAfriNet/Menafrinet.Core/Navigation Transition/FluidKit.dll because it already has a pending change that is not compatible.
+All of the changes were either unmodified files or locks.  The changes have been undone by the server.
+Changeset 30 successfully checked in.

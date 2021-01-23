@@ -1,0 +1,18 @@
+﻿<Window x:Class="MultiLang.SelectLanguage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SelectLanguage" Height="345" Width="300" Name="Window1" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" FontSize="14" Loaded="SelectLanguage_Load">
+    <Grid>
+        <DockPanel Name="DockPanel1">
+            <Button Height="35" Name="btOK" Width="125" DockPanel.Dock="Bottom" Margin="8" HorizontalAlignment="Right" Click="btOK_Click">OK</Button>
+            <GroupBox Header="Next time ..." Name="GroupBox1" DockPanel.Dock="Bottom" Margin="8,0">
+                <StackPanel>
+                    <RadioButton Name="rbShow" Margin="2" Checked="OnStartup_CheckedChanged">Show this form again</RadioButton>
+                    <RadioButton Name="rbSelected" Margin="2" Checked="OnStartup_CheckedChanged">Use the selected language</RadioButton>
+                    <RadioButton Name="rbDefault" Margin="2" Checked="OnStartup_CheckedChanged">Use the default language</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <ListBox Name="lstCultures" Margin="8" MouseDoubleClick="btOK_Click" />
+        </DockPanel>
+    </Grid>
+</Window>

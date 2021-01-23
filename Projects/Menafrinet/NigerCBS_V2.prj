@@ -1,0 +1,7 @@
+<Project id="a5400948-bd53-0969-8b16-936c2ff8df24" name="NigerCBS_V2" location="C:\Users\gfj0\Desktop\Epi Info 7\Projects\Niger" description="" schemaVersion="102" epiVersion="" createDate="09/25/2013 12:30:25" useMetadataDbForCollectedData="" useBackgroundOnAllPages="False">
+  <CollectedData>
+    <Database connectionString="/CMip3j3HV8RumZ8DOXlLCsNfxtHVPMPzQ5QwP6y4R8dqPQQ3Q3c2YBcemsDyfxV3WoZNkzBMzxE5nSGZnFiJQJYpn/65FIZ2kkGKeLjj6wWWQFPbk//nTKiN6LhUn/mgoH7/4a4PILyfMUk1WMEax4XKRU3EfM8EXrHGCaUiIE=" dataDriver="Epi.Data.Office.AccessDBFactory, Epi.Data.Office" />
+  </CollectedData>
+  <Metadata source="2" />
+  <EnterMakeviewInterpreter source="Epi.Core.EnterInterpreter" />
+</Project>

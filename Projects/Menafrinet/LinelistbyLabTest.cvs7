@@ -1,0 +1,69 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <projectPath>Menafrinet_NE.prj</projectPath>
+    <viewName>FichedeNotification</viewName>
+    <advancedDataFilterCondition>(district = permanent_district AND permanent_district  NOT= (.)) OR (district  NOT= (.) AND permanent_district = 'AAA') AND (epidyear &gt;= permanent_year_beg AND epidyear &lt;= permanent_year_end) AND (dateconsultation &gt;= permanent_date_beg AND dateconsultation &lt;= permanent_date_end)
+
+</advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>True</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <lineListGadget top="97" left="167" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="4a8e1259-55fc-4538-aadc-0f85f42f41dd">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>1000</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>True</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading></customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <customusercolumnsort>EpidShow^Region^District^DateReceivedNRL^GramNRL^LatexNRL^CultureNRL^PCR^FinalResultNRL</customusercolumnsort>
+      <dataFilters recordProcessScope="undeleted" />
+      <listFields>
+        <listField>Region</listField>
+        <listField>District</listField>
+        <listField>EpidShow</listField>
+        <listField>GramNRL</listField>
+        <listField>LatexNRL</listField>
+        <listField>CultureNRL</listField>
+        <listField>PCR</listField>
+        <listField>FinalResultNRL</listField>
+        <listField>DateReceivedNRL</listField>
+      </listFields>
+      <sortFields>
+        <sortField>Region (ascending)</sortField>
+        <sortField>District (ascending)</sortField>
+      </sortFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>True</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Liste des lignes par test du laboratoire</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

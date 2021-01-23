@@ -1,0 +1,123 @@
+﻿<UserControl x:Class="Menafrinet.View.Controls.MergePanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:view="clr-namespace:Menafrinet.View"
+             xmlns:core="clr-namespace:Menafrinet.Core;assembly=Menafrinet.Core"
+             xmlns:p="clr-namespace:Menafrinet.View.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="700" Loaded="UserControl_Loaded" xmlns:ml="clr-namespace:Menafrinet.View.ml_resources" xmlns:m="clr-namespace:MultiLanguageMarkup">
+    <Grid x:Name="grdHome" VerticalAlignment="Stretch" Height="Auto" SizeChanged="UserControl_SizeChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" x:Name="panelSiteMergeStatus" Background="#C00000">
+            <StackPanel Margin="18, 8, 18, 8">
+                <Label Foreground="White" FontSize="24" Content="{m:Lang Status_of_the_merge}" x:Uid="ML_1252" />
+                <DataGrid IsReadOnly="True" x:Name="dgSites" Height="700" Width="Auto"
+                              RowHeaderWidth="0" 
+                      
+                      RowStyle="{StaticResource SiteRowStyle}"
+                      ItemsSource="{Binding Path=SiteCollection, IsAsync=True, FallbackValue=...}"
+                  VirtualizingStackPanel.IsVirtualizing="True"
+                  VirtualizingStackPanel.VirtualizationMode="Recycling"
+                          AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <!--<DataGridTextColumn Header="Region" Binding="{Binding SiteName}" IsReadOnly="False" />-->
+                        <DataGridTextColumn Header="{m:Lang Resident}" Binding="{Binding SiteName}" IsReadOnly="True" x:Uid="ML_1254" />
+                        <DataGridTextColumn Header="{m:Lang Cohort}" Binding="{Binding SiteCode}" IsReadOnly="True" x:Uid="ML_1255" />
+                        <DataGridTextColumn Header="{m:Lang Previous_import_date}" Binding="{Binding LastMerged, StringFormat='dd/MM/yyyy'}" IsReadOnly="True" x:Uid="ML_1256" />
+                        <DataGridTextColumn Header="{m:Lang Days}" Binding="{Binding DaysElapsed}" IsReadOnly="True" x:Uid="ML_1257" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Margin="8, 0, 8, 0">
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Foreground="#C00000" Style="{StaticResource PageHeaderTextBlockStyle}" Text="{m:Lang res40}" x:Uid="ML_1259" />
+            <StackPanel Height="20">
+                <!--<Label Content="Mode d'emploi:" HorizontalAlignment="Left" Height="27" Margin="2,0,0,0" Width="115" FontSize="14"/>-->
+                <!--<Button x:Name="OpenModeEmploi" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize='17' Width="318" Click="btnOpenModeEmploi" Content="Mode d' Emploi"/>-->
+                <Button x:Name="btnOpenModeEmploi" Background="#C00000" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Width="230" Click="btnOpenModeEmploi_Click" Content="{m:Lang res28}" Margin="12,0,0,0" x:Uid="ML_1261" />
+            </StackPanel>
+
+            <Grid x:Name="grdExport">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="97" />
+                    <ColumnDefinition Width="418" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="1" Grid.Column="0" Margin="10,41,6,-25" Grid.ColumnSpan="2">
+
+                    <!--<Button x:Name="btnImport" Style="{StaticResource FlatButtonStyle}" Height="Auto" Content="{x:Static p:Resources.ButtonMerge}" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Width="318" Click="btnImport_Click" />-->
+
+                    <!--<Button x:Name="btnImport" Style="{StaticResource FlatButtonStyle}" Height="Auto" Content="{x:Static p:Resources.ButtonMerge}" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Width="318" Click="btnImport_Click" />-->
+                    <!--<Button x:Name="btnOpenFolder" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Click="btnOpenFolder_Click" Content="Ouvrir le dossier de fusion" />-->
+                    <!--<Button x:Name="btnImport" Style="{StaticResource FlatButtonStyle}" Height="Auto" Content="{x:Static p:Resources.ButtonMerge}" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Width="318" Click="btnImport_Click" />-->
+                    <!--<Button x:Name="btnOpenFolder" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Click="btnOpenFolder_Click" Content="Ouvrir le dossier de fusion" />-->
+                    <!--<Button x:Name="btnImport" Style="{StaticResource FlatButtonStyle}" Height="Auto" Content="{x:Static p:Resources.ButtonMerge}" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Width="318" Click="btnImport_Click" />-->
+                    <!--<Button x:Name="btnOpenFolder" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Click="btnOpenFolder_Click" Content="Ouvrir le dossier de fusion" />-->
+                    <!--<Button x:Name="btnImport" Style="{StaticResource FlatButtonStyle}" Height="Auto" Content="{x:Static p:Resources.ButtonMerge}" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Width="318" Click="btnImport_Click" />-->
+                    <!--<Button x:Name="btnOpenFolder" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Click="btnOpenFolder_Click" Content="Ouvrir le dossier de fusion" />-->
+                    <Grid Margin="0, 8, 0, 8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <TextBlock FontWeight="DemiBold" FontSize="13" Margin="4" Grid.Row="0" Grid.Column="0" Text="{m:Lang Date_of_the_last_import}" x:Uid="ML_1278" />
+                        <!--<TextBlock FontWeight="DemiBold" FontSize="13" Margin="4" Grid.Row="1" Grid.Column="0" Text="Dernier utilisateur"/>-->
+                        <!--<TextBlock FontWeight="DemiBold" FontSize="13" Margin="4" Grid.Row="2" Grid.Column="0" Text="Records exported"/>-->
+                        <TextBlock FontWeight="DemiBold" FontSize="13" Margin="4,3.667,0,3.667" Grid.Row="3" Grid.Column="0" Text="{m:Lang Files_packaged}" HorizontalAlignment="Left" Width="135" x:Uid="ML_1279" />
+
+                        <TextBlock FontSize="13" Margin="4" Grid.Row="0" Grid.Column="1" Text="{Binding DateLastMerged, Mode=OneWay, Source={x:Static p:Settings.Default}}" />
+                        <!--<TextBlock FontSize="13" Margin="4,4.5,0,3" Grid.Row="1" Grid.Column="1" Text="{Binding Source={x:Static p:Settings.Default}, Path=UserLastMerged, Mode=OneWay}" HorizontalAlignment="Left" Width="7"></TextBlock>-->
+                        <!--<TextBlock FontSize="13" Margin="4" Grid.Row="2" Grid.Column="1" Text="{Binding RecordsLastMerged, Mode=OneWay, Source={x:Static p:Settings.Default}}"/>-->
+                        <TextBlock FontSize="13" Margin="4" Grid.Row="3" Grid.Column="1" Text="{Binding PackagesLastMerged, Mode=OneWay, Source={x:Static p:Settings.Default}}" />
+
+                        <!--<StackPanel Margin="30, 0, 0, 0" Grid.Row="0" Grid.Column="3" Grid.RowSpan="10"/>-->
+
+                    </Grid>
+                    <!--<Button x:Name="btnOpenFolder" Style="{StaticResource FlatButtonStyle}" Height="Auto" Content="{x:Static p:Resources.OpenMergeFolder}" MaxWidth="250" MinWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="14" Click="btnOpenFolder_Click" />-->
+                    <!--<StackPanel Height="5" />-->
+
+                </StackPanel>
+                <!--<TextBox TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Margin="13,7,0,127" FontSize="14" Text="1. Cliquer sur «Ouvrir le dossier de 2. Copier le paquet de données que vous voulez fusionner 3. Cliquer sur 'Fusionner" Grid.RowSpan="2"/>-->
+                <Button x:Name="btnImport" Background="#C00000" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Click="btnImport_Click" Content="{m:Lang _2_Import}" Margin="168,18,0,0" Grid.Row="1" Grid.Column="1" x:Uid="ML_1282" />
+                <Button x:Name="btnOpenFolder" Background="#C00000" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Click="btnOpenFolder_Click" Content="{m:Lang _1_Open_import_folder}" Margin="10,18,0,0" Grid.Row="1" Grid.ColumnSpan="2" x:Uid="ML_1283" />
+
+            </Grid>
+
+
+
+        </StackPanel>
+
+        <StackPanel Margin="8, 0, 8, 15" VerticalAlignment="Bottom">
+            <Label HorizontalAlignment="Left" Content="{m:Lang Import_status}" FontWeight="DemiBold" x:Uid="ML_1285" />
+            <TextBox MinHeight="150" VerticalScrollBarVisibility="Visible" x:Name="txtImportStatus" VerticalAlignment="Top" HorizontalAlignment="Stretch" IsReadOnly="True" Visibility="Visible" />
+            <StackPanel Height="10" />
+            <ProgressBar x:Name="importProgressBar" Value="0" Height="32" />
+
+        </StackPanel>
+    </Grid>
+</UserControl>

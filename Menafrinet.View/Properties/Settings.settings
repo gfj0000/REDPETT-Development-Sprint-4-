@@ -1,0 +1,117 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Menafrinet.View.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MapImagePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\Images\AfricaMapHome_NE.png</Value>
+    </Setting>
+    <Setting Name="LogoImagePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\Images\Logo2.tif</Value>
+    </Setting>
+    <Setting Name="SettingsButtonPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\Images\SettingsButton4.jpg</Value>
+    </Setting>
+    <Setting Name="SettingsButtonPath1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\Images\SettingsButton.jpg</Value>
+    </Setting>
+    <Setting Name="DateLastExport" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserLastExport" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProjectPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Projects\TrackingMaster\TrackingMasterNew.prj</Value>
+    </Setting>
+    <Setting Name="SystemLevel" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="DataExportFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DataExports</Value>
+    </Setting>
+    <Setting Name="DataImportFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DataImports</Value>
+    </Setting>
+    <Setting Name="SiteName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FETP Office</Value>
+    </Setting>
+    <Setting Name="RecordsLastExport" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Language" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">en-US</Value>
+    </Setting>
+    <Setting Name="DataImportArchiveFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Archives</Value>
+    </Setting>
+    <Setting Name="DataExportArchiveFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Archive</Value>
+    </Setting>
+    <Setting Name="PackagesLastMerged" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="RecordsLastMerged" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DateLastMerged" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserLastMerged" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SiteCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">aga</Value>
+    </Setting>
+    <Setting Name="JobAid1URL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Resources\Field Epidemiology Training Program Quick Guide.pdf</Value>
+    </Setting>
+    <Setting Name="JobAid1ButtonText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Aide-mémoire pour le collecte des échantillons</Value>
+    </Setting>
+    <Setting Name="WindowWidth" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">825</Value>
+    </Setting>
+    <Setting Name="WindowHeight" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">712</Value>
+    </Setting>
+    <Setting Name="WindowTop" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="WindowLeft" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="WindowState" Type="System.Windows.WindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="JobAid1Visibility" Type="System.Windows.Visibility" Scope="Application">
+      <Value Profile="(Default)">Visible</Value>
+    </Setting>
+    <Setting Name="JobAid2Visibility" Type="System.Windows.Visibility" Scope="Application">
+      <Value Profile="(Default)">Visible</Value>
+    </Setting>
+    <Setting Name="MenafrinetLogoVisibility" Type="System.Windows.Visibility" Scope="Application">
+      <Value Profile="(Default)">Visible</Value>
+    </Setting>
+    <Setting Name="NigerMOHLogoSmall" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Visible</Value>
+    </Setting>
+    <Setting Name="JobAid2ButtonText" Type="System.String" Scope="Application">
+      <Value Profile="(Default)"> Aide-mémoire pour l’utilisation du milieu T-I</Value>
+    </Setting>
+    <Setting Name="JobAid2URL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Projects\Menafrinet\Aide-memoire milieu T-I  avril 2014.doc</Value>
+    </Setting>
+    <Setting Name="Graduate" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\Images\Graduate.JPG</Value>
+    </Setting>
+    <Setting Name="ApplicationName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReDPeTT</Value>
+    </Setting>
+    <Setting Name="SettingsButton4" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\Images\SettingsButton4.jpg</Value>
+    </Setting>
+    <Setting Name="Setting_PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gfj</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

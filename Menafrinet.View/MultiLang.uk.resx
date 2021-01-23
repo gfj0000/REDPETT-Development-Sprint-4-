@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_67" xml:space="preserve">
+    <value>Пошук</value>
+    <comment>3</comment>
+  </data>
+  <data name="_42" xml:space="preserve">
+    <value>Записи</value>
+    <comment>3</comment>
+  </data>
+  <data name="_77" xml:space="preserve">
+    <value>ОГЛЯД</value>
+    <comment>3</comment>
+  </data>
+  <data name="_78" xml:space="preserve">
+    <value>Класифікація проектів:</value>
+    <comment>3</comment>
+  </data>
+  <data name="_80" xml:space="preserve">
+    <value>Початкові ICD10 ім'я:</value>
+    <comment>3</comment>
+  </data>
+  <data name="_53" xml:space="preserve">
+    <value>Імпорт</value>
+    <comment>3</comment>
+  </data>
+  <data name="_94" xml:space="preserve">
+    <value>Стан імпортування</value>
+    <comment>3</comment>
+  </data>
+  <data name="_54" xml:space="preserve">
+    <value>Експорт</value>
+    <comment>3</comment>
+  </data>
+  <data name="_117" xml:space="preserve">
+    <value>Ім'я резидента:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_59" xml:space="preserve">
+    <value>Опції</value>
+    <comment>7</comment>
+  </data>
+  <data name="_60" xml:space="preserve">
+    <value>Новий запис</value>
+    <comment>3</comment>
+  </data>
+  <data name="_58" xml:space="preserve">
+    <value>Вихід</value>
+    <comment>2</comment>
+  </data>
+  <data name="_47" xml:space="preserve">
+    <value>Головна</value>
+    <comment>3</comment>
+  </data>
+  <data name="_57" xml:space="preserve">
+    <value>Звіти</value>
+    <comment>3</comment>
+  </data>
+  <data name="_110" xml:space="preserve">
+    <value>Код ICD10:</value>
+    <comment>3</comment>
+  </data>
+  <data name="_111" xml:space="preserve">
+    <value>Університет / інститут:</value>
+    <comment>3</comment>
+  </data>
+  <data name="_112" xml:space="preserve">
+    <value>Домен:</value>
+    <comment>3</comment>
+  </data>
+  <data name="_113" xml:space="preserve">
+    <value>Місто:</value>
+    <comment>3</comment>
+  </data>
+  <data name="_116" xml:space="preserve">
+    <value>Звіти</value>
+    <comment>3</comment>
+  </data>
+  <data name="_142" xml:space="preserve">
+    <value>Головна</value>
+    <comment>3</comment>
+  </data>
+  <data name="_121" xml:space="preserve">
+    <value>Скопіюйте та вставте пакет даних або кілька пакетів у це вікно, яке потрібно імпортувати.</value>
+    <comment>2</comment>
+  </data>
+  <data name="_134" xml:space="preserve">
+    <value>Експортування резидентів...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_99" xml:space="preserve">
+    <value>Маршрут FETP</value>
+    <comment>2</comment>
+  </data>
+  <data name="_148" xml:space="preserve">
+    <value>&lt;th style = "width: 80px;"&gt; Ведуча когорта &lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_149" xml:space="preserve">
+    <value>&lt;th style = "ширина: 90px;"&gt; Повне ім'я наставника &lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_150" xml:space="preserve">
+    <value>&lt;th style = "width: 90px;"&gt; Повне ім'я супервізора &lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_151" xml:space="preserve">
+    <value>&lt;th style = "width: 60px;"&gt; Створено &lt;/th&gt;</value>
+    <comment>7</comment>
+  </data>
+  <data name="_178" xml:space="preserve">
+    <value>&lt;th style = "width: 60px;"&gt; Оновлено &lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_144" xml:space="preserve">
+    <value>ДОДАНО проекти...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_180" xml:space="preserve">
+    <value>ДОДАНО Консультанти...</value>
+    <comment>7</comment>
+  </data>
+  <data name="_181" xml:space="preserve">
+    <value>ДОДАНО Мешканці...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_182" xml:space="preserve">
+    <value>Архівування: </value>
+    <comment>2</comment>
+  </data>
+  <data name="_183" xml:space="preserve">
+    <value>&lt;th style = "width: 90px;"&gt; Повне ім'я супервізора &lt;/th&gt;</value>
+    <comment>7</comment>
+  </data>
+  <data name="_192" xml:space="preserve">
+    <value>ДОДАНО Мешканці...</value>
+    <comment>7</comment>
+  </data>
+  <data name="_193" xml:space="preserve">
+    <value>Експортні консультанти ...</value>
+    <comment>7</comment>
+  </data>
+  <data name="_199" xml:space="preserve">
+    <value>ДОДАНО Мешканці...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_62" xml:space="preserve">
+    <value>Цей запис був оновлений і потребує перегляду.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_63" xml:space="preserve">
+    <value>Цей проект має подібну класифікацію проектів та присвоєний дату.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_64" xml:space="preserve">
+    <value>Початкова дата</value>
+    <comment>6</comment>
+  </data>
+  <data name="_65" xml:space="preserve">
+    <value>Дата закінчення</value>
+    <comment>6</comment>
+  </data>
+  <data name="_66" xml:space="preserve">
+    <value>Очистити</value>
+    <comment>6</comment>
+  </data>
+  <data name="_38" xml:space="preserve">
+    <value>      Новий запис</value>
+    <comment>6</comment>
+  </data>
+  <data name="_41" xml:space="preserve">
+    <value>Друк</value>
+    <comment>6</comment>
+  </data>
+  <data name="_68" xml:space="preserve">
+    <value>Повне ім'я</value>
+    <comment>6</comment>
+  </data>
+  <data name="_69" xml:space="preserve">
+    <value>Професійна приналежність</value>
+    <comment>6</comment>
+  </data>
+  <data name="_70" xml:space="preserve">
+    <value>Наставник</value>
+    <comment>6</comment>
+  </data>
+  <data name="_71" xml:space="preserve">
+    <value>Супервайзер</value>
+    <comment>6</comment>
+  </data>
+  <data name="_72" xml:space="preserve">
+    <value>Мобільний телефон</value>
+    <comment>6</comment>
+  </data>
+  <data name="_73" xml:space="preserve">
+    <value>Електронна пошта консультанта</value>
+    <comment>6</comment>
+  </data>
+  <data name="_15" xml:space="preserve">
+    <value>Статус</value>
+    <comment>6</comment>
+  </data>
+  <data name="_74" xml:space="preserve">
+    <value>Переглянуто</value>
+    <comment>6</comment>
+  </data>
+  <data name="_75" xml:space="preserve">
+    <value>Створено</value>
+    <comment>6</comment>
+  </data>
+  <data name="_76" xml:space="preserve">
+    <value>Оновлено</value>
+    <comment>6</comment>
+  </data>
+  <data name="_79" xml:space="preserve">
+    <value>Підозрювана хвороба</value>
+    <comment>6</comment>
+  </data>
+  <data name="_81" xml:space="preserve">
+    <value>Категорія хвороби:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_82" xml:space="preserve">
+    <value>Запис, введений користувачем:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_83" xml:space="preserve">
+    <value>Посібник користувача ReDPeTT</value>
+    <comment>6</comment>
+  </data>
+  <data name="_84" xml:space="preserve">
+    <value>Статус об'єднання</value>
+    <comment>6</comment>
+  </data>
+  <data name="_85" xml:space="preserve">
+    <value>Резидент</value>
+    <comment>6</comment>
+  </data>
+  <data name="_86" xml:space="preserve">
+    <value>Когорта</value>
+    <comment>6</comment>
+  </data>
+  <data name="_87" xml:space="preserve">
+    <value>Попередня дата імпорту</value>
+    <comment>6</comment>
+  </data>
+  <data name="_88" xml:space="preserve">
+    <value>Дні</value>
+    <comment>6</comment>
+  </data>
+  <data name="_89" xml:space="preserve">
+    <value>Довідка</value>
+    <comment>6</comment>
+  </data>
+  <data name="_90" xml:space="preserve">
+    <value>Дата останнього імпорту</value>
+    <comment>6</comment>
+  </data>
+  <data name="_91" xml:space="preserve">
+    <value>Файли упаковані:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_92" xml:space="preserve">
+    <value>2. Імпорт</value>
+    <comment>6</comment>
+  </data>
+  <data name="_93" xml:space="preserve">
+    <value>1. Відкрийте папку імпорту</value>
+    <comment>6</comment>
+  </data>
+  <data name="_95" xml:space="preserve">
+    <value>Повне ім'я</value>
+    <comment>6</comment>
+  </data>
+  <data name="_96" xml:space="preserve">
+    <value>Номер когорти</value>
+    <comment>6</comment>
+  </data>
+  <data name="_97" xml:space="preserve">
+    <value>Університет / навчальний заклад</value>
+    <comment>6</comment>
+  </data>
+  <data name="_98" xml:space="preserve">
+    <value>Статус випускника</value>
+    <comment>6</comment>
+  </data>
+  <data name="_100" xml:space="preserve">
+    <value>Навчальник електронної пошти</value>
+    <comment>6</comment>
+  </data>
+  <data name="_101" xml:space="preserve">
+    <value>1. Створіть пакет даних</value>
+    <comment>6</comment>
+  </data>
+  <data name="_102" xml:space="preserve">
+    <value>Дата останнього експорту</value>
+    <comment>6</comment>
+  </data>
+  <data name="_103" xml:space="preserve">
+    <value>Визначити</value>
+    <comment>6</comment>
+  </data>
+  <data name="_104" xml:space="preserve">
+    <value>Додати резидентів і консультантів</value>
+    <comment>6</comment>
+  </data>
+  <data name="_105" xml:space="preserve">
+    <value>Дата закінчення</value>
+    <comment>6</comment>
+  </data>
+  <data name="_106" xml:space="preserve">
+    <value>Початкова дата</value>
+    <comment>6</comment>
+  </data>
+  <data name="_107" xml:space="preserve">
+    <value>Стан експорту</value>
+    <comment>6</comment>
+  </data>
+  <data name="_61" xml:space="preserve">
+    <value>_Налаштування користувача</value>
+    <comment>6</comment>
+  </data>
+  <data name="_52" xml:space="preserve">
+    <value>Проекти</value>
+    <comment>6</comment>
+  </data>
+  <data name="_55" xml:space="preserve">
+    <value>Мешканці</value>
+    <comment>6</comment>
+  </data>
+  <data name="_56" xml:space="preserve">
+    <value>Консультанти</value>
+    <comment>6</comment>
+  </data>
+  <data name="_1" xml:space="preserve">
+    <value>об'єднати</value>
+    <comment>6</comment>
+  </data>
+  <data name="_2" xml:space="preserve">
+    <value>Вік</value>
+    <comment>6</comment>
+  </data>
+  <data name="_3" xml:space="preserve">
+    <value>Класифікація</value>
+    <comment>6</comment>
+  </data>
+  <data name="_4" xml:space="preserve">
+    <value>Створено на</value>
+    <comment>6</comment>
+  </data>
+  <data name="_6" xml:space="preserve">
+    <value>Тиждень Епі</value>
+    <comment>6</comment>
+  </data>
+  <data name="_7" xml:space="preserve">
+    <value>Результат остаточної лабораторії</value>
+    <comment>6</comment>
+  </data>
+  <data name="_8" xml:space="preserve">
+    <value>Ім'я</value>
+    <comment>6</comment>
+  </data>
+  <data name="_9" xml:space="preserve">
+    <value>Здоров'я</value>
+    <comment>6</comment>
+  </data>
+  <data name="_10" xml:space="preserve">
+    <value>Прізвище</value>
+    <comment>6</comment>
+  </data>
+  <data name="_11" xml:space="preserve">
+    <value>Виконано LP</value>
+    <comment>6</comment>
+  </data>
+  <data name="_12" xml:space="preserve">
+    <value>Результат</value>
+    <comment>6</comment>
+  </data>
+  <data name="_13" xml:space="preserve">
+    <value>Звітний район</value>
+    <comment>6</comment>
+  </data>
+  <data name="_14" xml:space="preserve">
+    <value>Секс</value>
+    <comment>6</comment>
+  </data>
+  <data name="_16" xml:space="preserve">
+    <value>Оновлено</value>
+    <comment>6</comment>
+  </data>
+  <data name="_17" xml:space="preserve">
+    <value>Рік</value>
+    <comment>6</comment>
+  </data>
+  <data name="_18" xml:space="preserve">
+    <value>створювати пакет даних</value>
+    <comment>6</comment>
+  </data>
+  <data name="_19" xml:space="preserve">
+    <value>Експортувати цільовий сайт:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_20" xml:space="preserve">
+    <value>Експорт типу призначення:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_21" xml:space="preserve">
+    <value>Дата закінчення:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_22" xml:space="preserve">
+    <value>Дата останнього експорту:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_23" xml:space="preserve">
+    <value>Ідентифікатор користувача останнього експорту:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_24" xml:space="preserve">
+    <value>відкрити папку transmisison</value>
+    <comment>6</comment>
+  </data>
+  <data name="_25" xml:space="preserve">
+    <value>очистити старі файли передачі</value>
+    <comment>6</comment>
+  </data>
+  <data name="_26" xml:space="preserve">
+    <value>Експортовані записи:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_27" xml:space="preserve">
+    <value>Дата початку:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_28" xml:space="preserve">
+    <value>Статус експорту:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_29" xml:space="preserve">
+    <value>Тип експорту:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_30" xml:space="preserve">
+    <value>Експортувати всі</value>
+    <comment>6</comment>
+  </data>
+  <data name="_31" xml:space="preserve">
+    <value>Експортувати всі останні</value>
+    <comment>6</comment>
+  </data>
+  <data name="_32" xml:space="preserve">
+    <value>Дати</value>
+    <comment>6</comment>
+  </data>
+  <data name="_33" xml:space="preserve">
+    <value>Місяць</value>
+    <comment>6</comment>
+  </data>
+  <data name="_34" xml:space="preserve">
+    <value>Дата останнього злиття:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_35" xml:space="preserve">
+    <value>Ідентифікатор користувача останнього об'єднання:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_36" xml:space="preserve">
+    <value>Система управління базою даних нагляду за окремими випадками</value>
+    <comment>6</comment>
+  </data>
+  <data name="_37" xml:space="preserve">
+    <value>Статус об'єднання:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_39" xml:space="preserve">
+    <value>відкрити папку злиття</value>
+    <comment>6</comment>
+  </data>
+  <data name="_40" xml:space="preserve">
+    <value>Файли пакетів об'єднані:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_43" xml:space="preserve">
+    <value>Об’єднані записи:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_44" xml:space="preserve">
+    <value>Статус об'єднання</value>
+    <comment>6</comment>
+  </data>
+  <data name="_108" xml:space="preserve">
+    <value>Тип проекту:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_109" xml:space="preserve">
+    <value>Когорта</value>
+    <comment>6</comment>
+  </data>
+  <data name="_114" xml:space="preserve">
+    <value>Мешканці</value>
+    <comment>6</comment>
+  </data>
+  <data name="_115" xml:space="preserve">
+    <value>Консультації</value>
+    <comment>6</comment>
+  </data>
+  <data name="_45" xml:space="preserve">
+    <value>Аналіз</value>
+    <comment>6</comment>
+  </data>
+  <data name="_46" xml:space="preserve">
+    <value>Введення даних</value>
+    <comment>6</comment>
+  </data>
+  <data name="_48" xml:space="preserve">
+    <value>Об'єднати</value>
+    <comment>6</comment>
+  </data>
+  <data name="_49" xml:space="preserve">
+    <value>Злиття даних</value>
+    <comment>6</comment>
+  </data>
+  <data name="_50" xml:space="preserve">
+    <value>Трансмісія</value>
+    <comment>6</comment>
+  </data>
+  <data name="_141" xml:space="preserve">
+    <value>повідомлення</value>
+    <comment>6</comment>
+  </data>
+  <data name="_119" xml:space="preserve">
+    <value>У папці імпорту немає пакетів даних.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_118" xml:space="preserve">
+    <value>Неможливо об'єднати дані, якщо налаштування користувача неправильно налаштовані.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_122" xml:space="preserve">
+    <value>Відкриття - розшифрування пакету ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_120" xml:space="preserve">
+    <value>Пакет {0} не був включений до об'єднання через неправильне ім'я файлу або помилки перевірки.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_123" xml:space="preserve">
+    <value>Об'єднання даних для:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_124" xml:space="preserve">
+    <value>Проекти A D D E D ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_125" xml:space="preserve">
+    <value>Консультанти A D D E D ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_126" xml:space="preserve">
+    <value>Учні A D D E D ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_127" xml:space="preserve">
+    <value>Учнівфільтр</value>
+    <comment>6</comment>
+  </data>
+  <data name="_128" xml:space="preserve">
+    <value>Проекти відфільтровані для</value>
+    <comment>6</comment>
+  </data>
+  <data name="_129" xml:space="preserve">
+    <value>Імпорт успішно завершено.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_130" xml:space="preserve">
+    <value>Експортувати обробку ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_138" xml:space="preserve">
+    <value>Визначена інформація про учасників ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_139" xml:space="preserve">
+    <value>Мешканці де-ідентифікуються</value>
+    <comment>6</comment>
+  </data>
+  <data name="_131" xml:space="preserve">
+    <value>Експортні консультанти ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_132" xml:space="preserve">
+    <value>Консультанти де-ідентифіковані</value>
+    <comment>6</comment>
+  </data>
+  <data name="_133" xml:space="preserve">
+    <value>Експорт проектів ...</value>
+    <comment>6</comment>
+  </data>
+  <data name="_135" xml:space="preserve">
+    <value>Проекти де-ідентифіковані</value>
+    <comment>6</comment>
+  </data>
+  <data name="_136" xml:space="preserve">
+    <value>Експорт успішно завершено.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_137" xml:space="preserve">
+    <value>Під час експортування сталася помилка:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_140" xml:space="preserve">
+    <value>Скопіюйте файл ReDPeTT з папки Exports.</value>
+    <comment>6</comment>
+  </data>
+  <data name="_177" xml:space="preserve">
+    <value>Створено: &lt;b&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_176" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt; Список рядків консультантів &lt;/p&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_155" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: bold;"&gt; Дата друку:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_175" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: bold;"&gt; Фільтр:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_173" xml:space="preserve">
+    <value>&lt;th style = "width: 180px;"&gt; Повне ім'я &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_172" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; Професійна приналежність &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_171" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; Ментор &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_170" xml:space="preserve">
+    <value>&lt;th style = "width: 30px;"&gt; Супервайзер &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_163" xml:space="preserve">
+    <value>&lt;th style = "width: 30px;"&gt; Мобільний телефон &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_169" xml:space="preserve">
+    <value>&lt;th style = "ширина: 100px;"&gt; електронна пошта консультанта &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_174" xml:space="preserve">
+    <value>&lt;th style = "width: 100px;"&gt; Створено &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_152" xml:space="preserve">
+    <value>&lt;th style = "width: 100px;"&gt; Оновлено &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_157" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: bold; clear: left; text-decoration: underline;"&gt; Інструмент відстеження проектних ресурсів (ReDPeTT) &lt;/p&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_156" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt; Список рядків проекту &lt;/p&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_153" xml:space="preserve">
+    <value>&lt;th style = "width: 180px;"&gt; Назва проекту &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_146" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; Призначена дата &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_147" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; Головний резидент &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_167" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: напівжирний; text-decoration: underline;"&gt; Resident Line List &lt;/p&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_168" xml:space="preserve">
+    <value>   &lt;p style = "font-size: 13pt; font-weight: bold;"&gt; Фільтр:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_158" xml:space="preserve">
+    <value>&lt;th style = "width: 180px;"&gt; Повне ім'я &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_159" xml:space="preserve">
+    <value>&lt;th style = "width: 180px;"&gt; Когортний номер &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_160" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; Університет / навчальний заклад &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_161" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; Статус випуску &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_162" xml:space="preserve">
+    <value>&lt;th style = "width: 140px;"&gt; FETP Track &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_164" xml:space="preserve">
+    <value>&lt;th style = "ширина: 30px;"&gt; Електронна адреса стажера &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_166" xml:space="preserve">
+    <value>&lt;th style = "width: 100px;"&gt; Створено &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_179" xml:space="preserve">
+    <value>Об'єднання даних для:</value>
+    <comment>6</comment>
+  </data>
+  <data name="_195" xml:space="preserve">
+    <value>Додайте мешканців, консультантів та місця роботи</value>
+    <comment>6</comment>
+  </data>
+  <data name="_194" xml:space="preserve">
+    <value>Статус експорту</value>
+    <comment>6</comment>
+  </data>
+  <data name="_191" xml:space="preserve">
+    <value>&lt;th style = "width: 90px;"&gt; Статус проекту &lt;/th&gt;</value>
+    <comment>6</comment>
+  </data>
+  <data name="_200" xml:space="preserve">
+    <value>Визначена інформація про учасників ...</value>
+    <comment>7</comment>
+  </data>
+  <data name="_201" xml:space="preserve">
+    <value>Налаштування сайту</value>
+    <comment>2</comment>
+  </data>
+  <data name="_202" xml:space="preserve">
+    <value>Налаштування користувача</value>
+    <comment>2</comment>
+  </data>
+  <data name="_203" xml:space="preserve">
+    <value>       Налаштування мови</value>
+    <comment>2</comment>
+  </data>
+  <data name="_205" xml:space="preserve">
+    <value>   &lt;p style="font-size: 13pt; font-weight: bold; text-decoration: underline;"&gt;Список ліній передньої лінії&lt;/p&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_204" xml:space="preserve">
+    <value>Передня лінія додана ...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_207" xml:space="preserve">
+    <value>Експорт передньої лінії даних ...</value>
+    <comment>2</comment>
+  </data>
+  <data name="_208" xml:space="preserve">
+    <value>Видалено</value>
+    <comment>2</comment>
+  </data>
+  <data name="_209" xml:space="preserve">
+    <value>Налаштування програми змінено. Зміни налаштувань користувача набудуть повноцінної сили під час наступного запуску програми. Закрийте програму та перезапустіть.</value>
+    <comment>2</comment>
+  </data>
+  <data name="_210" xml:space="preserve">
+    <value>Сповіщення REDPeTT:</value>
+    <comment>2</comment>
+  </data>
+  <data name="_211" xml:space="preserve">
+    <value>Цей проект не був встановлений належним чином. Переконайтесь, що програма встановлена правильно.</value>
+    <comment>2</comment>
+  </data>
+  <data name="_198" xml:space="preserve">
+    <value>1. Створіть пакет даних</value>
+    <comment>5</comment>
+  </data>
+  <data name="_196" xml:space="preserve">
+    <value>Остання дата експорту:</value>
+    <comment>5</comment>
+  </data>
+  <data name="_197" xml:space="preserve">
+    <value>Де-ідентифікувати</value>
+    <comment>5</comment>
+  </data>
+  <data name="_212" xml:space="preserve">
+    <value>&lt;br /&gt; Установа: &lt;b&gt;</value>
+    <comment>5</comment>
+  </data>
+  <data name="_216" xml:space="preserve">
+    <value>&lt;br /&gt; Номер когорти: &lt;b&gt;</value>
+    <comment>5</comment>
+  </data>
+  <data name="_217" xml:space="preserve">
+    <value>&lt;br /&gt; Мешканець: &lt;b&gt;</value>
+    <comment>5</comment>
+  </data>
+  <data name="_218" xml:space="preserve">
+    <value>&lt;br /&gt; Дата закінчення звітності: &lt;b&gt;</value>
+    <comment>5</comment>
+  </data>
+  <data name="_219" xml:space="preserve">
+    <value>&lt;br /&gt; Дата початку звітності: &lt;b&gt;</value>
+    <comment>5</comment>
+  </data>
+  <data name="_206" xml:space="preserve">
+    <value>Передня лінія</value>
+    <comment>5</comment>
+  </data>
+  <data name="_220" xml:space="preserve">
+    <value>(Виявлено)</value>
+    <comment>5</comment>
+  </data>
+  <data name="_221" xml:space="preserve">
+    <value>(ЗАВЕРШЕНО)</value>
+    <comment>2</comment>
+  </data>
+  <data name="_222" xml:space="preserve">
+    <value>Експорт даних проекту ...</value>
+    <comment>5</comment>
+  </data>
+  <data name="_224" xml:space="preserve">
+    <value>Формат виводу: переглядач звітів або інформація про Epi</value>
+    <comment>5</comment>
+  </data>
+  <data name="_227" xml:space="preserve">
+    <value>&lt;th style="width: 180px;"&gt;Дата початку когорти&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_228" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Дата закінчення когорти&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_229" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Повне ім'яe&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_230" xml:space="preserve">
+    <value>&lt;th style="width: 140px;"&gt;Електронна пошта&lt;/th&gt;</value>
+    <comment>2</comment>
+  </data>
+  <data name="_231" xml:space="preserve">
+    <value>Цей проект не був встановлений належним чином. Переконайтесь, що програма встановлена правильно</value>
+    <comment>5</comment>
+  </data>
+  <data name="_225" xml:space="preserve">
+    <value>С</value>
+    <comment>5</comment>
+  </data>
+  <data name="_226" xml:space="preserve">
+    <value>оорт</value>
+    <comment>5</comment>
+  </data>
+  <data name="_232" xml:space="preserve">
+    <value>Настройок користувача</value>
+    <comment>3</comment>
+  </data>
+  <data name="_236" xml:space="preserve">
+    <value>Дата початку когорти</value>
+    <comment>5</comment>
+  </data>
+  <data name="_237" xml:space="preserve">
+    <value>Дата закінчення когорти</value>
+    <comment>5</comment>
+  </data>
+  <data name="_238" xml:space="preserve">
+    <value>Електронна пошта</value>
+    <comment>5</comment>
+  </data>
+  <data name="_234" xml:space="preserve">
+    <value>Налаштування користувача</value>
+    <comment>2</comment>
+  </data>
+  <data name="_235" xml:space="preserve">
+    <value>Налаштування мови</value>
+    <comment>2</comment>
+  </data>
+  <data name="_233" xml:space="preserve">
+    <value>Налаштування мови</value>
+    <comment>5</comment>
+  </data>
+  <data name="_239" xml:space="preserve">
+    <value>Повна: Додайте резидентів, консультантів та польові сайти</value>
+    <comment>2</comment>
+  </data>
+  <data name="_240" xml:space="preserve">
+    <value>Установа</value>
+    <comment>2</comment>
+  </data>
+  <data name="_241" xml:space="preserve">
+    <value>Додайте мешканців, консультантів та місця роботи</value>
+    <comment>7</comment>
+  </data>
+  <data name="_223" xml:space="preserve">
+    <value>Формат звіту</value>
+    <comment>2</comment>
+  </data>
+  <data name="_242" xml:space="preserve">
+    <value>Виберіть пункт</value>
+    <comment>2</comment>
+  </data>
+  <data name="_243" xml:space="preserve">
+    <value>Відео користувачів ReDPeTT</value>
+    <comment>5</comment>
+  </data>
+</root>

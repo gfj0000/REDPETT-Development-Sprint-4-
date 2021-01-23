@@ -1,0 +1,73 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <projectPath>
+    </projectPath>
+    <viewName>
+    </viewName>
+        <connectionString>zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7Sj9EN3Tw6gyoykYAJDAPcHJ6rLNwEgGzSEj5cfg70Xud6y+55hUItNrZYuimxUdGxVneu3Lpy/GJHHTgQ80WVoW0ZViVq6Bee5Is7ceU245lZVGw/lYlCB/QApbeKIBU=</connectionString>
+    <tableName>FichedeNotification1</tableName>
+    <customSQLQuery>SELECT FichedeNotification1.Drs AS Expr1, FichedeNotification1.Districts AS Expr2, Count(*) AS Cases, Sum(IIf(Evolution='2',1,0)) AS Deaths, Count(FichedeNotification1.ponctionlombaire) AS [Ponction Lombaire (n)], ([Ponction Lombaire (n)]/[Cases]*100) AS [Ponction Lombaire (pct)], Count(FichedeNotification1.DateEnvoiDS) AS [CSF to Laboratory (n)]
+FROM FichedeNotification1
+GROUP BY FichedeNotification1.Drs, FichedeNotification1.Districts;
+</customSQLQuery>
+    <advancedDataFilterCondition>District = Permenant_District and Permenant_District not = 'AAA' </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>True</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <lineListGadget top="40" left="93" collapsed="false" gadgetType="EpiDashboard.LineListControl" id="f404b4c7-5e88-455b-95fe-e7fc0fe0bff8">
+      <groupVariable>Region</groupVariable>
+      <maxRows>50</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>True</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Line List</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <dataFilters recordProcessScope="undeleted" />
+      <listFields>
+        <listField>Cases</listField>
+        <listField>Deaths</listField>
+        <listField>District</listField>
+        <listField>Lumbar Punctures (n)</listField>
+        <listField>Lumbar Punctures (pct)</listField>
+        <listField>Region</listField>
+        <listField>CSF to Laboratory (n)</listField>
+        <listField>NmA</listField>
+        <listField>NmW</listField>
+        <listField>NmX</listField>
+        <listField>Spn</listField>
+        <listField>Hib</listField>
+      </listFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>True</showCanvasSummaryInfo>
+    <showGadgetHeadings>True</showGadgetHeadings>
+    <showGadgetSettings>True</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>
+    </customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

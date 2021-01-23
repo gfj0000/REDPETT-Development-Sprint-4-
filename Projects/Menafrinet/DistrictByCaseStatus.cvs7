@@ -1,0 +1,160 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <projectPath>Menafrinet_NE.prj</projectPath>
+    <viewName>FichedeNotification</viewName>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules>
+      <rule ruleType="EpiDashboard.Rules.Rule_Recode">
+        <friendlyRule>Recode the values in AgeYear to Anne</friendlyRule>
+        <sourceColumnName>AgeYear</sourceColumnName>
+        <sourceColumnType>System.Double</sourceColumnType>
+        <destinationColumnName>Anne</destinationColumnName>
+        <destinationColumnType>System.String</destinationColumnType>
+        <tableColumns>3</tableColumns>
+        <elseValue>
+        </elseValue>
+        <shouldUseWildcards>False</shouldUseWildcards>
+        <shouldMaintainSortOrder>True</shouldMaintainSortOrder>
+        <recodeTable>
+          <recodeTableRow>
+            <recodeTableData>0</recodeTableData>
+            <recodeTableData>1</recodeTableData>
+            <recodeTableData>&amp;lt; 1 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>1</recodeTableData>
+            <recodeTableData>4</recodeTableData>
+            <recodeTableData>1 - 4 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>5</recodeTableData>
+            <recodeTableData>9</recodeTableData>
+            <recodeTableData>5 - 9 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>10</recodeTableData>
+            <recodeTableData>14</recodeTableData>
+            <recodeTableData>10 - 14 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>15</recodeTableData>
+            <recodeTableData>19</recodeTableData>
+            <recodeTableData>15 - 19 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>20</recodeTableData>
+            <recodeTableData>24</recodeTableData>
+            <recodeTableData>20 - 24 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>25</recodeTableData>
+            <recodeTableData>44</recodeTableData>
+            <recodeTableData>25 - 44 Ans</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>45</recodeTableData>
+            <recodeTableData>100</recodeTableData>
+            <recodeTableData>&amp;gt;= 45</recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+          </recodeTableRow>
+          <recodeTableRow>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+            <recodeTableData>
+            </recodeTableData>
+          </recodeTableRow>
+        </recodeTable>
+      </rule>
+    </dashboardRules>
+  </dashboardHelper>
+  <Gadgets>
+    <frequencyGadget top="94" left="163" collapsed="False" gadgetType="EpiDashboard.CrosstabControl" id="9ecd60a6-3a16-49ec-bd46-bb49af32362c">
+      <mainVariable>District</mainVariable>
+      <crosstabVariable>FinalClassification</crosstabVariable>
+      <weightVariable>
+      </weightVariable>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <allValues>False</allValues>
+      <showListLabels>False</showListLabels>
+      <showConfLimits>True</showConfLimits>
+      <showCumulativePercent>True</showCumulativePercent>
+      <includeMissing>True</includeMissing>
+      <showStrataSummaryOnly>True</showStrataSummaryOnly>
+      <treatOutcomeAsContinuous>False</treatOutcomeAsContinuous>
+      <customHeading>Crosstabulation (MxN, 2x2)</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <layoutMode>vertical</layoutMode>
+      <rowColPercents>True</rowColPercents>
+      <showHeatMap>False</showHeatMap>
+      <breakType>0</breakType>
+      <break1>0</break1>
+      <break2>20</break2>
+      <break3>40</break3>
+      <break4>60</break4>
+      <break5>80</break5>
+      <startColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+      </startColor>
+      <endColor>
+        <red>252</red>
+        <green>90</green>
+        <blue>84</blue>
+      </endColor>
+      <dataFilters recordProcessScope="undeleted" />
+    </frequencyGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>False</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Classification du Cas</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

@@ -1,0 +1,215 @@
+﻿<UserControl x:Class="Menafrinet.View.Controls.TransmitPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:view="clr-namespace:Menafrinet.View"
+             xmlns:vm="clr-namespace:Menafrinet.ViewModel;assembly=Menafrinet.ViewModel"
+             xmlns:locations="clr-namespace:Menafrinet.ViewModel.Locations;assembly=Menafrinet.ViewModel"
+             xmlns:p="clr-namespace:Menafrinet.View.Properties"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="600" Loaded="UserControl_Loaded" xmlns:ml="clr-namespace:Menafrinet.View.ml_resources" xmlns:m="clr-namespace:MultiLanguageMarkup">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type locations:District}">
+            <WrapPanel>
+                <TextBlock Text="{Binding Code}" />
+                <TextBlock Text=" - " />
+                <TextBlock Text="{Binding Name}" />
+            </WrapPanel>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type locations:Region}">
+            <WrapPanel>
+                <TextBlock Text="{Binding Code}" />
+                <TextBlock Text=" - " />
+                <TextBlock Text="{Binding Name}" />
+            </WrapPanel>
+        </DataTemplate>
+
+    </UserControl.Resources>
+    <Grid x:Name="grdHome" VerticalAlignment="Stretch" Height="Auto" SizeChanged="grdHome_SizeChanged" Margin="0,0,0,36">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="grdMain" Margin="8, 0, 0, 0" Grid.Row="1" Grid.Column="3" Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}, Path=ActualHeight}">
+
+            <Grid x:Name="grdRecordsLayout">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <!--<TextBlock Grid.Row="0" Grid.ColumnSpan="4" Foreground="#C00000" Style="{StaticResource PageHeaderTextBlockStyle}" Text="{m:Lang res27}" x:Uid="ML_1397" />-->
+                    <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Foreground="#C00000" Style="{StaticResource PageHeaderTextBlockStyle}" Text="{m:Lang res27}" x:Uid="ML_1397" />
+                    <StackPanel Height="45">
+                        <!--<Button x:Name="btnExport" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Width="318" Click="btnExport_Click" Content="Créer un paquet de données">-->
+                        <!--</Button>-->
+                        <Button x:Name="OpenModeEmploi" Margin="6,0,0,0" Background="#C00000" Style="{StaticResource FlatButtonStyle}" Height="25" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Width="318" Click="btnOpenModeEmploi" Content="{m:Lang res28}" x:Uid="ML_1399" />
+                        <!--<Button Content="Mode d emploi" Click="btnOpenModeEmploi" HorizontalAlignment="Left" Width="92"/>-->
+
+                    </StackPanel>
+                    <!--<TextBox TextWrapping="Wrap" IsReadOnly="True" Height="118" VerticalScrollBarVisibility="Auto" Text="Mode d'emploi: 
+                             
+                     1. Sélectionner le type d'exportation (si exportation par dates, entrer la date de début et date de fin) 
+                     2. (Only for NRL, MoH, and network system levels)**: Sélectionner le type de destination pour l'exportation 
+                     3. (Only for NRL, MoH, and network system levels)**: Sélectionner le site de destination pour l'exportation 
+                     4. Cliquer sur «Créer un paquet de données »  
+                     5. Après avoir créé le paquet de données, cliquer sur «Ouvrir le dossier de transmission», et sélectionner le paquet de données (fichier .edp7) que vous voulez transmettre.
+                     6. Copier ce paquet de données en pièce jointe à un courriel ou d'une clé USB pour le transmettre" Margin="2,0,186,0"/>-->
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Grid x:Name="grdExport">
+                            <!--<Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" MinHeight="100"></RowDefinition>
+                                <RowDefinition Height="Auto" MinHeight="122"></RowDefinition>
+                            </Grid.RowDefinitions>-->
+
+                            <!--<Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>-->
+
+                            <StackPanel Grid.Row="0" Grid.Column="0" Margin="8,0,8.667,0" Visibility="Hidden">
+                                <!-- Type d'exportation -->
+                                <!-- Type d'exportation -->
+                                <!-- Type d'exportation -->
+                                <!--<Label Content="Type d'exportation" Height="28" Visibility="Hidden" />
+                                <ListBox x:Name="listboxExportTypes" Height="72" HorizontalAlignment="Left" Width="180" ItemsSource="{Binding}" SelectedIndex="0" ForceCursor="False" Visibility="Hidden">-->
+                                <!--<ListBoxItem IsSelected="False" x:Name="lbiMonth" IsEnabled="True" Content="Mois" />-->
+                                <!--<ListBoxItem Content="{x:Static p:Resources.ExportTypeDates}" IsSelected="False" x:Name="lbiDates" />
+                                    <ListBoxItem IsSelected="False" x:Name="lbiAllSinceLast" Content="Exporter tout depuis la dernière" />
+                                    <ListBoxItem IsSelected="False" x:Name="lbiAll" Content="Exporter tout" />
+                                </ListBox>
+                            </StackPanel>-->
+
+                                <!--<StackPanel Grid.Row="0" Grid.Column="1" Margin="8, 0, 8, 0">
+                                -->
+                                <!-- Date de Debut -->
+
+                                <!-- Date de Fin -->
+                                <!--
+                            </StackPanel>-->
+
+                                <!--<StackPanel x:Name="panelLabExportType" Grid.Row="0" Grid.Column="3" Margin="490.333,-7,-652.333,7" Visibility="Hidden">
+                                <Label Content="Type de destination pour l'exportation" Visibility="Hidden" />
+                                <ComboBox x:Name="cmbDestinationType" ItemsSource="{Binding SiteTypes}" />-->
+
+                                <!--<Label Content="Site de destination pour l'exportation" />
+                                <ComboBox x:Name="cmbDestination" ItemsSource="{Binding ElementName=cmbDestinationType,Path=SelectedItem.Sites}" DataContext="{Binding}">
+                                    <ComboBox.Style>
+                                        <Style TargetType="ComboBox">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding ElementName=cmbDestinationType, Path=SelectedIndex}" Value="2">
+                                                    <Setter Property="SelectedIndex" Value="-1" />
+                                                    <Setter Property="IsEnabled" Value="False" />
+                                                </DataTrigger>
+
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ComboBox.Style>
+                                </ComboBox>-->
+
+                                <!--<ListBox x:Name="listboxExportDestinations" Height="60" HorizontalAlignment="Left" Width="109" ItemsSource="{Binding}" SelectedIndex="0" ForceCursor="False">
+                                    <ListBoxItem Content="Month" IsSelected="False" x:Name="lbiMonth" IsEnabled="True" />
+                                    <ListBoxItem Content="Dates" IsSelected="False" x:Name="lbiDates" />
+                                    <ListBoxItem Content="Export all" IsSelected="False" x:Name="lbiAll" />
+                                </ListBox>-->
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="6,16,0.667,0">
+
+                                <!-- créer un paquet de données -->
+                                <Button x:Name="btnExport" Background="#C00000" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="16" Width="318" Click="btnExport_Click" Content="{m:Lang _1_Create_a_Data_Package}" x:Uid="ML_1405">
+                                </Button>
+                                <Grid Margin="0, 8, 0, 8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock FontWeight="DemiBold" FontSize="13" Margin="4" Grid.Row="0" Grid.Column="0" Text="{m:Lang Last_Export_Date}" x:Uid="ML_1412" />
+                                    <!--<TextBlock FontWeight="DemiBold" FontSize="13" Margin="4" Grid.Row="1" Grid.Column="0" Text="Last user"/>-->
+                                    <!--<TextBlock FontWeight="DemiBold" FontSize="13" Margin="4" Grid.Row="1" Grid.Column="0" Text="Records exportted"/>-->
+
+                                    <TextBlock FontSize="13" Margin="4" Grid.Row="0" Grid.Column="1" Text="{Binding DateLastExport, Mode=OneWay, Source={x:Static p:Settings.Default}}" />
+                                    <!--<TextBlock FontSize="13" Margin="4" Grid.Row="1" Grid.Column="1" Text="{Binding UserLastExport, Mode=OneWay, Source={x:Static p:Settings.Default}}"/>-->
+                                    <!--<TextBlock FontSize="13" Margin="4" Grid.Row="1" Grid.Column="1" Text="{Binding RecordsLastExport, Mode=OneWay, Source={x:Static p:Settings.Default}}"/>-->
+
+                                </Grid>
+
+                                <!--<Button FontSize="18" Margin="446,140,40,0" MaxWidth="250" MinWidth="250" x:Name="ExportCopy_btn" Content="copy data files" VerticalAlignment="Top" Grid.Row="1" Height="32" MouseLeftButtonUp="ExportCopy" Visibility="Hidden" />-->
+                                <!--<StackPanel Height="10" />-->
+                                <!--
+                                <StackPanel Height="5" />
+                                -->
+                                <!--<Button x:Name="btnOpenFolder" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="250" MinWidth="200" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="14" Click="btnOpenFolder_Click" Content="Ouvrir le dossier de transmission" />-->
+                                <!--
+                                <StackPanel Height="10" />-->
+                                <!--<Button x:Name="btnClean" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="17" Click="btnClean_Click" Content="Purger les anciens fichiers de transmission" Width="325" />-->
+                                <TextBox Visibility="Collapsed" Grid.Row="2" Height="127" HorizontalAlignment="Left" Name="txtTransmit2" VerticalAlignment="Top" Width="682" Text="" IsEnabled="True" DataContext="{Binding}" FontFamily="Arial" />
+                            </StackPanel>
+
+                            <StackPanel Margin="30.333,0,20.667,0" Grid.Row="0" Grid.Column="3" />
+                            <Rectangle Name="DeidentifyBox" Fill="#FFF9F9F9" HorizontalAlignment="Left" Height="85" Margin="526,-45,-236,0" Stroke="#FFB09C9C" VerticalAlignment="Top" Width="302" Opacity="0.65" />
+                            <CheckBox Name="deidentify" Content="{m:Lang De_Identify}" HorizontalAlignment="Left" Margin="547,-26,-46,0" VerticalAlignment="Top" Grid.RowSpan="2" x:Uid="ML_1417" />
+                            <CheckBox Name="AddResidents" Content="{m:Lang String15}"  HorizontalAlignment="Left" Margin="547,-3,-225,0" VerticalAlignment="Top" x:Uid="ML_1418" Width="270" />
+                            <Label Content="{m:Lang Last_Export_Date}" Margin="53.333,-7,-155.333,79" Grid.Column="3" Visibility="Hidden" x:Uid="ML_1419" />
+                            <DatePicker HorizontalAlignment="Left" x:Name="datePicker1" Width="167" Margin="53.333,19,-102.333,55" Grid.Column="3" Visibility="Hidden">
+                                <DatePicker.Style>
+                                    <Style>
+                                        <Setter Property="UIElement.IsEnabled" Value="False" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsSelected, ElementName=lbiDates}" Value="false">
+                                                <Setter Property="UIElement.IsEnabled" Value="True" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </DatePicker.Style>
+                            </DatePicker>
+                            <Label Content="OPEN5" Grid.Column="3" Margin="260.333,-8,-326.333,80" Visibility="Hidden" x:Uid="ML_1425" />
+                            <DatePicker HorizontalAlignment="Left" x:Name="datePicker2" Width="167" Margin="260.333,18,-309.333,56" Grid.Column="3" Visibility="Hidden">
+                                <DatePicker.Style>
+                                    <Style>
+                                        <Setter Property="UIElement.IsEnabled" Value="False" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsSelected, ElementName=lbiDates}" Value="false">
+                                                <Setter Property="UIElement.IsEnabled" Value="True" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </DatePicker.Style>
+                            </DatePicker>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+        <!--<Button x:Name="OpenModeEmploi" Style="{StaticResource FlatButtonStyle}" Height="Auto" MaxWidth="330" MinWidth="250" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize='17' Width="318" Click="btnOpenModeEmploi" Content="Mode d' Emploi"/>-->
+        <!--<Button Content="Base de données de sauvegarde" HorizontalAlignment="Left" Margin="400,175,-140,0" FontSize="18" VerticalAlignment="Top" Width="340" Click="Button_Click"/>-->
+        <StackPanel Margin="8, 0, 8, 0" VerticalAlignment="Bottom">
+            <Label HorizontalAlignment="Left" Content="{m:Lang Status_of_the_Export}" FontWeight="DemiBold" x:Uid="ML_1432" />
+            <TextBox MinHeight="150" VerticalScrollBarVisibility="Visible" x:Name="txtTransmit1" VerticalAlignment="Top" HorizontalAlignment="Stretch" Text="" IsReadOnly="True" Visibility="Visible" />
+            <StackPanel Height="10" />
+            <!--<ProgressBar x:Name="exportProgressBar" Value="0" Height="32" />-->
+        </StackPanel>
+    </Grid>
+</UserControl>

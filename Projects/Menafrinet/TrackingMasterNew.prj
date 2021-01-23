@@ -1,0 +1,7 @@
+<Project id="f2914347-bd6b-98fa-7ae9-91081f6774a3" name="TrackingMasterNew" location="C:\TFSCODE\CurrentShell2\Epi Info 7\build\release\Projects\Menafrinet" description="" schemaVersion="102" epiVersion="" createDate="03/01/2016 15:45:26" useMetadataDbForCollectedData="" useBackgroundOnAllPages="False">
+  <CollectedData>
+    <Database connectionString="zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROEObQjjBNpAqfBpRexgf2IoubCuTLO+JUKN0f2pDVwhMRLfVWdyFQa+Qr34Q4u8wR+AEhnvaVqNJ9dvP7XfaZshUtgHqKkuiIHwIJcOd7tyhnocbMKXPt2gHs2ljJendc3" dataDriver="Epi.Data.Office.AccessDBFactory, Epi.Data.Office" />
+  </CollectedData>
+  <Metadata source="2" />
+  <EnterMakeviewInterpreter source="Epi.Core.EnterInterpreter" />
+</Project>

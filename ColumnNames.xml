@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Columns>
+  <Column FieldName="projecttitle">
+    <Translations>
+      <Translation Culture="en-US">Project Title</Translation>
+      <Translation Culture="en-GB">Project Title</Translation>
+      <Translation Culture="fr-FR">Project Title</Translation>
+    </Translations>
+  </Column>
+
+  <Column FieldName="DateAssigned">
+    <Translations>
+      <Translation Culture="en-US">Date Assigned</Translation>
+      <Translation Culture="en-GB">Date Assigned</Translation>
+      <Translation Culture="fr-FR">Date Assigned</Translation>
+    </Translations>
+  </Column>
+
+  <Column FieldName="LeadResident">
+    <Translations>
+      <Translation Culture="en-US">Lead Resident</Translation>
+      <Translation Culture="en-GB">Lead Resident</Translation>
+      <Translation Culture="fr-FR">Lead Resident</Translation>
+    </Translations>
+  </Column>
+
+  <Column FieldName="MentorFullName">
+    <Translations>
+      <Translation Culture="en-US">Mentor's Full Name</Translation>
+      <Translation Culture="en-GB">Mentor's Full Name</Translation>
+      <Translation Culture="fr-FR">Mentor's Full Name</Translation>
+    </Translations>
+  </Column>
+
+  <Column FieldName="SupervisorFullName">
+    <Translations>
+      <Translation Culture="en-US">Supervisor's Full Name</Translation>
+      <Translation Culture="en-GB">Supervisor's Full Name</Translation>
+      <Translation Culture="fr-FR">Supervisor's Full Name</Translation>
+    </Translations>
+  </Column>
+     
+</Columns>

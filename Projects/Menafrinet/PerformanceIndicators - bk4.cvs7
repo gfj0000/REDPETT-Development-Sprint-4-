@@ -1,0 +1,116 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <connectionString>zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi7csqJucXA0eUm4ILZ7oROEhyw74eaUAZiyj4Np4qCcKHhE3Dszq5mCDpes1bt7jyDaEkhUTUGobsj1w5bdnvWNfpquxicljLl9Oh3eeblVUC0VAKD8qOivbZ7M2k4ly9FG0aT6Ym5Jq7phC9gNlboK</connectionString>
+    <customSQLQuery>SELECT FichedeNotification1.Region, FichedeNotification1.District, Count(*) AS [Cas], Sum(IIf 
+(Outcome='1',1,0)) AS [Vivant],
+iiF([Vivant]=0,0,FORMAT([Vivant]/[Cas], "PERCENT")) AS [Vivant (pct)], Sum(IIf(Outcome='2',1,0)) AS [Décès], fORMAT 
+(Décès/[Cas], "PERCENT") AS [Décès (pct)], Sum(IIf(VaccinationStatus='1',1,0)) AS [Malade Vaccine], Sum(IIf(MenA=- 
+1,1,0)) AS [MenAfriVac], iiF([Malade Vaccine]=0,0,FORMAT([MenAfriVac]/[Malade Vaccine], "PERCENT")) AS [MenAfriVacpct)], Sum(IIf(SpecimenCollected='1',1,0)) AS [Ponction Lombaire (n)], FORMAT([Ponction Lombaire (n)]/[Cas], "PERCENT") AS [Ponction lombaire (%) (Seuil &gt; 80%)],
+Sum(IIf(TIDistrict=-1,1,0)) AS [TI District], iiF([Ponction Lombaire (n)]=0,0,FORMAT([TI District]/[Ponction Lombaire (n)], "PERCENT")) AS [TI (pct)], Sum(IIf(TIRegion=-1,1,0)) AS [TI Region], 
+
+
+
+([TI Region] + [TI District] + [TI NRL]) AS [TI ALL],
+
+iiF([Ponction Lombaire (n)]=0,0,FORMAT([TI ALL]/[Ponction Lombaire (n)], "PERCENT")) AS [LCR reçus au labo TI %],
+
+
+iiF([Ponction Lombaire (n)]=0,0,FORMAT([TI Region]/[Ponction Lombaire (n)], "PERCENT")) AS [TI Region (pct)], Sum(IIf(TINRL=-1,1,0)) AS [TI NRL], iiF([Ponction Lombaire (n)]=0,0,FORMAT([TI NRL]/[Ponction Lombaire (n)], "PERCENT")) AS [TI NRL (pct)], 
+
+Count(*) AS [DateReceivedNRL], 
+
+
+Sum(IIf(CultureNRL ='13' ,1,0)) AS [Culture Contaminé Sum],
+Sum(IIf(CultureNRL ='01' Or CultureNRL ='02' Or CultureNRL ='03' Or CultureNRL ='04' Or CultureNRL ='05' Or CultureNRL ='06' Or CultureNRL ='07' Or CultureNRL ='08' Or CultureNRL ='09' Or CultureNRL ='10' Or CultureNRL ='11' Or CultureNRL ='12' Or CultureNRL ='14',1,0)) AS [Culture NRL Sum],
+
+
+Sum(IIf(PCR ='13' ,1,0)) AS [Contaminé Sum],
+Sum(IIf(PCR ='01' Or PCR ='02' Or PCR ='03' Or PCR ='04' Or PCR ='05' Or PCR ='06' Or PCR ='07' Or PCR ='08' Or PCR ='09' Or PCR ='10' Or PCR ='11' Or PCR ='12' Or PCR ='14',1,0)) AS [PCR Sum],
+
+
+Sum(IIf(FinalResultNRL ='01' Or FinalResultNRL ='02' Or FinalResultNRL ='03' Or FinalResultNRL ='04' Or FinalResultNRL ='05' Or FinalResultNRL ='06' Or FinalResultNRL ='07' Or FinalResultNRL ='08' Or FinalResultNRL ='09' Or FinalResultNRL ='10' Or FinalResultNRL ='11' Or FinalResultNRL ='12' Or FinalResultNRL ='14',1,0)) AS [FinalResultNRL Sum],
+iiF([Ponction Lombaire (n)]=0,0,FORMAT([FinalResultNRL Sum]/[Ponction Lombaire (n)], "PERCENT")) AS [LCR confirmé au LNR %]
+
+
+
+
+
+
+FROM ((FichedeNotification1 INNER JOIN FichedeNotification2 ON FichedeNotification1.GlobalRecordId = FichedeNotification2.GlobalRecordId) INNER JOIN FichedeNotification10 ON FichedeNotification1.GlobalRecordId = FichedeNotification10.GlobalRecordId) INNER JOIN FichedeNotification6 ON FichedeNotification1.GlobalRecordId = FichedeNotification6.GlobalRecordId
+
+GROUP BY FichedeNotification1.Region, FichedeNotification1.District;</customSQLQuery>
+    <advancedDataFilterCondition>
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules />
+  </dashboardHelper>
+  <Gadgets>
+    <lineListGadget top="33" left="50" collapsed="False" gadgetType="EpiDashboard.LineListControl" id="e6e774b9-ba67-4197-b8b7-09e2b0b2c878">
+      <groupVariable>
+      </groupVariable>
+      <maxRows>50</maxRows>
+      <maxColumnNameLength>24</maxColumnNameLength>
+      <sortColumnsByTabOrder>False</sortColumnsByTabOrder>
+      <useFieldPrompts>False</useFieldPrompts>
+      <showListLabels>False</showListLabels>
+      <showLineColumn>False</showLineColumn>
+      <showColumnHeadings>True</showColumnHeadings>
+      <showNullLabels>True</showNullLabels>
+      <customHeading>Indicateurs de performance</customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <dataFilters recordProcessScope="undeleted" />
+      <listFields>
+        <listField>Cas</listField>
+        <listField>Décès</listField>
+        <listField>Décès (pct)</listField>
+        <listField>District</listField>
+        <listField>Malade Vaccine</listField>
+        <listField>MenAfriVac</listField>
+        <listField>MenAfriVacpct)</listField>
+        <listField>Ponction lombaire (%) (Seuil &gt; 80%)</listField>
+        <listField>Ponction Lombaire (n)</listField>
+        <listField>Region</listField>
+        <listField>TI (pct)</listField>
+        <listField>TI District</listField>
+        <listField>TI Region (pct)</listField>
+        <listField>TI Region</listField>
+        <listField>TI NRL (pct)</listField>
+        <listField>TI NRL</listField>
+        <listField>Vivant</listField>
+        <listField>Vivant (pct)</listField>
+	<listField>Contaminé Sum</listField>
+	<listField>PCR Sum</listField>
+	<listField>LCR reçus par le LNR (%)</listField>
+      </listFields>
+      <sortFields>
+        <sortField>Region (ascending)</sortField>
+        <sortField>District (ascending)</sortField>
+      </sortFields>
+    </lineListGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>False</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>True</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>Indicateurs de performance</customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

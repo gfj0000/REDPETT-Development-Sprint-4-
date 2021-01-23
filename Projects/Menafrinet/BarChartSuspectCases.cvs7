@@ -1,0 +1,175 @@
+﻿<DashboardCanvas>
+  <dashboardHelper>
+    <projectPath>Menafrinet_NE.prj</projectPath>
+    <viewName>FichedeNotification</viewName>
+    <advancedDataFilterCondition>(district = permanent_district AND permanent_district  NOT= (.)) OR (district  NOT= (.) AND permanent_district = 'AAA') AND (epidyear &gt;= permanent_year_beg AND epidyear &lt;= permanent_year_end) AND (epidweek = permanent_epidweek AND permanent_epidweek  NOT= '99') OR (epidweek  NOT= 99 AND permanent_epidweek = '99')
+    </advancedDataFilterCondition>
+    <useAdvancedDataFilterCondition>False</useAdvancedDataFilterCondition>
+    <relatedDataConnections />
+    <dataFilters recordProcessScope="undeleted" />
+    <dashboardRules>
+      <rule ruleType="EpiDashboard.Rules.Rule_ConditionalAssign">
+        <friendlyRule>Assign Cases the value 1 when the value of [CaseNumber] is not missing  and the value of [FinalClassification] is equal to 3-Suspect</friendlyRule>
+        <destinationColumnName>Cases</destinationColumnName>
+        <destinationColumnType>System.Decimal</destinationColumnType>
+        <assignValue>1</assignValue>
+        <useElse>False</useElse>
+        <dataFilters recordProcessScope="undeleted">
+          <filterCondition>
+            <condition>([CaseNumber] is not null )</condition>
+            <friendlyCondition>The value of [CaseNumber] is not missing </friendlyCondition>
+            <columnName>[CaseNumber]</columnName>
+            <columnType>System.Double</columnType>
+            <rawColumnName>CaseNumber</rawColumnName>
+            <operand>is not null</operand>
+            <friendlyOperand>is not missing</friendlyOperand>
+            <value>
+            </value>
+            <friendlyValue>
+            </friendlyValue>
+            <highValue>
+            </highValue>
+            <friendlyHighValue>
+            </friendlyHighValue>
+            <lowValue>
+            </lowValue>
+            <friendlyLowValue>
+            </friendlyLowValue>
+            <isBetween>false</isBetween>
+            <isEnabled>true</isEnabled>
+            <joinType>
+            </joinType>
+          </filterCondition>
+          <filterCondition>
+            <condition>([FinalClassification] = '3-Suspect')</condition>
+            <friendlyCondition>The value of [FinalClassification] is equal to 3-Suspect</friendlyCondition>
+            <columnName>[FinalClassification]</columnName>
+            <columnType>System.String</columnType>
+            <rawColumnName>FinalClassification</rawColumnName>
+            <operand>=</operand>
+            <friendlyOperand>is equal to</friendlyOperand>
+            <value>'3-Suspect'</value>
+            <friendlyValue>3-Suspect</friendlyValue>
+            <highValue>
+            </highValue>
+            <friendlyHighValue>
+            </friendlyHighValue>
+            <lowValue>
+            </lowValue>
+            <friendlyLowValue>
+            </friendlyLowValue>
+            <isBetween>false</isBetween>
+            <isEnabled>true</isEnabled>
+            <joinType>and</joinType>
+          </filterCondition>
+        </dataFilters>
+      </rule>
+    </dashboardRules>
+  </dashboardHelper>
+  <Gadgets>
+    <standardTextReportGadget top="85" left="698" width="599" height="61" collapsed="false" gadgetType="EpiDashboard.Gadgets.Reporting.StandardTextControl">
+      <text>Cas suspects de la méningite par semaine</text>
+      <fontWeight>bold</fontWeight>
+      <fontSize>29</fontSize>
+      <fontStretch>Normal</fontStretch>
+      <fontStyle>Normal</fontStyle>
+      <fontFamily>Global User Interface</fontFamily>
+      <textDecorations>
+      </textDecorations>
+      <foregroundColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+      </foregroundColor>
+    </standardTextReportGadget>
+    <columnChartGadget top="220" left="633" collapsed="false" gadgetType="EpiDashboard.Gadgets.Charting.ColumnChartGadget" id="7fa24484-7f18-499e-8f06-b603cbcbc7dd">
+      <mainVariable>EpidWeek</mainVariable>
+      <weightVariable>Cases</weightVariable>
+      <crosstabVariable>
+      </crosstabVariable>
+      <secondYVarType>0</secondYVarType>
+      <secondYVar>
+      </secondYVar>
+      <height>500</height>
+      <width>800</width>
+      <sort>
+      </sort>
+      <allValues>False</allValues>
+      <showListLabels>False</showListLabels>
+      <includeMissing>False</includeMissing>
+      <customHeading>
+      </customHeading>
+      <customDescription>
+      </customDescription>
+      <customCaption>
+      </customCaption>
+      <useDiffBarColors>False</useDiffBarColors>
+      <useRefValues>True</useRefValues>
+      <showAnnotations>False</showAnnotations>
+      <y2showAnnotations>False</y2showAnnotations>
+      <showGridLines>True</showGridLines>
+      <composition>0</composition>
+      <barSpace>0</barSpace>
+      <orientation>0</orientation>
+      <palette>12</palette>
+      <barType>2</barType>
+      <y2LineType>0</y2LineType>
+      <y2LineDashStyle>4</y2LineDashStyle>
+      <y2LineThickness>1</y2LineThickness>
+      <yAxisFrom>
+      </yAxisFrom>
+      <yAxisTo>
+      </yAxisTo>
+      <yAxisStep>
+      </yAxisStep>
+      <xAxisStartValue>
+      </xAxisStartValue>
+      <xAxisEndValue>
+      </xAxisEndValue>
+      <yAxisLabel>
+      </yAxisLabel>
+      <yAxisFormatString>
+      </yAxisFormatString>
+      <y2AxisLabel>
+      </y2AxisLabel>
+      <y2AxisLegendTitle>
+      </y2AxisLegendTitle>
+      <y2AxisFormatString>
+      </y2AxisFormatString>
+      <xAxisLabelType>3</xAxisLabelType>
+      <xAxisLabel>Semaine</xAxisLabel>
+      <xAxisAngle>0</xAxisAngle>
+      <chartTitle>
+      </chartTitle>
+      <chartSubTitle>
+      </chartSubTitle>
+      <showLegend>False</showLegend>
+      <showLegendBorder>False</showLegendBorder>
+      <showLegendVarNames>False</showLegendVarNames>
+      <legendFontSize>12</legendFontSize>
+      <legendDock>1</legendDock>
+      <dataFilters recordProcessScope="undeleted" />
+    </columnChartGadget>
+  </Gadgets>
+  <OutputSettings>
+    <showCanvasSummaryInfo>False</showCanvasSummaryInfo>
+    <showGadgetHeadings>True</showGadgetHeadings>
+    <showGadgetSettings>False</showGadgetSettings>
+    <useAlternatingColors>False</useAlternatingColors>
+    <tableFontSize>13</tableFontSize>
+    <customHeading>
+    </customHeading>
+    <customSummary>
+    </customSummary>
+    <customConclusion>
+    </customConclusion>
+    <customTableFontFamily>
+    </customTableFontFamily>
+    <canvasHeight>8000</canvasHeight>
+    <sortGadgets>True</sortGadgets>
+  </OutputSettings>
+  <CanvasSettings>
+    <editMode>True</editMode>
+    <layoutMode>free</layoutMode>
+  </CanvasSettings>
+</DashboardCanvas>

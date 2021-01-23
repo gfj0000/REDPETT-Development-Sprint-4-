@@ -1,0 +1,8 @@
+READ {C:\3 18 15 - New Checkcode\MenAfriNet v 9 12 14 (working)\TFSCode - Menu Test Code - Copy\Epi Info 7\build\release\Projects\Menafrinet\Menafrinet_NE.prj}:FichedeNotification 
+***READ {Menafrinet_NE.prj}:FichedeNotification 
+DEFINE DISTRICT_UC TEXTINPUT 
+ASSIGN DISTRICT_UC = UPPERCASE( District )
+SUMMARIZE CASES :: Count(CaseNumber) TO MapTable STRATAVAR = DISTRICT_UC
+Quit
+
+

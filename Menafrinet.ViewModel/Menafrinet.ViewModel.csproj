@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{095A5743-063B-4191-B0F4-59B676427095}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Menafrinet.ViewModel</RootNamespace>
+    <AssemblyName>Menafrinet.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Epi Info 7\build\release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Epi Info 7\build\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MenLogoI.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Epi.Core, Version=7.1.5017.15417, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\TFSCode\Epi Info 7\build\release\Epi.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Epi.Data.Office, Version=7.1.5017.15435, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\TFSCode\Epi Info 7\build\release\Epi.Data.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Epi.ImportExport, Version=7.1.5017.15420, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Epi Info 7\build\release\Epi.ImportExport.dll</HintPath>
+    </Reference>
+    <Reference Include="Epi.Menu, Version=7.2.6856.24689, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Epi Info 7\build\release\Epi.Menu.dll</HintPath>
+    </Reference>
+    <Reference Include="EpiInfo.Plugin, Version=7.1.2.20, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\TFSCode\Epi Info 7\build\release\EpiInfo.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="FluidKit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FluidKit.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Case.cs" />
+    <Compile Include="CaseViewModel.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="DataHelperBase.cs" />
+    <Compile Include="Events\CaseDataPopulatedArgs.cs" />
+    <Compile Include="Events\CaseDeletedArgs.cs" />
+    <Compile Include="Events\DuplicateIdDetectedArgs.cs" />
+    <Compile Include="Events\InvalidIdDetectedArgs.cs" />
+    <Compile Include="ExportSettings.cs" />
+    <Compile Include="IDataHelper.cs" />
+    <Compile Include="ImportSettings.cs" />
+    <Compile Include="LabExportTypes.cs" />
+    <Compile Include="Locations\District.cs" />
+    <Compile Include="Locations\Districts.cs" />
+    <Compile Include="Locations\ISite.cs" />
+    <Compile Include="Locations\ISiteType.cs" />
+    <Compile Include="Locations\MoH.cs" />
+    <Compile Include="Locations\Region.cs" />
+    <Compile Include="Locations\Regions.cs" />
+    <Compile Include="Locations\SiteBase.cs" />
+    <Compile Include="Locations\SiteTypeBase.cs" />
+    <Compile Include="MainDialogViewModel.cs" />
+    <Compile Include="MlString.cs" />
+    <Compile Include="NRL.cs" />
+    <Compile Include="ObservableObject.cs" />
+    <Compile Include="PageViewModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PropertySupport.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ReportsViewModel.cs" />
+    <Compile Include="SiteMergeStatus.cs" />
+    <Compile Include="SiteMergeStatusViewModel.cs" />
+    <Compile Include="ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Menafrinet.Core\Menafrinet.Core.csproj">
+      <Project>{7A431091-6712-4E26-8B0C-92637590BC08}</Project>
+      <Name>Menafrinet.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Menafrinet.ViewModel_ml.xml" />
+    <Content Include="MenLogoI.ico" />
+    <Content Include="NIGER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MultiLang.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
